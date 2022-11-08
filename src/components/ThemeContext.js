@@ -14,6 +14,7 @@ export const ThemeProvider = (props) => {
     const [firstThemeMode, setFirstThemeMode] = useState(false);
     const [secondThemeMode, setSecondThemeMode] = useState(false);
     const [thirdThemeMode, setThirdThemeMode] = useState(false);
+    
 
     
 
