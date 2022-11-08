@@ -12,7 +12,7 @@ import { GlobalStyles } from './components/Globalstyles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<HashRouter>
+<HashRouter base="/">
   <React.StrictMode>
     <ThemeProvider>
       <GlobalStyles/>
