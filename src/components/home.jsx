@@ -1,30 +1,27 @@
-import { useState} from "react"
+import { React, useState, useEffect} from "react"
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import hamburger from "../assets/images/gg_menu-left.png"
 import logo from "../assets/images/Joseph.svg"
-import Illustration1 from "../assets/images/Illustration1.svg"
-import Illustration2 from "../assets/images/Illustration2.svg"
-import facebook from "../assets/images/facebook.png"
-import linkedIn from "../assets/images/linkedin.png"
-import dribble from "../assets/images/dribbble.png"
-import instagram from "../assets/images/instagram.png"
-// import tumblr from "../assets/images/tumblr.png"
-import github from "../assets/images/github-dark.jpg"
+import lightBulb from "../assets/images/lightBulb.png"
+import rocket from "../assets/images/rocket.png"
 import Services from "./services"
 import Works from "./works";
 import Others from "./Others";
 import { AnimateButtonPrimary } from "./AnimateButton";
 import { AnimateButtonPoint } from "./AnimateButton";
 import { VerticalLine } from "./VerticalLine";
+// import GrowingCircleAnimation from "./GrowingCircleAnimation";
+// import ThemeButton from "./ThemeButton";
+// import FlippableCard from "./flipable-card";
+// import { ThemeSwitcher} from "./ThemeSwitcher";
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, blueTheme } from "./themes";
+import Footer from "./Footer";
+import GlobalStyles from './Globalstyles';
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
-import GrowingCircleAnimation from "./GrowingCircleAnimation";
-import ThemeButton from "./ThemeButton";
-import FlippableCard from "./flipable-card";
-import { ThemeSwitcherOne } from "./ThemeSwitcher";
-import { ThemeSwitcherTwo } from "./ThemeSwitcher";
-import { ThemeSwitcherThree } from "./ThemeSwitcher";
+import { Theme } from "./ThemeContext";
+
 
 export default function Home(props) {
 
@@ -46,15 +43,62 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
     delay: "500"
   });
 
-//   const {darkMode} = useContext(ThemeContext)
-//   console.log('darkmode', darkMode)
+  let currentTheme = sessionStorage.getItem("theme")
+
+// const darkMode = useContext(Theme)
+
+// console.log('darkMode', darkMode)
+// const themeMode = useContext(Theme)
+// const [theme, setTheme] = useState(themeMode)
+const [theme, setTheme] = useState(currentTheme)
+
+
+useEffect(() => {
+  sessionStorage.setItem("theme", theme)
+}, [theme])
+
+
+  
+//   || "light"
 
   return (
+    <ThemeProvider theme = {theme == "light" ? lightTheme : theme == "dark" ? darkTheme : blueTheme}>
     <>
+    <GlobalStyles/>
     <div className="header">
-        <ThemeSwitcherOne/>
-        <ThemeSwitcherTwo/>
-        <ThemeSwitcherThree/>
+
+
+    <div className="theme-one h-[100px] w-[100px] rounded-full bg-[#E6E6E6] absolute top-[100px] left-[380px] cursor-pointer z-[1000]" 
+        onClick = {()=> {
+          setTheme("light")
+        console.log(theme)
+        }}
+        >
+
+      </div>
+
+    
+        <div className="theme-two h-[100px] w-[100px] rounded-full bg-[#1B3577] absolute top-[310px] left-[310px] cursor-pointer z-[1000]" 
+          onClick = {() => {
+            setTheme("blue")
+          console.log(theme)
+        }}
+          >
+  
+      </div>
+    
+
+      <div className="theme-three h-[100px] w-[100px] rounded-full bg-[#333333] absolute top-[400px] left-[120px] cursor-pointer z-[1000]" 
+        onClick = {()=> {
+          setTheme("dark")
+        console.log(theme)
+        }}
+        >
+  
+      </div>
+
+
+        {/* <ThemeSwitcher/> */}
     {/* <GrowingCircleAnimation isDark={darkMode}/> */}
     {/* {console.log('darkMode', darkMode)} */}
         <div className="photo-header">
@@ -64,6 +108,11 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
                     <div className="logo-contain">
                         <Link to="/"><img src={logo} alt="" height="100"></img></Link>
                     </div>
+
+
+                    <div className="print-resume-btn w-[400px] h-[120px] bg-transparent rounded-[20px] border-solid border-[10px] p-2 text-[60px] cursor-pointer">Resume</div>
+
+
                     <div className={`nav-link-wrapper ${hamburgerToggle ? "show" : ""}`}>
                         <div className="nav-link">
                             <Link to="/">services</Link>
@@ -110,11 +159,11 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
            {/* <VerticalLine/> */}
             <div ref={introRef1} className={`intro-one fade-in ${introOneVisibility ? "appear" : ""}`}>
                 <h2 className="text-left">I'm a frontend developer and i'm based in Nigeria. I love to explore and create new things with passion for designs. Since the beginning of my journey, three years ago, I have worked on different projects and identified awesome web designs in different perspectives and views. </h2>
-                <img src={Illustration2} alt="" height="1300"></img>
+                <img src={lightBulb} alt=""></img>
             </div>
             <div ref={introRef2} className={`intro-two fade-in ${introTwoVisibility ? "appear" : ""}`}>
                 <h2 className="text-right">I believe in the upmost beauty of things and how better they can be, from vector graphics to web, with respect to user interface and user experience.</h2>
-                <img src={Illustration1} alt="" height="1500"></img>
+                <img src={rocket} alt=""></img>
             </div>
            {/* <VerticalLine/> */}
         </div>
@@ -131,17 +180,17 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
         
     </div>
 
-    <div id='end' className="end">
+    <div id='end' className="end w-full h-auto text-center">
         <VerticalLine/>
         
         <AnimateButtonPoint/>
 
-        <div className="w-full flex justify-center align-center">
-            <div className="text-center w-[40%] h-auto rounded-[100px] ease duration-700 py-60">
-            <h2 className="text-9xl pb-24">Want to work on something?</h2>
-            <p className="text-7xl pb-60">Throw me your ideas and let me see how i can be of assistance.</p>
-            <button className="h-[200px] w-[600px] rounded-[100px] mb-[100px] border-solid border-[10px] ease duration-500 hover:">
-                <a href="mailto:josey359@gmail.com" className="text-7xl">let's Chat</a>
+        <div className="w-full flex justify-center align-center py-36">
+            <div className="connect-card text-center w-[40%] h-auto rounded-[100px] ease duration-700 p-60">
+            <h2 className="text-9xl pb-24 font-['overlock']">Want to work on something?</h2>
+            <p className="text-7xl pb-60 font-bold text-center">Throw me your ideas and let me see how i can be of assistance.</p>
+            <button className="connect-button h-[200px] w-[600px] rounded-[100px] mb-[100px] border-solid border-[10px] ease duration-500 text-white">
+                <a href="mailto:josey359@gmail.com" className="text-7xl font-['Bellota'] font-bold decoration-0">let's Chat</a>
             </button>
         </div>
         </div>
@@ -153,25 +202,9 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
         </div>
         
     </div>
-           
-<footer>
     
-    <h1>let's connect</h1>
-    <div className="social flex flex-row justify-center">
-        <a href="https://facebook.com/joseph.akinwole.7/"><img src={facebook} alt="" height="130" id="facebook-logo" className="h-40"></img></a>
-        <a href="https://www.linkedin.com/in/joseph-akinwole-71415a198/"><img src={linkedIn} alt="" height="130" id="linkedin-logo" className="h-40"></img></a>
-        <a href="https://dribbble.com/Joebim"><img src={dribble} alt="" height="130" id="dribble-logo" className="h-40"></img></a>
-        <a href="https://github.com/Joebim"><img src={github} alt="" height="130" id="github-logo" className="rounded-[120px] h-40"></img></a>
-        {/* <a href=""><img src={tumblr} alt="" height="130" id="tumblr-logo"></img></a> */}
-        <a href="https://www.instagram.com/josephakinwole/"><img src={instagram} alt="" height="130" id="instagram-logo" className="h-40"></img></a>
-    </div>
-    
-    
-    
-
-    <cite>Redesigned by me @ TwentyTwentyTwo</cite>
-    <script src="./main.js"></script>
-</footer>
+    <Footer/>
 </>
+ </ThemeProvider>
   );
 }

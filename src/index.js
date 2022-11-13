@@ -5,8 +5,9 @@ import { HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from './components/ThemeContext';
-import { GlobalStyles } from './components/Globalstyles';
+
+
+// sessionStorage.setItem("theme", "light");
 
 
 
@@ -14,10 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <HashRouter base="/">
   <React.StrictMode>
-    <ThemeProvider>
-      <GlobalStyles/>
       <App />
-    </ThemeProvider>
   </React.StrictMode> 
 </HashRouter>
 );

@@ -9,7 +9,7 @@ import { ImageSliderTwo } from "./ImageSlider";
 export default function Services() {
 
     return (
-        <div className="w-full h-auto bg-white flex justify-center px-[200px]">
+        <div className="services w-full h-aut flex justify-center px-[200px]">
             <div className="service-card-contain w-3/4">
                 <div className="service-card flex flex-row w-full py-60 justify-between items-center">
                     <div className="service-info-contain">

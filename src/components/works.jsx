@@ -53,22 +53,27 @@ export default function Works(props) {
         
         <div className="work-contain flex w-full">
         <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
-                <h1 ref={text1} className={`text-[150px] font-bold ${textOneVisibility ? "text-animate" : ""}`}>2019</h1>
+                <h1 ref={text1} className={`text-[150px] font-bold ${textOneVisibility ? "text-animate" : ""}`}>2021</h1>
         </div>
          <div className={`card-right flex-[5_5_0%] ${toggleCardTwo ? "show" : ""}`} id="card-two" onClick={() => {setToggleCardTwo(!toggleCardTwo)}}>
              <div className={`card-contain ${toggleCardTwo ? "show" : ""}`}>
-             <div className={`info-card ${toggleCardTwo ? "show" : ""}`}></div>
+             <div className={`info-card flex justify-center items-center ${toggleCardTwo ? "show p-20" : ""}`}>
+                <div className={`info-card-contain flex justify-center items-center w-[900px] h-[900px] ${toggleCardTwo ? "show" : ""}`}>
+                    <h1 className="text-white text-7xl ">JSP is a digital School system that </h1>
+                </div>
+             </div>
              <div className={`inner ${toggleCardTwo ? "show" : ""}`}>
-                <div className={`work-info-contain flex flex-col ${toggleCardTwo ? "show" : ""}`}>
-                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">WHAT I DO</h3>
+                <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardTwo ? "show" : ""}`}>
+                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">JSP</h3>
                  <div className="text-contain">
-                 <p className="pt-[50px] pb-[150px] text-8xl text-center">I create interactive web designs and bring your ideas to life.</p>
+                 <p className="pt-[50px] pb-[150px] text-8xl text-center">A digital school management system </p>
                  </div>
                 </div>
                  
                  <div  id="btn_1" 
                  onClick={() => {setToggleCardTwo(!toggleCardTwo)}} 
-                 className="info"></div>
+                 className="info">
+                 </div>
              </div>
              </div>
          </div>
@@ -82,10 +87,10 @@ export default function Works(props) {
             <div className={`card-left flex-[5_5_0%] ${toggleCardThree ? "show" : ""}`} id="card-three" onClick={() => {setToggleCardThree(!toggleCardThree)}}>
          <div className={`card-contain-left ${toggleCardThree ? "show" : ""}`}>
              <div className={`inner ${toggleCardThree ? "show" : ""}`}>
-                <div className={`work-info-contain flex flex-col ${toggleCardThree ? "show" : ""}`}>
-                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">I DESIGN FOR YOU</h3>
+                <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardThree ? "show" : ""}`}>
+                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">Spirq</h3>
                     <div className="text-contain">
-                    <p className="pt-[50px] pb-[150px] text-8xl text-center">I design graphic contents just as you want.</p>
+                    <p className="pt-[50px] pb-[150px] text-8xl text-center">A Free Speaking Web Community</p>
                  </div>
                 </div>
                  
@@ -93,7 +98,11 @@ export default function Works(props) {
                  onClick={() => {setToggleCardThree(!toggleCardThree)}}
                  className="info"></div>
              </div>
-             <div className={`info-card ${toggleCardThree ? "show" : ""}`}></div>
+             <div className={`info-card flex justify-center items-center ${toggleCardThree ? "show" : ""}`}>
+                <div className={`info-card-contain flex justify-center items-center w-[900px] h-[900px] ${toggleCardThree ? "show" : ""}`}>
+                    <h1 className="text-white text-7xl ">Spirq is an interactive community</h1>
+                </div>
+             </div>
              </div>
          </div>
 
@@ -116,12 +125,16 @@ export default function Works(props) {
         
         <div className={`card-right flex-[5_5_0%] ${toggleCardFour ? "show" : ""}`} id="card-two" onClick={() => {setToggleCardFour(!toggleCardFour)}}>
              <div className={`card-contain ${toggleCardFour ? "show" : ""}`}>
-             <div className={`info-card ${toggleCardFour ? "show" : ""}`}></div>
+             <div className={`info-card flex justify-center items-center ${toggleCardFour ? "show" : ""}`}>
+             <div className={`info-card-contain flex justify-center items-center w-[900px] h-[900px] ${toggleCardFour ? "show" : ""}`}>
+                    <h1 className="text-white text-7xl ">Foodipy is a Magnificent food website</h1>
+                </div>
+             </div>
              <div className={`inner ${toggleCardFour ? "show" : ""}`}>
-                <div className={`work-info-contain flex flex-col ${toggleCardFour ? "show" : ""}`}>
-                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">WHAT I DO</h3>
+                <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardFour ? "show" : ""}`}>
+                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">Foodipy</h3>
                  <div className="text-contain">
-                 <p className="pt-[50px] pb-[150px] text-8xl text-center">I create interactive web designs and bring your ideas to life.</p>
+                 <p className="pt-[50px] pb-[150px] text-8xl text-center">A smooth recipe Website with healthy meal management</p>
                  </div>
                 </div>
                  
@@ -143,10 +156,10 @@ export default function Works(props) {
          <div className={`card-left flex-[5_5_0%] ${toggleCardFive ? "show" : ""}`} id="card-three" onClick={() => {setToggleCardFive(!toggleCardFive)}}>
          <div className={`card-contain-left ${toggleCardFive ? "show" : ""}`}>
              <div className={`inner ${toggleCardFive ? "show" : ""}`}>
-                <div className={`work-info-contain flex flex-col ${toggleCardFive ? "show" : ""}`}>
-                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">I DESIGN FOR YOU</h3>
+                <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardFive ? "show" : ""}`}>
+                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">Tousech</h3>
                  <div className="text-contain">
-                 <p className="pt-[50px] pb-[150px] text-8xl text-center">I design graphic contents just as you want.</p>
+                 <p className="pt-[50px] pb-[150px] text-8xl text-center">A tech blog</p>
                  </div>
                 </div>
                  
@@ -154,7 +167,11 @@ export default function Works(props) {
                  onClick={() => {setToggleCardFive(!toggleCardFive)}}
                  className="info"></div>
              </div>
-             <div className={`info-card ${toggleCardFive ? "show" : ""}`}></div>
+             <div className={`info-card flex justify-center items-center ${toggleCardFive ? "show" : ""}`}>
+             <div className={`info-card-contain flex justify-center items-center w-[900px] h-[900px] ${toggleCardTwo ? "show" : ""}`}>
+                    <h1 className="text-white text-7xl ">Bringing leading tech Information to the world</h1>
+                </div>
+             </div>
              </div>
          </div>
 

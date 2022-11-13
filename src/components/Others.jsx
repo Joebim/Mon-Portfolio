@@ -66,7 +66,7 @@ return (
 
     <div className="w-full flex justify-center items-center py-60">
         <div className="others-grid w-3/4 grid grid-cols-3 gap-24">
-            <div ref={card1} className={`bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardOneVisibility ? "appear" : ""}`}>
+            <div ref={card1} className={`others-card bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardOneVisibility ? "appear" : ""}`}>
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Simple Portfolio Landing</h1>
                     <p className="text-5xl py-56">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
@@ -77,7 +77,7 @@ return (
                     </div>
                 </div>            
             </div>
-            <div ref={card2} className={`bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardTwoVisibility ? "appear" : ""}`}>
+            <div ref={card2} className={`others-card bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardTwoVisibility ? "appear" : ""}`}>
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Login UI</h1>
                     <p className="text-5xl py-56">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
@@ -88,7 +88,7 @@ return (
                     </div>
                 </div>
             </div>
-            <div ref={card3} className={`bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardThreeVisibility ? "appear" : ""}`}>
+            <div ref={card3} className={`others-card bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardThreeVisibility ? "appear" : ""}`}>
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Web UI Components</h1>
                     <p className="text-6xl py-56">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
@@ -99,7 +99,7 @@ return (
                     </div>
                 </div>
             </div>
-            <div ref={card4} className={`bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardFourVisibility ? "appear" : ""}`}>
+            <div ref={card4} className={`others-card bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardFourVisibility ? "appear" : ""}`}>
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Xender Web Clone</h1>
                     <p className="text-5xl py-56">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
@@ -110,7 +110,7 @@ return (
                     </div>
                 </div>
             </div>
-            <div ref={card5} className={`bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardFiveVisibility ? "appear" : ""}`}>
+            <div ref={card5} className={`others-card bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardFiveVisibility ? "appear" : ""}`}>
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Font Manager</h1>
                     <p className="text-5xl py-56">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
@@ -121,7 +121,7 @@ return (
                     </div>
                 </div>
             </div>
-            <div ref={card6} className={`bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardSixVisibility ? "appear" : ""}`}>
+            <div ref={card6} className={`others-card bg-white rounded-[20px] flex justify-center items-center p-24 fade-in ${cardSixVisibility ? "appear" : ""}`}>
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Task List</h1>
                     <p className="text-5xl py-56">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>

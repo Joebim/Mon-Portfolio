@@ -44,7 +44,7 @@ export function ImageSliderOne (props) {
         <>
         {slides1?.map((slide, index) => {
             return(
-            <div className={`carousel-new-inner w-[600px] h-[600px] gray-200 flex justify-center align-center inline-flex ${index == currentSlide ? "slide-one current" : "slide-one"}`} key={index}>
+            <div className={`carousel-new-inner w-[600px] h-[600px] gray-200 justify-center align-center inline-flex ${index == currentSlide ? "slide-one current" : "slide-one"}`} key={index}>
                 {index == currentSlide && (
                     <img src={slide.image} alt="slide" className="w-[400px] h-[400px]"></img>
                 )}
@@ -91,7 +91,7 @@ export function ImageSliderTwo (props) {
             auto()
         }
 
-    }, [currentSlide]);
+    }, [autoSlide, currentSlide]);
 
 
     return (

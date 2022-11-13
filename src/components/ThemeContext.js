@@ -1,35 +1,18 @@
 import React, {createContext, useState} from "react";
 
-export const ThemeContextOne = createContext();
-export const ThemeContextTwo = createContext();
-export const ThemeContextThree = createContext();
+export const Theme = createContext();
 
+export const ProviderTheme = (props) => {
 
-export const ThemeProvider = (props) => {
+    const [theme, setTheme] = useState("light");
 
-    // const [darkMode, setDarkMode] = useState(false);
-
-    const [theme, setTheme] = useState("first");
-
-    const [firstThemeMode, setFirstThemeMode] = useState(false);
-    const [secondThemeMode, setSecondThemeMode] = useState(false);
-    const [thirdThemeMode, setThirdThemeMode] = useState(false);
-    
-
-    
+    // console.log('props.theme', props.theme)
 
     return (
         <>
-        {theme == "first" ? <ThemeContextOne.Provider value={{firstThemeMode, setFirstThemeMode}}>
+        <Theme.Provider value={theme}>
                 {props.children}
-            </ThemeContextOne.Provider> : 
-            theme == "second" ? <ThemeContextTwo.Provider value={{secondThemeMode, setSecondThemeMode}}>
-                {props.children}
-            </ThemeContextTwo.Provider> : 
-            theme == "third" ? <ThemeContextThree.Provider value={{thirdThemeMode, setThirdThemeMode}}> 
-            {props.children}
-            </ThemeContextThree.Provider>: 
-            ""}
+            </Theme.Provider> 
         </>
     )
 }
