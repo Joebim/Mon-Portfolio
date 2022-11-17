@@ -14,7 +14,7 @@ export default function Services() {
                 <div className="service-card flex flex-row w-full py-60 justify-between items-center">
                     <div className="service-info-contain">
                         <h1 className="text-9xl pt-96 font-bold">What I Do</h1>
-                        <p className="text-8xl py-24">I create interactive web designs and bring your ideas to life.</p>
+                        <p className="text-[75px] leading-[120px] py-24">I create interactive web designs and bring your ideas to life.</p>
                     </div>
                     <div className="slider">
                     <div className="carousel-new h-[600px] w-[600px] bg-gray-200 rounded-full overflow-hidden relative flex justify-center items-center" >
@@ -27,7 +27,7 @@ export default function Services() {
                 <div className="service-card flex flex-row-reverse py-60 w-full justify-between items-center">
                     <div className="text-right service-info-contain">
                         <h1 className="text-9xl pt-96 font-bold">I Design For You</h1>
-                        <p className="text-8xl py-24">I design graphic contents just as you want.</p>
+                        <p className="text-[75px] leading-[120px] py-24">I design graphic contents just as you want.</p>
                     </div>
                     <div className="slider h-[600px] w-[600px] relative grid place-items-center">
                     <div className="carousel-new h-[600px] w-[600px] bg-gray-200 rounded-full overflow-hidden relative flex justify-center items-center" >

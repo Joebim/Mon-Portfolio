@@ -5,7 +5,7 @@ export function AnimateButtonPrimary() {
             <a href="#intro"></a>
         </button>
     )
-}
+} 
 
 export function AnimateButtonPoint(props) {
     return(

@@ -10,7 +10,7 @@ export default function Footer() {
     return (
     <footer>
     
-        <h1>let's connect</h1>
+        <h1 className="footer-text">let's connect</h1>
         <div className="social flex flex-row justify-center">
             <a href="https://facebook.com/joseph.akinwole.7/"><img src={facebook} alt="" height="130" id="facebook-logo" className="h-40"></img></a>
             <a href="https://www.linkedin.com/in/joseph-akinwole-71415a198/"><img src={linkedIn} alt="" height="130" id="linkedin-logo" className="h-40"></img></a>
@@ -23,7 +23,7 @@ export default function Footer() {
         
         
 
-        <cite>Redesigned by me @ TwentyTwentyTwo</cite>
+        <cite className="footer-cite">Redesigned by me @ TwentyTwentyTwo</cite>
         {/* <script src="./main.js"></script> */}
     </footer>
     )

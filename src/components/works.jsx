@@ -42,7 +42,7 @@ export default function Works(props) {
 
 
     return (
-        <div className="works-contain w-full px-96">
+        <div className="works-contain w-full px-96 pt-56">
         <div className="w-full text-center py-60">
             <h1 className="text-9xl font-bold">My Project Timeline</h1>
         </div>
@@ -53,20 +53,20 @@ export default function Works(props) {
         
         <div className="work-contain flex w-full">
         <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
-                <h1 ref={text1} className={`text-[150px] font-bold ${textOneVisibility ? "text-animate" : ""}`}>2021</h1>
+                <h2 ref={text1} className={`text-[150px] font-bold ${textOneVisibility ? "text-animate" : ""}`}>2021</h2>
         </div>
          <div className={`card-right flex-[5_5_0%] ${toggleCardTwo ? "show" : ""}`} id="card-two" onClick={() => {setToggleCardTwo(!toggleCardTwo)}}>
              <div className={`card-contain ${toggleCardTwo ? "show" : ""}`}>
-             <div className={`info-card flex justify-center items-center ${toggleCardTwo ? "show p-20" : ""}`}>
+             <div className={`info-card flex justify-center items-center ${toggleCardTwo ? "show p-20" : "border-0"}`}>
                 <div className={`info-card-contain flex justify-center items-center w-[900px] h-[900px] ${toggleCardTwo ? "show" : ""}`}>
                     <h1 className="text-white text-7xl ">JSP is a digital School system that </h1>
                 </div>
              </div>
              <div className={`inner ${toggleCardTwo ? "show" : ""}`}>
                 <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardTwo ? "show" : ""}`}>
-                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">JSP</h3>
+                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">JSP</h3>
                  <div className="text-contain">
-                 <p className="pt-[50px] pb-[150px] text-8xl text-center">A digital school management system </p>
+                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">A digital school management system </h4>
                  </div>
                 </div>
                  
@@ -88,9 +88,9 @@ export default function Works(props) {
          <div className={`card-contain-left ${toggleCardThree ? "show" : ""}`}>
              <div className={`inner ${toggleCardThree ? "show" : ""}`}>
                 <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardThree ? "show" : ""}`}>
-                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">Spirq</h3>
+                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">Spirq</h3>
                     <div className="text-contain">
-                    <p className="pt-[50px] pb-[150px] text-8xl text-center">A Free Speaking Web Community</p>
+                    <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">A Free Speaking Web Community</h4>
                  </div>
                 </div>
                  
@@ -107,7 +107,7 @@ export default function Works(props) {
          </div>
 
          <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
-                <h1 ref={text2} className={`text-[150px] font-bold ${textTwoVisibility ? "text-animate" : ""}`}>2019</h1>
+                <h2 ref={text2} className={`text-[150px] font-bold ${textTwoVisibility ? "text-animate" : ""}`}>2020</h2>
             </div>
          </div>
          
@@ -120,7 +120,7 @@ export default function Works(props) {
      <div className="work-contain flex w-full">
 
      <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
-                <h1 ref={text3} className={`text-[150px] font-bold ${textThreeVisibility ? "text-animate" : ""}`}>2019</h1>
+                <h2 ref={text3} className={`text-[150px] font-bold ${textThreeVisibility ? "text-animate" : ""}`}>2022</h2>
             </div>
         
         <div className={`card-right flex-[5_5_0%] ${toggleCardFour ? "show" : ""}`} id="card-two" onClick={() => {setToggleCardFour(!toggleCardFour)}}>
@@ -132,9 +132,9 @@ export default function Works(props) {
              </div>
              <div className={`inner ${toggleCardFour ? "show" : ""}`}>
                 <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardFour ? "show" : ""}`}>
-                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">Foodipy</h3>
+                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">Foodipy</h3>
                  <div className="text-contain">
-                 <p className="pt-[50px] pb-[150px] text-8xl text-center">A smooth recipe Website with healthy meal management</p>
+                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">A smooth recipe Website with healthy meal management</h4>
                  </div>
                 </div>
                  
@@ -157,9 +157,9 @@ export default function Works(props) {
          <div className={`card-contain-left ${toggleCardFive ? "show" : ""}`}>
              <div className={`inner ${toggleCardFive ? "show" : ""}`}>
                 <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardFive ? "show" : ""}`}>
-                    <h3 className="pt-[200px] pb-[100px] text-9xl font-black text-center">Tousech</h3>
+                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">Vlish</h3>
                  <div className="text-contain">
-                 <p className="pt-[50px] pb-[150px] text-8xl text-center">A tech blog</p>
+                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">A tech blog</h4>
                  </div>
                 </div>
                  
@@ -176,7 +176,7 @@ export default function Works(props) {
          </div>
 
          <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
-                <h1 ref={text4} className={`text-[150px] font-bold ${textFourVisibility ? "text-animate" : ""}`}>2019</h1>
+                <h2 ref={text4} className={`text-[150px] font-bold ${textFourVisibility ? "text-animate" : ""}`}>2019</h2>
             </div>
          </div>
 

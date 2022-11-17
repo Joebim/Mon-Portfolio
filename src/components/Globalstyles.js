@@ -24,25 +24,141 @@ const GlobalStyles = createGlobalStyle`
 
     .print-resume-btn {
         border-color: ${({ theme }) => theme.color.navLinkHover};
-        color: ${({ theme }) => theme.color.textHeader};
+        color: ${({ theme }) => theme.text};
     }
 
     .nav-link a {
-        color: ${({ theme }) => theme.color.text};
+        color: ${({ theme }) => theme.text};
     }
 
     .profile h4 {
-        color: ${({ theme }) => theme.color.text};
+        color: ${({ theme }) => theme.color.textSecondary};
     }
 
     .profile h2 {
-        color: ${({ theme }) => theme.color.text};
+        color: ${({ theme }) => theme.text};
 
     }
 
     .profile h3 {
-        color: ${({ theme }) => theme.color.text};
+        color: ${({ theme }) => theme.text};
 
+    }
+
+    .info {
+        background-color: ${({ theme }) => theme.buttonAnimation.buttonBg};
+        border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+    }
+
+    @keyframes info {
+        10%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+        }
+        50%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorderAnimation};
+        }
+        100%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+        }
+    }
+
+
+    .info:hover {
+        background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBg};
+        border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBorder};
+    }
+
+    @keyframes infoHover {
+        10%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBorder};
+            background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBg};
+        }
+        50%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverAnimationBorder};
+            background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverAnimationBg};
+        }
+        100%{border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBorder};
+            background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBg};
+        }
+    }
+    
+
+    .profile button {
+        background-color: ${({ theme }) => theme.buttonAnimation.buttonBg};
+        border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+    }
+
+    @keyframes button {
+        10%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+        }
+        50%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorderAnimation};
+        }
+        100%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+        }
+    }
+
+    .profile button:hover {
+        background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBg};
+        border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBorder};
+    }
+
+    @keyframes buttonHover {
+        10%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBorder};
+            background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBg};
+        }
+        50%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverAnimationBorder};
+            background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverAnimationBg};
+        }
+        100%{border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBorder};
+            background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBg};
+        }
+    }
+
+    .info-end {
+        background-color: ${({ theme }) => theme.buttonAnimation.buttonBg};
+        border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+    }
+
+    @keyframes infoEnd {
+        10%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+        }
+        50%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorderAnimation};
+        }
+        100%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+        }
+    }
+
+    .info-end:hover {
+        background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBg};
+        border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBorder};
+    }
+
+    @keyframes infoEndHover {
+        10%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+        }
+        50%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorderAnimation};
+        }
+        100%{
+            border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
+        }
+    }
+
+    .vl {
+        background-color: ${({ theme }) => theme.color.verticalLine};
+    }
+    
+    .vl:hover {
+        background-color:  ${({ theme }) => theme.color.verticalLineHover};
     }
 
     .intro {
@@ -50,19 +166,27 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .intro h2 {
-        color: ${({ theme }) => theme.color.text};
+        color: ${({ theme }) => theme.text};
     }
 
     .contain h1 {
-        color: ${({ theme }) => theme.color.textHeader};
+        color: ${({ theme }) => theme.color.textAlt};
+    }
+
+    .work-info-header {
+        color: ${({ theme }) => theme.text};
     }
 
     .contain p {
-        color: ${({ theme }) => theme.color.text};
+        color: ${({ theme }) => theme.text};
     }
 
     .services {
         background-color: ${({ theme }) => theme.color.servicesBg};
+    }
+
+    .work-year-contain h2 {
+        color: ${({ theme }) => theme.color.workYear};
     }
 
     .others-card {
@@ -73,22 +197,14 @@ const GlobalStyles = createGlobalStyle`
         background-color: ${({ theme }) => theme.color.endBg};
     }
     
-    .card-connect h2 {
-        color: #962218;
-    }
-    
-    .card-connect:hover h2 {
-        color :#ffedeb;
-    }
-    
     .connect-button {
-        background-color: #85271e;
-        border-color: #b43522;
+        background-color: ${({ theme }) => theme.color.connectCardButton};
+        border-color: ${({ theme }) => theme.color.connectCardButtonBorder};
     }
     
     .connect-button:hover {
-        background-color: #b3382a;
-        border-color: #ffded9;
+        background-color: ${({ theme }) => theme.color.connectCardButtonHover};
+        border-color: ${({ theme }) => theme.color.connectCardButtonBorder};
     }
     
     .card-connect a {
@@ -97,33 +213,34 @@ const GlobalStyles = createGlobalStyle`
     
 
     .connect-card {
-        background-color: #fce4e1;
         box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
         background-color: ${({ theme }) => theme.color.connectCard};
     }
 
     .connect-card:hover {
-        box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardHoverShadow};
+        box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
         height: auto;
         background-color: ${({ theme }) => theme.color.connectCardHover};
     }
-    
-    .connect-card:hover h2 {
-        color: ${({ theme }) => theme.color.connectCardH2};
+
+    .connect-card h2 {
+        color: ${({ theme }) => theme.text};
     }
     
-    .connect-card:hover p {
-        color: #ffcdc7;
-    }
-    
-   
-    
-    .card-connect p {
-        color: #70150d;
+    .connect-card p {
+        color: ${({ theme }) => theme.color.textAlt};
     }
 
     footer {
         background-color: ${({ theme }) => theme.color.footer};
+    }
+
+    .footer-text {
+        color: ${({ theme }) => theme.text};
+    }
+
+    .footer-cite {
+        color: ${({ theme }) => theme.color.textAlt};
     }
 `
 

@@ -43,7 +43,7 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
     delay: "500"
   });
 
-  let currentTheme = sessionStorage.getItem("theme")
+  let currentTheme = sessionStorage.getItem("theme") || "light";
 
 // const darkMode = useContext(Theme)
 
@@ -53,13 +53,6 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
 const [theme, setTheme] = useState(currentTheme)
 
 
-useEffect(() => {
-  sessionStorage.setItem("theme", theme)
-}, [theme])
-
-
-  
-//   || "light"
 
   return (
     <ThemeProvider theme = {theme == "light" ? lightTheme : theme == "dark" ? darkTheme : blueTheme}>
@@ -70,7 +63,7 @@ useEffect(() => {
 
     <div className="theme-one h-[100px] w-[100px] rounded-full bg-[#E6E6E6] absolute top-[100px] left-[380px] cursor-pointer z-[1000]" 
         onClick = {()=> {
-          setTheme("light")
+          setTheme("light") || sessionStorage.setItem("theme", "light")
         console.log(theme)
         }}
         >
@@ -80,7 +73,7 @@ useEffect(() => {
     
         <div className="theme-two h-[100px] w-[100px] rounded-full bg-[#1B3577] absolute top-[310px] left-[310px] cursor-pointer z-[1000]" 
           onClick = {() => {
-            setTheme("blue")
+            setTheme("blue") || sessionStorage.setItem("theme", "blue")
           console.log(theme)
         }}
           >
@@ -90,7 +83,7 @@ useEffect(() => {
 
       <div className="theme-three h-[100px] w-[100px] rounded-full bg-[#333333] absolute top-[400px] left-[120px] cursor-pointer z-[1000]" 
         onClick = {()=> {
-          setTheme("dark")
+          setTheme("dark") || sessionStorage.setItem("theme", "dark")
         console.log(theme)
         }}
         >
@@ -158,11 +151,11 @@ useEffect(() => {
             
            {/* <VerticalLine/> */}
             <div ref={introRef1} className={`intro-one fade-in ${introOneVisibility ? "appear" : ""}`}>
-                <h2 className="text-left">I'm a frontend developer and i'm based in Nigeria. I love to explore and create new things with passion for designs. Since the beginning of my journey, three years ago, I have worked on different projects and identified awesome web designs in different perspectives and views. </h2>
+                <h2 className="text-left text-[75px] leading-[120px]">I'm a frontend developer and i'm based in Nigeria. I love to explore and create new things with passion for designs. Since the beginning of my journey, three years ago, I have worked on different projects and identified awesome web designs in different perspectives and views. </h2>
                 <img src={lightBulb} alt=""></img>
             </div>
             <div ref={introRef2} className={`intro-two fade-in ${introTwoVisibility ? "appear" : ""}`}>
-                <h2 className="text-right">I believe in the upmost beauty of things and how better they can be, from vector graphics to web, with respect to user interface and user experience.</h2>
+                <h2 className="text-right text-[75px] leading-[120px]">I believe in the upmost beauty of things and how better they can be, from vector graphics to web, with respect to user interface and user experience.</h2>
                 <img src={rocket} alt=""></img>
             </div>
            {/* <VerticalLine/> */}
@@ -182,12 +175,11 @@ useEffect(() => {
 
     <div id='end' className="end w-full h-auto text-center">
         <VerticalLine/>
-        
         <AnimateButtonPoint/>
 
         <div className="w-full flex justify-center align-center py-36">
-            <div className="connect-card text-center w-[40%] h-auto rounded-[100px] ease duration-700 p-60">
-            <h2 className="text-9xl pb-24 font-['overlock']">Want to work on something?</h2>
+            <div className="connect-card text-center w-[40%] h-auto rounded-[100px] ease duration-700 p-52">
+            <h2 className="text-[80px] pb-24 font-['overlock'] font-bold">Want to work on something?</h2>
             <p className="text-7xl pb-60 font-bold text-center">Throw me your ideas and let me see how i can be of assistance.</p>
             <button className="connect-button h-[200px] w-[600px] rounded-[100px] mb-[100px] border-solid border-[10px] ease duration-500 text-white">
                 <a href="mailto:josey359@gmail.com" className="text-7xl font-['Bellota'] font-bold decoration-0">let's Chat</a>
