@@ -463,7 +463,6 @@ body {
 
 
 .card-right:hover {
-    box-shadow: 0px 0px 60px #cacaca;
     width: 50.5%;
     height: 1700px;
     padding: 40px;
@@ -693,10 +692,6 @@ body {
     transition-timing-function: ease;
 }
 
-.inner:hover {
-    background-color: #fff0df;
-}
-
 .text-contain {
     display: flex;
     align-items: center;
@@ -723,7 +718,6 @@ body {
 
 
 .card-left:hover {
-    box-shadow: 0px 0px 60px #cacaca;
     width: 50.5%;
     height: 1700px;
     padding: 40px;

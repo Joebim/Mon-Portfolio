@@ -153,6 +153,20 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
+    .card-right:hover {
+        box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
+    }
+
+    .card-left:hover {
+        box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
+    }
+    
+    .inner:hover {
+        background-color: ${({ theme }) => theme.color.innerHoverBg};
+    }
+
+    
+
     .vl {
         background-color: ${({ theme }) => theme.color.verticalLine};
     }
@@ -210,7 +224,6 @@ const GlobalStyles = createGlobalStyle`
     .card-connect a {
         color: #ffcbc3;
     }
-    
 
     .connect-card {
         box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};

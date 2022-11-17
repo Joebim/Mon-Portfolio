@@ -27,6 +27,7 @@ export const lightTheme = {
         verticalLine: "#78efb3",
         verticalLineHover: "#0b753b",
         workYear: "#000000",
+        innerHoverBg: "#e9fff4",
     },
     buttonAnimation: {
         buttonBg: "#28e593",
@@ -62,6 +63,7 @@ export const blueTheme = {
         verticalLine: "#50b0ff",
         verticalLineHover: "#bddbff",
         workYear: "#ffffff",
+        innerHoverBg: "#e1edff",
     },
     buttonAnimation: {
         buttonBg: "#132459",
@@ -97,6 +99,7 @@ export const darkTheme = {
         verticalLine: "#808080",
         verticalLineHover: "#f2f2f2",
         workYear: "#ffffff",
+        innerHoverBg: "#eaeaea",
     },
     buttonAnimation: {
         buttonBg: "#000000",
