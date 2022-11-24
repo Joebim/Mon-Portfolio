@@ -21,7 +21,7 @@ import Footer from "./Footer";
 import GlobalStyles from './Globalstyles';
 import { useContext } from "react";
 import { Theme } from "./ThemeContext";
-import resume from "../assets/JosephAbimbola.pdf"
+import resume from "../assets/Joseph-Abimbola-Akinwole.pdf"
 import Sidebar from "./Sidebar";
 
 
@@ -64,7 +64,7 @@ const onPrintButtonClick = ()=> {
 
       let aLink = document.createElement('a')
       aLink.href = fileURL
-      aLink.download = "joseph-akinwole-abimbola.pdf"
+      aLink.download = "Joseph-Akinwole-Abimbola.pdf"
       aLink.click()
     })
   })
