@@ -21,6 +21,8 @@ import Footer from "./Footer";
 import GlobalStyles from './Globalstyles';
 import { useContext } from "react";
 import { Theme } from "./ThemeContext";
+import resume from "../assets/JosephAbimbola.pdf"
+import Sidebar from "./Sidebar";
 
 
 export default function Home(props) {
@@ -53,41 +55,52 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
 const [theme, setTheme] = useState(currentTheme)
 
 
+const onPrintButtonClick = ()=> {
+
+  
+  fetch(resume).then(res => {
+    res.blob().then(blob => {
+      const fileURL = window.URL.createObjectURL(blob)
+
+      let aLink = document.createElement('a')
+      aLink.href = fileURL
+      aLink.download = "joseph-akinwole-abimbola.pdf"
+      aLink.click()
+    })
+  })
+}
+
 
   return (
     <ThemeProvider theme = {theme == "light" ? lightTheme : theme == "dark" ? darkTheme : blueTheme}>
     <>
     <GlobalStyles/>
+    <Sidebar/>
     <div className="header">
 
-
-    <div className="theme-one h-[100px] w-[100px] rounded-full bg-[#E6E6E6] absolute top-[100px] left-[380px] cursor-pointer z-[1000]" 
+    <div className={`theme-one h-[100px] w-[100px] hover:h-[120px] hover:w-[120px] ease-linear duration-200 rounded-full bg-[#E6E6E6] absolute top-[100px] left-[380px] cursor-pointer z-[1000] ${theme === "light" ? "theme-selected" : ""}`}
         onClick = {()=> {
           setTheme("light") || sessionStorage.setItem("theme", "light")
         console.log(theme)
         }}
         >
-
       </div>
-
-    
-        <div className="theme-two h-[100px] w-[100px] rounded-full bg-[#1B3577] absolute top-[310px] left-[310px] cursor-pointer z-[1000]" 
+      
+        <div className={`theme-two h-[100px] w-[100px] hover:h-[120px] hover:w-[120px] ease-linear duration-200 rounded-full bg-[#1B3577] absolute top-[310px] left-[310px] cursor-pointer z-[1000] ${theme === "blue" ? "theme-selected" : ""}`} 
           onClick = {() => {
             setTheme("blue") || sessionStorage.setItem("theme", "blue")
           console.log(theme)
         }}
           >
-  
       </div>
     
 
-      <div className="theme-three h-[100px] w-[100px] rounded-full bg-[#333333] absolute top-[400px] left-[120px] cursor-pointer z-[1000]" 
+      <div className={`theme-three h-[100px] w-[100px] hover:h-[120px] hover:w-[120px] ease-linear duration-200 rounded-full bg-[#333333] absolute top-[400px] left-[120px] cursor-pointer z-[1000] ${theme === "dark" ? "theme-selected" : ""}`} 
         onClick = {()=> {
           setTheme("dark") || sessionStorage.setItem("theme", "dark")
         console.log(theme)
         }}
         >
-  
       </div>
 
 
@@ -97,27 +110,18 @@ const [theme, setTheme] = useState(currentTheme)
         <div className="photo-header">
             
             <div  className="right-side">
-                <nav className="nav-wrapper">
+                <nav className="nav-wrapper flex flex-row p-[100px] justify-between pr-[200px]">
                     <div className="logo-contain">
                         <Link to="/"><img src={logo} alt="" height="100"></img></Link>
                     </div>
 
-
-                    <div className="print-resume-btn w-[400px] h-[120px] bg-transparent rounded-[20px] border-solid border-[10px] p-2 text-[60px] cursor-pointer">Resume</div>
-
-
-                    <div className={`nav-link-wrapper ${hamburgerToggle ? "show" : ""}`}>
-                        <div className="nav-link">
-                            <Link to="/">services</Link>
-                        </div>
-                        <div className="nav-link">
-                            <Link to="/">Works</Link>
-                        </div>
-                        <div className="nav-link">    
-                            <Link to="/">About</Link>
-                        </div>
+                    <div 
+                    className="print-resume-btn w-[400px] h-[120px] bg-transparent rounded-[20px] border-solid border-[10px] p-2 text-[60px] cursor-pointer"
+                    onClick={onPrintButtonClick}
+                    >Resume
                     </div>
-                    <img className="hamburger" onClick={() => {setHamburgerToggle(!hamburgerToggle)}} src={hamburger} alt=""></img>
+
+                    <div></div>
                 </nav>
             </div>
 

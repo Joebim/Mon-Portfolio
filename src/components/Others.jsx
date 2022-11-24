@@ -7,6 +7,11 @@ import dimtec from "../assets/images/Dimtec.svg"
 import { useInView } from 'react-intersection-observer';
 import { AnimateButtonPoint } from "./AnimateButton"
 import { VerticalLine } from "./VerticalLine"
+import { FaGithub } from "react-icons/fa";
+import { BsBoxArrowUpRight } from "react-icons/bs";
+import { IconContext } from "react-icons";
+import styled from "styled-components"
+
 
 
 export default function Others() {
@@ -52,6 +57,7 @@ export default function Others() {
         rootMargin: "0px 0px -200px 0px",
         delay: "500"
       });
+      
 
 return (
     <>
@@ -70,10 +76,21 @@ return (
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Simple Portfolio Landing</h1>
                     <p className="text-6xl text-center py-56 leading-[80px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
-                    <div className="flex justify-between w-full">
-                        <p className="text-5xl">one</p>
-                        <p className="text-5xl">two</p>
-                        <p className="text-5xl">three</p>
+                    <div className="flex flex-row justify-between w-full">
+                    
+                        <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">ReactJs</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Bootstrap</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Redux</div>
+                        </div>
+                        <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
+                            <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
+                                <FaGithub />
+                                <BsBoxArrowUpRight/>
+                            </div>
+                        </IconContext.Provider>
+                        
+                    
                     </div>
                 </div>            
             </div>
@@ -81,10 +98,21 @@ return (
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Login UI</h1>
                     <p className="text-6xl text-center py-56 leading-[80px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
-                    <div className="flex justify-between w-full">
-                        <p className="text-5xl">one</p>
-                        <p className="text-5xl">two</p>
-                        <p className="text-5xl">three</p>
+                    <div className="flex flex-row justify-between w-full">
+                    
+                        <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-[40px]">ReactJs</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-[40px]">Bootstrap</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-[40px]">Redux</div>
+                        </div>
+                        <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
+                            <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
+                                <FaGithub />
+                                <BsBoxArrowUpRight/>
+                            </div>
+                        </IconContext.Provider>
+                        
+                    
                     </div>
                 </div>
             </div>
@@ -92,10 +120,21 @@ return (
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Web UI Components</h1>
                     <p className="text-6xl text-center py-56 leading-[80px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
-                    <div className="flex justify-between w-full">
-                        <p className="text-5xl">one</p>
-                        <p className="text-5xl">two</p>
-                        <p className="text-5xl">three</p>
+                    <div className="flex flex-row justify-between w-full">
+                    
+                        <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">ReactJs</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Bootstrap</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Redux</div>
+                        </div>
+                        <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
+                            <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
+                                <FaGithub />
+                                <BsBoxArrowUpRight/>
+                            </div>
+                        </IconContext.Provider>
+                        
+                    
                     </div>
                 </div>
             </div>
@@ -103,10 +142,21 @@ return (
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Xender Web Clone</h1>
                     <p className="text-6xl text-center py-56 leading-[80px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
-                    <div className="flex justify-between w-full">
-                        <p className="text-5xl">one</p>
-                        <p className="text-5xl">two</p>
-                        <p className="text-5xl">three</p> fade-in
+                    <div className="flex flex-row justify-between w-full">
+                    
+                        <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">ReactJs</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Bootstrap</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Redux</div>
+                        </div>
+                        <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
+                            <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
+                                <FaGithub />
+                                <BsBoxArrowUpRight/>
+                            </div>
+                        </IconContext.Provider>
+                        
+                    
                     </div>
                 </div>
             </div>
@@ -114,10 +164,18 @@ return (
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Font Manager</h1>
                     <p className="text-6xl text-center py-56 leading-[80px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
-                    <div className="flex justify-between w-full">
-                        <p className="text-5xl">one</p>
-                        <p className="text-5xl">two</p>
-                        <p className="text-5xl">three</p>
+                  <div className="flex justify-between flex-row w-full">
+                        <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">ReactJs</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Bootstrap</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Redux</div>
+                        </div>
+                        <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
+                            <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
+                                <FaGithub />
+                                <BsBoxArrowUpRight/>
+                            </div>
+                        </IconContext.Provider>
                     </div>
                 </div>
             </div>
@@ -125,10 +183,21 @@ return (
                 <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">Task List</h1>
                     <p className="text-6xl text-center py-56 leading-[80px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum et at expedita assumenda possimus.</p>
-                    <div className="flex justify-between w-full">
-                        <p className="text-5xl">one</p>
-                        <p className="text-5xl">two</p>
-                        <p className="text-5xl">three</p>
+                    <div className="flex flex-row justify-between justify-between w-full">
+                    
+                        <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">ReactJs</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Bootstrap</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Redux</div>
+                        </div>
+                        <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
+                            <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
+                                <FaGithub />
+                                <BsBoxArrowUpRight/>
+                            </div>
+                        </IconContext.Provider>
+                        
+                    
                     </div>
                 </div>
             </div> 

@@ -5,6 +5,37 @@ const GlobalStyles = createGlobalStyle`
         background: ${({ theme }) => theme.body};
     }
 
+    #sidebar {
+        background: ${({ theme }) => theme.body};
+        box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
+    }
+
+    #sidebar li {
+        color: ${({ theme }) => theme.color.textSecondary};
+    }
+
+    #sidebar li:hover {
+        backbround-color: ${({ theme }) => theme.text};
+    }
+
+    .top, .middle, .bottom {
+        background-color: ${({ theme }) => theme.color.textSecondary};
+
+    }
+
+    .theme-selected {
+        border-color: ${({ theme }) => theme.text};
+        width: 140px;
+        height: 140px;
+        border-width: 20px;
+    }
+
+    .tag {
+        background: ${({ theme }) => theme.text};
+        color: ${({ theme }) => theme.body};
+        font-weight: bold;
+    }
+
     .nav-link:hover {
         border-bottom: 9px solid ${({ theme }) => theme.color.navLinkHover};
         background-color: ${({ theme }) => theme.color.navLinkHover};
