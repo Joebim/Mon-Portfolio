@@ -14,7 +14,7 @@ export const lightTheme = {
         navLinkHoverA: "#fdf7f7",
         navLinkHover: "#EE5645",
         textHeader: "#000000",
-        introBg: "#ffffff",
+        introBg: "#F4F4F4",
         servicesBg: "#ffffff",
         endBg: "#F4F4F4",
         footer: "#ffffff",
