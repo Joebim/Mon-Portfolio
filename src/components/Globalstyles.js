@@ -236,7 +236,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .featured-btn {
-        border-color: ${({ theme }) => theme.color.textSecondary};
+        border-color: ${({ theme }) => theme.text};
     }
 
     .others-card {
