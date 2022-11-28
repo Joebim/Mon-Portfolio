@@ -4,7 +4,7 @@ import './customStyles.css';
 import Home from './components/home';
 import Works from './components/works';
 import Services from './components/services';
-import About from './components/about';
+import Gallery from './components/Gallery';
 // import Footer from './components/Footer';
 // import { ThemeProvider } from 'styled-components';
 // import { lightTheme, darkTheme, blueTheme } from "./components/themes";
@@ -22,7 +22,7 @@ function App () {
       <Route path="/" element={<Home />}/>
       <Route path="/works" element={<Works />} />
       <Route path="/services" element={<Services />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/about" element={<Gallery />} />
     </Routes>
     {/* <Footer/> */}
     </>

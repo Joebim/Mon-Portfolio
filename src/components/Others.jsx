@@ -85,8 +85,8 @@ return (
                         </div>
                         <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                                <a href=""><FaGithub /></a>
+                                <a href=""><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         
@@ -107,8 +107,8 @@ return (
                         </div>
                         <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                                <a href=""><FaGithub /></a>
+                                <a href=""><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         
@@ -129,8 +129,8 @@ return (
                         </div>
                         <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                                <a href=""><FaGithub /></a>
+                                <a href=""><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         
@@ -151,8 +151,8 @@ return (
                         </div>
                         <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                                <a href=""><FaGithub /></a>
+                                <a href=""><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         
@@ -172,8 +172,8 @@ return (
                         </div>
                         <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                                <a href=""><FaGithub /></a>
+                                <a href=""><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                     </div>
@@ -192,8 +192,8 @@ return (
                         </div>
                         <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                                <a href=""><FaGithub /></a>
+                                <a href=""><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         

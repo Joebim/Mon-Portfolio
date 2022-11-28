@@ -890,6 +890,24 @@ input[type="checkbox"]:checked ~ .bar .middle {
     border-style: solid;
 }
 
+.sidebar-link {
+    transition: all 0.4s ease;
+}
+
+.sidebar-gallery {
+    background: linear-gradient(to right,#6a82fb , transparent)#fc5c7d;
+    transition: all 0.8s ease;
+}
+
+.sidebar-gallery:hover, .sidebar-gallery:focus {
+    background-color: #2ebf91;
+    transition: all 0.8s ease;
+}
+
+/* .featured-btn {
+    background: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+} */
+
 @media screen and (max-width: 640px) {
     .about-text {
         padding-bottom: 150px;

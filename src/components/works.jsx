@@ -46,7 +46,7 @@ export default function Works(props) {
 
 
     return (
-        <div className="works-contain w-full px-96 pt-56">
+        <div id="works" className="works-contain w-full px-96 pt-56">
         <div className="w-full text-center py-60">
             <h1 className="text-9xl font-bold">My Project Timeline</h1>
         </div>
@@ -73,9 +73,9 @@ export default function Works(props) {
                             <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Redux</div>
                         </div>
                         <IconContext.Provider value={{ color: "white", size:"90"}}>
-                            <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                            <div className="info-card-link flex flex-row w-[30%] justify-between items-center">
+                                <div className="featured-btn w-[250px] h-[100px] rounded-[50px] flex justify-center items-center border-8 border-white text-white text-[40px] bg-transparent">Featured</div>
+                                <a href="https://jdlab.ng"><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         
@@ -131,8 +131,8 @@ export default function Works(props) {
                         </div>
                         <IconContext.Provider value={{ color: "white", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                                <a href="https://github.com/Joebim/Spirq"><FaGithub /></a>
+                                <a href="https://joebim.github.io/Spirq"><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         
@@ -173,8 +173,8 @@ export default function Works(props) {
                         </div>
                         <IconContext.Provider value={{ color: "white", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                                <a href="https://github.com/Joebim/Foodipy"><FaGithub /></a>
+                                <a href="https://joebim.github.io/Foodipy"><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         
@@ -231,8 +231,8 @@ export default function Works(props) {
                         </div>
                         <IconContext.Provider value={{ color: "white", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
-                                <FaGithub />
-                                <BsBoxArrowUpRight/>
+                                <a href="https://github.com/Joebim/Vlish"><FaGithub /></a>
+                                <a href="https://joebim.github.io/Vlish"><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         

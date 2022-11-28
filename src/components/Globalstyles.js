@@ -10,12 +10,13 @@ const GlobalStyles = createGlobalStyle`
         box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
     }
 
-    #sidebar li {
+    .sidebar-link {
         color: ${({ theme }) => theme.color.textSecondary};
     }
 
-    #sidebar li:hover {
-        backbround-color: ${({ theme }) => theme.text};
+    .sidebar-link:hover {
+        background-color: ${({ theme }) => theme.text};
+        color: white;
     }
 
     .top, .middle, .bottom {
@@ -232,6 +233,10 @@ const GlobalStyles = createGlobalStyle`
 
     .work-year-contain h2 {
         color: ${({ theme }) => theme.color.workYear};
+    }
+
+    .featured-btn {
+        border-color: ${({ theme }) => theme.color.textSecondary};
     }
 
     .others-card {
