@@ -10,6 +10,11 @@ const GlobalStyles = createGlobalStyle`
         box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
     }
 
+    .nav-sticky {
+        background: ${({ theme }) => theme.body};
+        box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
+    }
+
     .sidebar-link {
         color: ${({ theme }) => theme.color.textSecondary};
     }
@@ -26,8 +31,8 @@ const GlobalStyles = createGlobalStyle`
 
     .theme-selected {
         border-color: ${({ theme }) => theme.text};
-        width: 140px;
-        height: 140px;
+        width: 150px;
+        height: 150px;
         border-width: 20px;
     }
 

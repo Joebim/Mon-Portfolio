@@ -23,13 +23,14 @@ import { useContext } from "react";
 import { Theme } from "./ThemeContext";
 import resume from "../assets/Joseph-Abimbola-Akinwole.pdf"
 import Sidebar from "./Sidebar";
+import { RiPaletteFill } from "react-icons/ri";
+import { IconContext } from "react-icons";
+
 
 
 export default function Home(props) {
 
 const [hamburgerToggle, setHamburgerToggle] = useState(false)
-
-
 
 const { ref: introRef1, inView: introOneVisibility} = useInView({
     /* Optional options */
@@ -45,7 +46,15 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
     delay: "500"
   });
 
+  const { ref: navRef , inView: navVisibility} = useInView({
+    /* Optional options */
+    threshold: 0,
+    rootMargin: "0px 0px -600px 0px",
+    delay: "0"
+  });
+
   let currentTheme = sessionStorage.getItem("theme") || "light";
+
 
 // const darkMode = useContext(Theme)
 
@@ -70,6 +79,8 @@ const onPrintButtonClick = ()=> {
   })
 }
 
+const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
+
 
   return (
     <ThemeProvider theme = {theme == "light" ? lightTheme : theme == "dark" ? darkTheme : blueTheme}>
@@ -78,52 +89,63 @@ const onPrintButtonClick = ()=> {
     <Sidebar/>
     <div className="header">
 
-    <div className={`theme-one h-[100px] w-[100px] hover:h-[120px] hover:w-[120px] ease-linear duration-200 rounded-full bg-[#E6E6E6] absolute top-[100px] left-[380px] cursor-pointer z-[1000] ${theme === "light" ? "theme-selected" : ""}`}
-        onClick = {()=> {
-          setTheme("light") || sessionStorage.setItem("theme", "light")
-        console.log(theme)
-        }}
-        >
-      </div>
-      
-        <div className={`theme-two h-[100px] w-[100px] hover:h-[120px] hover:w-[120px] ease-linear duration-200 rounded-full bg-[#1B3577] absolute top-[310px] left-[310px] cursor-pointer z-[1000] ${theme === "blue" ? "theme-selected" : ""}`} 
-          onClick = {() => {
-            setTheme("blue") || sessionStorage.setItem("theme", "blue")
-          console.log(theme)
-        }}
-          >
-      </div>
-    
-
-      <div className={`theme-three h-[100px] w-[100px] hover:h-[120px] hover:w-[120px] ease-linear duration-200 rounded-full bg-[#333333] absolute top-[400px] left-[120px] cursor-pointer z-[1000] ${theme === "dark" ? "theme-selected" : ""}`} 
-        onClick = {()=> {
-          setTheme("dark") || sessionStorage.setItem("theme", "dark")
-        console.log(theme)
-        }}
-        >
-      </div>
-
-
         {/* <ThemeSwitcher/> */}
-    {/* <GrowingCircleAnimation isDark={darkMode}/> */}
-    {/* {console.log('darkMode', darkMode)} */}
-        <div className="photo-header">
+        {/* <GrowingCircleAnimation isDark={darkMode}/> */}
+        {/* {console.log('darkMode', darkMode)} */}
+
+    <div className="photo-header">
             
-            <div  className="right-side">
-                <nav className="nav-wrapper flex flex-row p-[100px] justify-between pr-[200px]">
-                    <div className="logo-contain">
-                        <Link to="/"><img src={logo} alt="" height="100"></img></Link>
-                    </div>
+    <div className={`navbar ${navVisibility ? "nav-sticky" : ""}`}>
 
-                    <div 
-                    className="print-resume-btn w-[400px] h-[120px] bg-transparent rounded-[20px] border-solid border-[10px] p-2 text-[60px] cursor-pointer"
-                    onClick={onPrintButtonClick}
-                    >Resume
-                    </div>
+      <IconContext.Provider value={{ color: themeIndicateColor, size:"70"}}>   
 
-                    <div></div>
-                </nav>
-            </div>
+        <div className={`theme-one flex justify-center items-center h-[120px] w-[120px] hover:h-[120px] hover:w-[120px] ease-linear duration-200 rounded-full bg-[#E6E6E6] absolute top-[100px] left-[380px] cursor-pointer z-[1000] ${theme === "light" ? "theme-selected current" : ""} ${navVisibility ? "align" : ""}`}
+          onClick = {()=> {
+            setTheme("light") || sessionStorage.setItem("theme", "light")
+          console.log(theme)
+          }}
+          >{theme == "light" ? <div className="theme-indicate-contain">
+            <RiPaletteFill/>
+          </div> : ""}
+            
+        </div>
+        
+        <div className={`theme-two flex justify-center items-center h-[120px] w-[120px] hover:h-[120px] hover:w-[120px] ease-linear duration-200 rounded-full bg-[#1B3577] absolute top-[310px] left-[310px] cursor-pointer z-[1000] ${theme === "blue" ? "theme-selected current" : ""} ${navVisibility ? "align" : ""}`} 
+            onClick = {() => {
+              setTheme("blue") || sessionStorage.setItem("theme", "blue")
+            console.log(theme)
+          }}
+            >{theme == "blue" ? <div className="theme-indicate-contain">
+            <RiPaletteFill/>
+          </div> : ""}
+        </div>
+      
+
+        <div className={`theme-three flex justify-center items-center h-[120px] w-[120px] hover:h-[120px] hover:w-[120px] ease-linear duration-200 rounded-full bg-[#333333] absolute top-[400px] left-[120px] cursor-pointer z-[1000] ${theme === "dark" ? "theme-selected current" : ""} ${navVisibility ? "align" : ""}`} 
+          onClick = {()=> {
+            setTheme("dark") || sessionStorage.setItem("theme", "dark")
+          console.log(theme)
+          }}
+          >{theme == "dark" ? <div className="theme-indicate-contain">
+          <RiPaletteFill/>
+        </div> : ""}
+        </div>
+      </IconContext.Provider>
+
+      <nav className="nav-wrapper h-[250px] flex flex-row justify-between items-center">
+          <div className="logo-contain pl-[100px]">
+              <Link to="/"><img src={logo} alt="" height="100"></img></Link>
+          </div>
+
+          <div 
+          className="print-resume-btn w-[400px] h-[120px] bg-transparent rounded-[20px] border-solid border-[10px] p-2 text-[60px] cursor-pointer"
+          onClick={onPrintButtonClick}
+          >Resume
+          </div>
+
+          <div className="w-[210px]"></div>
+      </nav>
+    </div>
 
             
             {/* <ThemeButton/> */}
@@ -147,7 +169,8 @@ const onPrintButtonClick = ()=> {
 
     </div>
 
-    <div className="contain w-full">
+
+    <div ref={navRef} className="contain w-full">
         <div id='intro' className="intro">
             {/* <div className="flex-auto justify-center items-center h-60 w-full"> */}
              <h1 className="about-text text-9xl pt-96 font-bold">About Me</h1>
@@ -174,10 +197,7 @@ const onPrintButtonClick = ()=> {
 
         <VerticalLine/>
 
-        
-    </div>
-
-    <div id='end' className="end w-full h-auto text-center">
+        <div id='end' className="end w-full h-auto text-center">
         <VerticalLine/>
         <AnimateButtonPoint/>
 
@@ -196,6 +216,8 @@ const onPrintButtonClick = ()=> {
         <div className="flex w-100 justify-center">
             {/* <FlippableCard/> */}
         </div>
+        
+    </div>
         
     </div>
     

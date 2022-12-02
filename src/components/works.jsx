@@ -174,7 +174,7 @@ export default function Works(props) {
                         <IconContext.Provider value={{ color: "white", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
                                 <a href="https://github.com/Joebim/Foodipy"><FaGithub /></a>
-                                <a href="https://joebim.github.io/Foodipy"><BsBoxArrowUpRight/></a>
+                                <a href="https://joebim.github.io/Foodipy/"><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         

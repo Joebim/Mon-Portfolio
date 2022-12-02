@@ -3,23 +3,26 @@ import logo from "../assets/images/Joseph.svg"
 import { Link } from 'react-router-dom'
 
 
-export default function Sidebar() {
+export default function Sidebar(props) {
 
-const [sidebarToggle, setSidebarToggle] = useState(false)
+    const [sidebarToggle, setSidebarToggle] = useState(false)
+
 
   return (
-    <>
-    <div className={`hamburger-contain w-[800px] h-[300px] p-[30px] flex justify-end items-center absolute right-[40px] z-[2001] ${sidebarToggle ? "show" : ""}`}>
-                <label htmlFor="">
-                    <input type="checkbox" name="" id="" onClick={() => {setSidebarToggle(!sidebarToggle)}} />
-                    <div className="bar cursor-pointer flex justify-start relative h-[100px] w-[200px]">
-                        <span className='top'></span>
-                        <span className='middle'></span>
-                        <span className='bottom'></span>
-                    </div>
-                </label>
+    <>      
+
+<div className={`hamburger-contain p-[30px] flex justify-end z-[2003] w-[300px] fixed items-center right-[40px] ${sidebarToggle ? "show" : ""}`}>
+        <label htmlFor="">
+            <input type="checkbox" name="" id="" checked = {sidebarToggle}
+            onClick={() => {setSidebarToggle(!sidebarToggle)}}/>
+            <div className="bar cursor-pointer flex justify-start relative h-[100px] w-[200px]">
+                <span className='top z-[2000]'></span>
+                <span className='middle'></span>
+                <span className='bottom z-[2000]'></span>
             </div>
-            
+        </label>
+    </div> 
+
     <div id='sidebar' className={`bg-white ${sidebarToggle ? "show" : ""}`}>
         <div className="logo-contain-sidebar flex justify-center h-[200px]  mt-[200px]">
             <Link to="/"><img src={logo} className="h-[150px]" alt="" height="100"></img></Link>

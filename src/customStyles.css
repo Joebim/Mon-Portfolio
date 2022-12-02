@@ -44,7 +44,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 2000;
+    z-index: 2002;
     padding: 100px;
     transition: all 0.3s ease;
     transform: translateX(0%);
@@ -57,7 +57,8 @@ input[type="checkbox"] {
     width: 100px;
     position: relative;
     top: 60px;
-    z-index: 1000;
+    right: 0;
+    z-index: 2001;
 }
 
 .bar .middle {
@@ -112,12 +113,24 @@ input[type="checkbox"]:checked ~ .bar .middle {
     text-align: center;
 }
 
-.right-side {
-    width: 100%;
-    height: 150px;  
+.navbar {
+    height: 250px;  
 }
 
-/* .right-side div {
+.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    transition: all 0.5s ease;
+    z-index: 2000;
+}
+
+.nav-sticky + .contain {
+    padding-top: 60px;
+  }
+
+/* .navbar div {
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
@@ -126,6 +139,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
     float: right;
     text-align: center;
 } */
+
 
 
 .logo-contain img {
@@ -145,7 +159,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
     position: relative;
     height: auto;
     width: 100%;
-    padding-top: 550px;
+    padding-top: 330px;
     justify-content: center;
 }
 
@@ -890,6 +904,17 @@ input[type="checkbox"]:checked ~ .bar .middle {
     border-style: solid;
 }
 
+.theme-one.align, .theme-two.align, .theme-three.align {
+    top: 50px;
+    left: 400px;
+}
+
+.theme-one.align.current, .theme-two.align.current, .theme-three.align.current {
+    z-index: 2003;
+    /* top: 45px; */
+    left: 380px;
+}
+
 .sidebar-link {
     transition: all 0.4s ease;
 }
@@ -1079,9 +1104,8 @@ input[type="checkbox"]:checked ~ .bar .middle {
 
     .navbar {
         display: block;
-        height: 100px;
-        width: 100px;
-        cursor: pointer;
+        height: 250px;
+        width: 100%;
     }
 
     .profile h4 {
