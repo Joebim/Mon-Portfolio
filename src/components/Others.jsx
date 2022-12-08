@@ -36,7 +36,7 @@ return (
                 
             return (
                    
-                <InView as="div" onChange={(inView, entry)=> setInview(inView)} className={`others-card bg-white rounded-[40px] flex justify-center items-center p-16 md:p-16 lg:p-16 xl:p-24 fade-in ${inview ? "appear" : ""}`} key={index}>
+                <InView as="div" onChange={(inView, entry)=> setInview(inView)} className={`others-card bg-white rounded-[40px] flex justify-center items-center p-24 md:p-16 lg:p-16 xl:p-24 fade-in ${inview ? "appear" : ""}`} key={index}>
                     <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">{projectData.title}</h1>
                     <p className="text-6xl text-center py-56 leading-[80px]">{projectData.content}</p>
