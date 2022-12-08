@@ -64,7 +64,7 @@ export default function Works(props) {
              <div className={`info-card flex justify-center items-center ${toggleCardTwo ? "show p-20" : "border-0"}`}>
                 <div className={`info-card-contain flex flex-col justify-center items-center w-[1200px] h-full ${toggleCardTwo ? "show" : ""}`}>
                     <div className="info-card-text-contain w-full flex text-center justify-center items-center flex-[6_6_0%]">
-                        <h2 className="info-card-text text-white text-7xl  ${toggleCardTwo">JSP is a digital School system that </h2>
+                        <h2 className="info-card-text text-white text-7xl  ${toggleCardTwo">JDLab School Portal(JSP) is a digital School system that </h2>
                     </div>
                     <div className="info-card-link-contain justify-between w-full h-full flex-[1_1_0%] flex flex-row">
                         <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
@@ -154,9 +154,9 @@ export default function Works(props) {
         
      <div className="work-contain flex w-full">
 
-     <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
+        <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
                 <h2 ref={text3} className={`text-[150px] font-bold ${textThreeVisibility ? "text-animate" : ""}`}>2022</h2>
-            </div>
+        </div>
         
         <div className={`card-right flex-[5_5_0%] ${toggleCardFour ? "show" : ""}`} id="card-two" onClick={() => {setToggleCardFour(!toggleCardFour)}}>
              <div className={`card-contain ${toggleCardFour ? "show" : ""}`}>
@@ -183,7 +183,7 @@ export default function Works(props) {
              </div>
              <div className={`inner ${toggleCardFour ? "show" : ""}`}>
                 <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardFour ? "show" : ""}`}>
-                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">Foodipy</h3>
+                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">Foodipi</h3>
                  <div className="text-contain">
                  <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">A smooth recipe Website with healthy meal management</h4>
                  </div>
@@ -248,6 +248,103 @@ export default function Works(props) {
          </div>
 
          <VerticalLine/>
+         <AnimateButtonPoint animateButtonClass={"animate-button-class"}/>
+
+
+         <div className="work-contain flex w-full">
+
+        <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
+                <h2 ref={text3} className={`text-[150px] font-bold ${textThreeVisibility ? "text-animate" : ""}`}>2022</h2>
+        </div>
+        
+        <div className={`card-right flex-[5_5_0%] ${toggleCardFour ? "show" : ""}`} id="card-two" onClick={() => {setToggleCardFour(!toggleCardFour)}}>
+             <div className={`card-contain ${toggleCardFour ? "show" : ""}`}>
+             <div className={`info-card flex justify-center items-center ${toggleCardFour ? "show p-20" : ""}`}>
+             <div className={`info-card-contain flex flex-col justify-center items-center w-[1200px] h-full ${toggleCardFour ? "show" : ""}`}>
+             <div className="info-card-text-contain  w-full flex text-center justify-center items-center flex-[6_6_0%]">
+                        <h2 className="info-card-text text-white text-7xl  ${toggleCardTwo">Foodipy is a Magnificent food website</h2>
+                    </div>
+                    <div className="info-card-link-contain justify-between w-full h-full flex-[1_1_0%] flex flex-row">
+                        <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">ReactJs</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Bootstrap</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Redux</div>
+                        </div>
+                        <IconContext.Provider value={{ color: "white", size:"90"}}>
+                            <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
+                                <a href="https://github.com/Joebim/Foodipy"><FaGithub /></a>
+                                <a href="https://joebim.github.io/Foodipy/"><BsBoxArrowUpRight/></a>
+                            </div>
+                        </IconContext.Provider>
+                        
+                    </div>
+                      </div>
+             </div>
+             <div className={`inner ${toggleCardFour ? "show" : ""}`}>
+                <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardFour ? "show" : ""}`}>
+                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">Boonie</h3>
+                 <div className="text-contain">
+                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">Reaching out to the Boons</h4>
+                 </div>
+                </div>
+                 
+                 <div  id="btn_1" 
+                 onClick={() => {setToggleCardFour(!toggleCardFour)}} 
+                 className="info"></div>
+             </div>
+             </div>
+         </div>
+     </div>
+
+     <VerticalLine/>
+     <AnimateButtonPoint animateButtonClass={"animate-button-class"}/>
+
+     <div className="work-contain right-content flex w-full">
+
+            <div className={`card-left flex-[5_5_0%] ${toggleCardFive ? "show" : ""}`} id="card-three" onClick={() => {setToggleCardFive(!toggleCardFive)}}>
+            <div className={`card-contain-left ${toggleCardFive ? "show" : ""}`}>
+                <div className={`inner ${toggleCardFive ? "show" : ""}`}>
+                <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardFive ? "show" : ""}`}>
+                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">Grexo</h3>
+                    <div className="text-contain">
+                    <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">An AI Measuring Tool</h4>
+                    </div>
+                </div>
+                    
+                    <div  id="btn_2" 
+                    onClick={() => {setToggleCardFive(!toggleCardFive)}}
+                    className="info"></div>
+                </div>
+                <div className={`info-card flex justify-center items-center ${toggleCardFive ? "show p-20" : ""}`}>
+                <div className={`info-card-contain flex flex-col justify-center items-center w-[1200px] h-full ${toggleCardFive ? "show" : ""}`}>
+                <div className="info-card-text-contain  w-full flex text-center justify-center items-center flex-[6_6_0%]">
+                        <h2 className="info-card-text text-white text-7xl  ${toggleCardTwo">Bringing leading tech Information to the world</h2>
+                    </div>
+                    <div className="info-card-link-contain justify-between w-full h-full flex-[1_1_0%] flex flex-row">
+                        <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">ReactJs</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Bootstrap</div>
+                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Redux</div>
+                        </div>
+                        <IconContext.Provider value={{ color: "white", size:"90"}}>
+                            <div className="info-card-link flex flex-row text-[30px] w-[20%] justify-between items-center">
+                                <a href="https://github.com/Joebim/Vlish"><FaGithub /></a>
+                                <a href="https://joebim.github.io/Vlish"><BsBoxArrowUpRight/></a>
+                            </div>
+                        </IconContext.Provider>
+                        
+                    </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+            <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
+                <h2 ref={text4} className={`text-[150px] font-bold ${textFourVisibility ? "text-animate" : ""}`}>2019</h2>
+            </div>
+            </div>
+
+            <VerticalLine/>
 
          
         </div>
