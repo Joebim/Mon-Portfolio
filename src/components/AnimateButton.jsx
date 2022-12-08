@@ -1,7 +1,7 @@
 export function AnimateButtonPrimary() {
 
     return (
-        <button>
+        <button className="button-primary">
             <a href="#intro"></a>
         </button>
     )

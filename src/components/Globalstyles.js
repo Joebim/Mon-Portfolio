@@ -24,6 +24,14 @@ const GlobalStyles = createGlobalStyle`
         color: white;
     }
 
+    .checkout {
+        color: ${({ theme }) => theme.color.textSecondary};
+    }
+
+    .checkout:hover {
+        color: ${({ theme }) => theme.text};
+    }
+
     .top, .middle, .bottom {
         background-color: ${({ theme }) => theme.color.textSecondary};
 
@@ -120,7 +128,7 @@ const GlobalStyles = createGlobalStyle`
     }
     
 
-    .profile button {
+    .button-primary {
         background-color: ${({ theme }) => theme.buttonAnimation.buttonBg};
         border-color: ${({ theme }) => theme.buttonAnimation.buttonBorder};
     }
@@ -137,7 +145,7 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    .profile button:hover {
+    .button-primary:hover {
         background-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBg};
         border-color: ${({ theme }) => theme.buttonAnimation.buttonHoverBorder};
     }
@@ -242,6 +250,11 @@ const GlobalStyles = createGlobalStyle`
 
     .featured-btn {
         border-color: ${({ theme }) => theme.text};
+    }
+
+    .featured-alt-btn {
+        border-color: ${({ theme }) => theme.text};
+        color: ${({ theme }) => theme.text};
     }
 
     .others-card {

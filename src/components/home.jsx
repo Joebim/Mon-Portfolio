@@ -157,7 +157,10 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
                 <h2>Designer & Frontend Developer</h2>
                 <h3>I code simple designs and make them work beautifully.</h3>
 
+                <div className="pt-[150px] pb-[100px] h-[500px] flex justify-center">
                 <AnimateButtonPrimary/>
+                </div>
+                
 
                     {/* <div className="profile-pic">
                         <img src="images/josey.png" alt="" height="1000">

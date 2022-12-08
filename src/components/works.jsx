@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import { useInView } from 'react-intersection-observer';
+import { AnimateButtonPrimary } from "./AnimateButton";
 import { AnimateButtonPoint } from "./AnimateButton";
 import { VerticalLine } from "./VerticalLine";
 import { FaGithub } from "react-icons/fa";
@@ -345,7 +346,23 @@ export default function Works(props) {
             </div>
 
             <VerticalLine/>
+            <VerticalLine/>
+            <AnimateButtonPoint/>
 
+            <div className="h-[300px] w-full flex items-center flex-col-reverse">
+                {/* <div className="pr-[20px]">
+                    <AnimateButtonPrimary/>
+                </div> */}
+                
+                <div className="checkout w-1/2 text-center h-[100px] text-white text-[80px] pb-[150px] pt-[100px] ease duration-500 cursor-pointer">
+                    More Projects..
+                </div>
+            </div>
+
+            {/* <div className="flex w-full justify-center items-center">
+                
+            </div> */}
+            
          
         </div>
     );

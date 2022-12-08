@@ -193,11 +193,9 @@ input[type="checkbox"]:checked ~ .bar .middle {
     color: #da5533;
 }
 
-.profile button {
+.button-primary {
     height: 200px;
     width: 200px;
-    margin-bottom: 150px;
-    margin-top: 100px;
     background-color: #8f2e23;
     border-radius: 200px;
     border-color: #bd4436;
@@ -223,8 +221,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
     }
 }
 
-.profile button:hover {
-    margin-top: 20px;
+.button-primary:hover {
     height: 300px;
     width: 300px;
     background-color: #c9574b;
@@ -1095,6 +1092,24 @@ input[type="checkbox"]:checked ~ .bar .middle {
     .connect-card {
         width: 75%;
     }
+
+    .others-grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr))!important;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-gap: 100px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+}
+
+@media (max-width: 768px) {
+    .others-grid {
+       
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        
+      }
 }
 
 @media screen and (max-width: 1024px) {
