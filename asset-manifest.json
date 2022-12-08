@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Mon-Portfolio/static/css/main.1d813535.css",
-    "main.js": "/Mon-Portfolio/static/js/main.83ba8da5.js",
+    "main.css": "/Mon-Portfolio/static/css/main.a858192d.css",
+    "main.js": "/Mon-Portfolio/static/js/main.b832408e.js",
     "static/js/787.595b4aa7.chunk.js": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js",
     "static/media/mohammad-rahmani-_Fx34KeqIEw-unsplash.jpg": "/Mon-Portfolio/static/media/mohammad-rahmani-_Fx34KeqIEw-unsplash.9938f701f5e11f4f0bb4.jpg",
     "static/media/lightBulb.png": "/Mon-Portfolio/static/media/lightBulb.18d836d52c5efd4766f8.png",
@@ -37,12 +37,12 @@
     "static/media/Dimtec.svg": "/Mon-Portfolio/static/media/Dimtec.7eaf38b56fb9dd6f70244e385f1c3bee.svg",
     "static/media/Parlo.svg": "/Mon-Portfolio/static/media/Parlo.8f91f1c7f84c47d0d6e57fd9fd969725.svg",
     "index.html": "/Mon-Portfolio/index.html",
-    "main.1d813535.css.map": "/Mon-Portfolio/static/css/main.1d813535.css.map",
-    "main.83ba8da5.js.map": "/Mon-Portfolio/static/js/main.83ba8da5.js.map",
+    "main.a858192d.css.map": "/Mon-Portfolio/static/css/main.a858192d.css.map",
+    "main.b832408e.js.map": "/Mon-Portfolio/static/js/main.b832408e.js.map",
     "787.595b4aa7.chunk.js.map": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d813535.css",
-    "static/js/main.83ba8da5.js"
+    "static/css/main.a858192d.css",
+    "static/js/main.b832408e.js"
   ]
 }
