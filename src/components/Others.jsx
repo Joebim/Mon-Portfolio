@@ -19,7 +19,14 @@ import { othersData } from "./othersData"
 
 export default function Others() {
 
-    const [inview, setInview] = useState(false)
+    // const [inview, setInview] = useState(false)
+    // const [entryBound, setEntryBound] = useState(0)
+
+    const { ref, inView, entry } = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px 800px 0px",
+      });
 
 return (
     <>  
@@ -36,7 +43,7 @@ return (
                 
             return (
                    
-                <InView as="div" onChange={(inView, entry)=> setInview(inView)} className={`others-card bg-white rounded-[40px] flex justify-center items-center p-24 md:p-16 lg:p-16 xl:p-24 fade-in ${inview ? "appear" : ""}`} key={index}>
+                <div ref={ref} className={`others-card bg-white rounded-[40px] flex justify-center items-center p-24 md:p-16 lg:p-16 xl:p-24 fade-in ${inView ? "appear" : ""}`} key={index}>
                     <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">{projectData.title}</h1>
                     <p className="text-6xl text-center py-56 leading-[80px]">{projectData.content}</p>
@@ -63,7 +70,7 @@ return (
                     
                     </div>
                 </div>            
-            </InView>
+            </div>
                 )
             })}
              
