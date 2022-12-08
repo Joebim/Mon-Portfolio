@@ -224,8 +224,6 @@ input[type="checkbox"]:checked ~ .bar .middle {
 .button-primary:hover {
     height: 300px;
     width: 300px;
-    background-color: #c9574b;
-    border-color: #a8372b;
     border-style: solid;
     border-width: 30px; 
     animation: buttonHover 4s infinite;  
