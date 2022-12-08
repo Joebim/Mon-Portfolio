@@ -196,9 +196,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
 .button-primary {
     height: 200px;
     width: 200px;
-    background-color: #8f2e23;
     border-radius: 200px;
-    border-color: #bd4436;
     border-style: solid;
     border-width: 40px;
     animation: button 4s infinite;
