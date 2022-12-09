@@ -11,7 +11,7 @@ export function ImageSliderOne (props) {
 
     const autoSlide = true
     let slideInterval
-    let intervalTime = 5000
+    let intervalTime = 4000
 
     const nextSlide = () => {
         setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1); 
@@ -65,7 +65,7 @@ export function ImageSliderTwo (props) {
 
     const autoSlide = true
     let slideInterval
-    let intervalTime = 6500
+    let intervalTime = 5500
 
     const nextSlide = () => {
         setCurrentSlide(currentSlide == slideLength - 1 ? 0 : currentSlide + 1); 

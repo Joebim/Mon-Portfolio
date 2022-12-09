@@ -192,7 +192,7 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
         </div>
 
         <Services></Services>
-        <Works></Works>
+        <Works theme={theme}></Works>
         <Others></Others>
 
         <AnimateButtonPoint/>

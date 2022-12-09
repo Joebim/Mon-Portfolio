@@ -452,7 +452,6 @@ input[type="checkbox"]:checked ~ .bar .middle {
 
     /* align-items: flex-end; */
     box-sizing: border-box;
-    background-image: url("./assets/images/mohammad-rahmani-_Fx34KeqIEw-unsplash.jpg");
     background-size: cover;
     /* margin-left: 41%; */
     border-radius: 100px;
@@ -474,7 +473,6 @@ input[type="checkbox"]:checked ~ .bar .middle {
     display: flex;
     /* align-items: flex-end; */
     box-sizing: border-box;
-    background-image: url("./assets/images/mohammad-rahmani-_Fx34KeqIEw-unsplash.jpg");
     background-size: cover;
     /* margin-left: 41%; */
     border-radius: 100px;
@@ -700,7 +698,6 @@ input[type="checkbox"]:checked ~ .bar .middle {
     display: flex;
     /* align-items: flex-end; */
     box-sizing: border-box;
-    background-image: url("./assets/images/krisztian-tabori-IyaNci0CyRk-unsplash (1).jpg");
     background-size: cover;
     /* margin-left: 7%; */
     border-radius: 100px;
@@ -723,7 +720,6 @@ input[type="checkbox"]:checked ~ .bar .middle {
     display: flex;
     /* align-items: flex-end; */
     box-sizing: border-box;
-    background-image: url("./assets/images/krisztian-tabori-IyaNci0CyRk-unsplash (1).jpg");
     background-size: cover;
     /* margin-left: 7%; */
     border-radius: 100px;
