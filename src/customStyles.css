@@ -207,14 +207,14 @@ input[type="checkbox"]:checked ~ .bar .middle {
 
 @keyframes button {
     10%{
-        border-color: #bd4436;
+        
         border-width: 15px; 
     }
     50%{
-        border-color: #fd998e;
+     
         border-width: 35px;
     }
-    100%{border-color: #bd4436;
+    100%{
         border-width: 15px;
     }
 }
@@ -229,19 +229,19 @@ input[type="checkbox"]:checked ~ .bar .middle {
 
 @keyframes buttonHover {
     10%{
-        border-color: #a8372b;
+      
         border-width: 20px;
-        background-color: #c9574b; 
+       
     }
     50%{
-        border-color: #ffbab2;
+       
         border-width: 45px;
-        background-color: #aa3e31;
+      
     }
     100%{
-        border-color: #a8372b;
+   
         border-width: 20px;
-        background-color: #c9574b;
+       
     }
 }
 
