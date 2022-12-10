@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Mon-Portfolio/static/css/main.074f2ec9.css",
-    "main.js": "/Mon-Portfolio/static/js/main.09e468ff.js",
+    "main.css": "/Mon-Portfolio/static/css/main.4c4947a2.css",
+    "main.js": "/Mon-Portfolio/static/js/main.7fc69346.js",
     "static/js/787.595b4aa7.chunk.js": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js",
     "static/media/lightBulb.png": "/Mon-Portfolio/static/media/lightBulb.18d836d52c5efd4766f8.png",
     "static/media/foodipiLight.jpg": "/Mon-Portfolio/static/media/foodipiLight.496b12d7fbeda4b648bd.jpg",
@@ -10,7 +10,6 @@
     "static/media/vlishLight.jpg": "/Mon-Portfolio/static/media/vlishLight.2f44f12b2b592fc1c031.jpg",
     "static/media/vlishDark.jpg": "/Mon-Portfolio/static/media/vlishDark.3eb231dbab7c9f1a700e.jpg",
     "static/media/grexoLight.jpg": "/Mon-Portfolio/static/media/grexoLight.320fbf923057d8068f3e.jpg",
-    "static/media/JSP.jpg": "/Mon-Portfolio/static/media/JSP.73efa781630d69f6ce5a.jpg",
     "static/media/spirqBackgroundLight.jpg": "/Mon-Portfolio/static/media/spirqBackgroundLight.af36a76b76b289a47657.jpg",
     "static/media/Joseph-Abimbola-Akinwole.pdf": "/Mon-Portfolio/static/media/Joseph-Abimbola-Akinwole.70f45879a7b466a77df5.pdf",
     "static/media/spirqBackgroundDark.jpg": "/Mon-Portfolio/static/media/spirqBackgroundDark.3a0fc535e9a0f6a062f4.jpg",
@@ -46,12 +45,12 @@
     "static/media/Dimtec.svg": "/Mon-Portfolio/static/media/Dimtec.7eaf38b56fb9dd6f70244e385f1c3bee.svg",
     "static/media/Parlo.svg": "/Mon-Portfolio/static/media/Parlo.8f91f1c7f84c47d0d6e57fd9fd969725.svg",
     "index.html": "/Mon-Portfolio/index.html",
-    "main.074f2ec9.css.map": "/Mon-Portfolio/static/css/main.074f2ec9.css.map",
-    "main.09e468ff.js.map": "/Mon-Portfolio/static/js/main.09e468ff.js.map",
+    "main.4c4947a2.css.map": "/Mon-Portfolio/static/css/main.4c4947a2.css.map",
+    "main.7fc69346.js.map": "/Mon-Portfolio/static/js/main.7fc69346.js.map",
     "787.595b4aa7.chunk.js.map": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.074f2ec9.css",
-    "static/js/main.09e468ff.js"
+    "static/css/main.4c4947a2.css",
+    "static/js/main.7fc69346.js"
   ]
 }
