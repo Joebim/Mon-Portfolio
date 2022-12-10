@@ -20,7 +20,7 @@ export default function Works(props) {
     const [toggleCard6, setToggleCard6] = useState(false)
 
 
-    // console.log('eval("toggleCard"+workDetails.id)', eval("toggleCard"+1))
+    console.log('eval("toggleCard"+workDetails.id)', eval("toggleCard"+1))
 
    
 
@@ -66,7 +66,6 @@ export default function Works(props) {
         delay: "350"
       });
     
-    //   console.log('worksData', worksData)
 
 
     return (
@@ -77,7 +76,7 @@ export default function Works(props) {
         <AnimateButtonPoint/>
         <VerticalLine/>
         <VerticalLine/>
-        <AnimateButtonPoint animateButtonClass={"btn-class"}/>
+        <AnimateButtonPoint animateButtonClass={"animate-button-class"}/>
 
         
         {worksData.map((workDetails, index)=> {
@@ -133,12 +132,20 @@ export default function Works(props) {
         
          <VerticalLine/> 
 
-         <AnimateButtonPoint animateButtonClass={"btn-class"}/>
+         <AnimateButtonPoint animateButtonClass={"animate-button-class"}/>
          </div>
             )
         })}
 
-        <AnimateButtonPoint animateButtonClass={"btn-end"}/>
+
+
+
+
+
+
+
+            <VerticalLine/>
+            <AnimateButtonPoint/>
 
             <div className="h-[300px] w-full flex items-center flex-col-reverse">
                 {/* <div className="pr-[20px]">
