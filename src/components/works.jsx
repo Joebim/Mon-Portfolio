@@ -66,6 +66,7 @@ export default function Works(props) {
         delay: "350"
       });
     
+      console.log('worksData', worksData)
 
 
     return (
