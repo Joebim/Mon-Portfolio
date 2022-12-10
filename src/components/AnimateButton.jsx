@@ -8,8 +8,11 @@ export function AnimateButtonPrimary() {
 } 
 
 export function AnimateButtonPoint(props) {
+
+    const btnClass = props.animateButtonClass
+
     return(
-        <div className={`animate-button w-full flex justify-center ${props.animateButtonClass}`}>
+        <div className={`animate-button w-full flex justify-center ${btnClass == "btn-class" ? "button-class" : btnClass == "btn-end" ? "btn-end":""}`}>
             <div className="animate-button-contain pr-8">
                 <div  
                 id="btn_2"

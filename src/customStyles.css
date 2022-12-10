@@ -430,6 +430,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
 .card-contain-left {
     display: flex;
     width: 100%;
+    flex-direction: row-reverse;
     padding-left: 60%;
     transition: 0.7s;
     transition-timing-function: ease;
@@ -847,9 +848,13 @@ input[type="checkbox"]:checked ~ .bar .middle {
     }
   }
 
-  .animate-button.animate-button-class {
+  .animate-button.button-class {
     display: none;
   }
+
+  .animate-button.btn-end {
+    display: flex;
+}
 
   .flip-card {
     perspective: 1000px;
@@ -1011,7 +1016,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
 
     .card-contain-left {
         padding-left: 0;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .info {
@@ -1066,8 +1071,12 @@ input[type="checkbox"]:checked ~ .bar .middle {
 
     }
 
-    .animate-button.animate-button-class {
+    .animate-button.button-class {
         display: flex;
+    }
+
+    .animate-button.btn-end {
+        display: none;
     }
 
     .others-grid {
