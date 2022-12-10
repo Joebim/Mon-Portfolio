@@ -6,38 +6,60 @@ import { VerticalLine } from "./VerticalLine";
 import { FaGithub } from "react-icons/fa";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { IconContext } from "react-icons";
+import { worksData } from "./worksData";
 
 
 
 export default function Works(props) {
 
-    const [toggleCardTwo, setToggleCardTwo] = useState(false)
-    const [toggleCardThree, setToggleCardThree] = useState(false)
-    const [toggleCardFour, setToggleCardFour] = useState(false)
-    const [toggleCardFive, setToggleCardFive] = useState(false)
+    const [toggleCard1, setToggleCard1] = useState(false)
+    const [toggleCard2, setToggleCard2] = useState(false)
+    const [toggleCard3, setToggleCard3] = useState(false)
+    const [toggleCard4, setToggleCard4] = useState(false)
+    const [toggleCard5, setToggleCard5] = useState(false)
+    const [toggleCard6, setToggleCard6] = useState(false)
 
-    const { ref: text1, inView: textOneVisibility} = useInView({
+
+    console.log('eval("toggleCard"+workDetails.id)', eval("toggleCard"+1))
+
+   
+
+    const { ref: text1, inView: text1Visibility} = useInView({
         /* Optional options */
         threshold: 0,
         rootMargin: "0px 0px -250px 0px",
         delay: "350"
       });
 
-      const { ref: text2, inView: textTwoVisibility} = useInView({
+      const { ref: text2, inView: text2Visibility} = useInView({
         /* Optional options */
         threshold: 0,
         rootMargin: "0px 0px -250px 0px",
         delay: "350"
       });
 
-      const { ref: text3, inView: textThreeVisibility} = useInView({
+      const { ref: text3, inView: text3Visibility} = useInView({
         /* Optional options */
         threshold: 0,
         rootMargin: "0px 0px -250px 0px",
         delay: "350"
       });
 
-      const { ref: text4, inView: textFourVisibility} = useInView({
+      const { ref: text4, inView: text4Visibility} = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -250px 0px",
+        delay: "350"
+      });
+
+      const { ref: text5, inView: text5Visibility} = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -250px 0px",
+        delay: "350"
+      });
+
+      const { ref: text6, inView: text6Visibility} = useInView({
         /* Optional options */
         threshold: 0,
         rootMargin: "0px 0px -250px 0px",
@@ -55,23 +77,27 @@ export default function Works(props) {
         <VerticalLine/>
         <VerticalLine/>
         <AnimateButtonPoint animateButtonClass={"animate-button-class"}/>
+
         
-        <div className="work-contain flex w-full">
-        <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
-                <h2 ref={text1} className={`text-[150px] font-bold ${textOneVisibility ? "text-animate" : ""}`}>2021</h2>
-        </div>
-         <div className={`card-right flex-[5_5_0%] bg-cover bg-[url('./assets/images/JSP.jpg')] ${toggleCardTwo ? "show" : ""}`} id="card-two" onClick={() => {setToggleCardTwo(!toggleCardTwo)}}>
-             <div className={`card-contain ${toggleCardTwo ? "show" : ""}`}>
-             <div className={`info-card flex justify-center items-center ${toggleCardTwo ? "show p-20" : "border-0"}`}>
-                <div className={`info-card-contain flex flex-col justify-center items-center w-[1200px] h-full ${toggleCardTwo ? "show" : ""}`}>
+        {worksData.map((workDetails, index)=> {
+            return (
+        <div  key={index}>
+            <div className={`work-contain flex w-full ${workDetails.position == "left" ? "flex-row-reverse hover:flex-row-reverse" : ""}`}>
+                <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
+                    <h2 ref={eval("text" + workDetails.id)} className={`text-[150px] font-bold ${eval("text" + workDetails.id + "Visibility") ? "text-animate" : ""}`}>{workDetails.year}</h2>
+                </div>
+         <div className={`card-${workDetails.position} flex-[5_5_0%] ${props.theme == "light" ? `bg-[${workDetails.imageLight}]` : `bg-[${workDetails.imageDark}]`} bg-cover ${eval("toggleCard"+workDetails.id) ? "show" : ""}`} id="card-two" onClick={() => {eval("setToggleCard" + workDetails.id)(!eval("toggleCard"+workDetails.id))}}>
+             <div className={`card-contain${workDetails.position == "left" ? "-left flex-row-reverse" : ""} ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
+             <div className={`info-card flex justify-center items-center ${eval("toggleCard"+workDetails.id) ? "show p-20" : "border-0"}`}>
+                <div className={`info-card-contain flex flex-col justify-center items-center w-[1200px] h-full ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
                     <div className="info-card-text-contain w-full flex text-center justify-center items-center flex-[6_6_0%]">
-                        <h2 className="info-card-text text-white text-7xl leading-[100px]">JDLab School Portal(JSP) is a state-of-the-art management portal that offers all the features you need for your institution. It is a fast clean interface with easy integration </h2>
+                        <h2 className="info-card-text text-white text-7xl leading-[100px]">{workDetails.mainInfo}</h2>
                     </div>
                     <div className="info-card-link-contain justify-between w-full h-full flex-[1_1_0%] flex flex-row">
                         <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
-                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">ReactJs</div>
-                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Bootstrap</div>
-                            <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]">Redux</div>
+                            {workDetails.framework.map((tag, index) => {
+                                <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]" key={index}>{tag.name}</div>
+                            })}
                         </div>
                         <IconContext.Provider value={{ color: "white", size:"90"}}>
                             <div className="info-card-link flex flex-row w-[30%] justify-between items-center">
@@ -83,16 +109,16 @@ export default function Works(props) {
                     </div>
                 </div>
              </div>
-             <div className={`inner ${toggleCardTwo ? "show" : ""}`}>
-                <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardTwo ? "show" : ""}`}>
-                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">JSP</h3>
+             <div className={`inner ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
+                <div className={`work-info-contain justify-center items-center flex flex-col ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
+                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">{workDetails.name}</h3>
                  <div className="text-contain">
-                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">Everything you need to manage your school.</h4>
+                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">{workDetails.innerInfo}</h4>
                  </div>
                 </div>
                  
                  <div  id="btn_1" 
-                 onClick={() => {setToggleCardTwo(!toggleCardTwo)}} 
+                 onClick={() => {eval("setToggleCard" + workDetails.id)(!eval("toggleCard"+workDetails.id))}} 
                  className="info">
                  </div>
              </div>
@@ -103,6 +129,14 @@ export default function Works(props) {
          <VerticalLine/> 
 
          <AnimateButtonPoint animateButtonClass={"animate-button-class"}/>
+         </div>
+            )
+        })}
+
+
+
+
+{/*          
          
          <div className="work-contain right-content flex w-full">
             <div className={`card-left flex-[5_5_0%] ${props.theme == "light" ? "bg-[url('./assets/images/spirqBackgroundLight.jpg')]" : "bg-[url('./assets/images/spirqBackgroundDark.jpg')]"} ${toggleCardThree ? "show" : ""}`} id="card-three" onClick={() => {setToggleCardThree(!toggleCardThree)}}>
@@ -211,7 +245,7 @@ export default function Works(props) {
                 <div className={`work-info-contain justify-center items-center flex flex-col ${toggleCardFive ? "show" : ""}`}>
                     <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">Vlish</h3>
                  <div className="text-contain">
-                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">Explore virtual 3D Asset</h4>
+                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">Take interior decoration to another level virtual 3D Editing</h4>
                  </div>
                 </div>
                  
@@ -222,7 +256,7 @@ export default function Works(props) {
              <div className={`info-card flex justify-center items-center ${toggleCardFive ? "show p-20" : ""}`}>
              <div className={`info-card-contain flex flex-col justify-center items-center w-[1200px] h-full ${toggleCardFive ? "show" : ""}`}>
              <div className="info-card-text-contain  w-full flex text-center justify-center items-center flex-[6_6_0%]">
-                        <h2 className="info-card-text text-white text-7xl leading-[100px]">Experience immersive 3D Assets and objects in Virtual Reality with Editing Features</h2>
+                        <h2 className="info-card-text text-white text-7xl leading-[100px]">Experience immersive 3D inerior Assets, enviroments and objects in Virtual Reality with Editing Features for interior decoration</h2>
                     </div>
                     <div className="info-card-link-contain justify-between w-full h-full flex-[1_1_0%] flex flex-row">
                         <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
@@ -346,6 +380,10 @@ export default function Works(props) {
             </div>
 
             <VerticalLine/>
+             */}
+
+
+
             <VerticalLine/>
             <AnimateButtonPoint/>
 

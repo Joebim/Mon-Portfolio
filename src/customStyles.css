@@ -958,13 +958,13 @@ input[type="checkbox"]:checked ~ .bar .middle {
         /* width: 100%; */
     }
 
-    .work-contain.right-content {
+    .right-content {
         flex-direction: column-reverse;
         height: 2000px;
         /* width: 100%; */
     }
 
-    .work-contain.right-content:hover {
+    .right-content:hover {
         flex-direction: column-reverse;
         height: 2000px;
     }
