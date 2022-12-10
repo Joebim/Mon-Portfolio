@@ -6,7 +6,6 @@ import spirq from "../assets/images/Spirq Light.svg"
 import dimtec from "../assets/images/Dimtec.svg"
 import { useState } from "react"
 import { useInView } from 'react-intersection-observer';
-import { InView } from "react-intersection-observer"
 import { AnimateButtonPoint } from "./AnimateButton"
 import { VerticalLine } from "./VerticalLine"
 import { FaGithub } from "react-icons/fa";
@@ -19,13 +18,46 @@ import { othersData } from "./othersData"
 
 export default function Others() {
 
-    // const [inview, setInview] = useState(false)
-    // const [entryBound, setEntryBound] = useState(0)
-
-    const { ref, inView, entry } = useInView({
+    const { ref: card1, inView: card1Visibility} = useInView({
         /* Optional options */
         threshold: 0,
-        rootMargin: "0px 0px 800px 0px",
+        rootMargin: "0px 0px -200px 0px",
+        delay: "500"
+      });
+    
+      const { ref: card2, inView: card2Visibility} = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -200px 0px",
+        delay: "500"
+      });
+
+      const { ref: card3, inView: card3Visibility} = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -200px 0px",
+        delay: "500"
+      });
+
+      const { ref: card4, inView: card4Visibility} = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -200px 0px",
+        delay: "500"
+      });
+
+      const { ref: card5, inView: card5Visibility} = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -200px 0px",
+        delay: "500"
+      });
+
+      const { ref: card6, inView: card6Visibility} = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -200px 0px",
+        delay: "500"
       });
 
 return (
@@ -38,12 +70,11 @@ return (
     <div className="w-full flex justify-center items-center py-60">
         <div className="others-grid w-3/4 md:w-[95%] lg:w-[95%] xl:w-3/4  grid grid-cols-1 md:grid-cols-3 gap-24 md:gap-20 lg:gap-20 xl:gap-24">
 
-
             {othersData?.map((projectData, index) => {
                 
             return (
                    
-                <div ref={ref} className={`others-card bg-white rounded-[40px] flex justify-center items-center p-24 md:p-16 lg:p-16 xl:p-24 fade-in ${inView ? "appear" : ""}`} key={index}>
+                <div ref={eval("card"+ projectData.id)} className={`others-card bg-white rounded-[40px] flex justify-center items-center p-24 md:p-16 lg:p-16 xl:p-24 fade-in ${eval("card"+projectData.id+"Visibility") ? "appear" : ""}`} key={index}>
                     <div className="w-full flex justify-center flex-col items-center">
                     <h1 className="text-7xl font-bold">{projectData.title}</h1>
                     <p className="text-6xl text-center py-56 leading-[80px]">{projectData.content}</p>
