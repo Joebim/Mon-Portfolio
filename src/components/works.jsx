@@ -76,8 +76,7 @@ export default function Works(props) {
         <AnimateButtonPoint/>
         <VerticalLine/>
         <VerticalLine/>
-        <AnimateButtonPoint animateButtonClass={"animate-button-class"}/>
-
+        <AnimateButtonPoint animateButtonClass={"button-class"}/>
         
         {worksData.map((workDetails, index)=> {
             return (
@@ -87,7 +86,7 @@ export default function Works(props) {
                     <h2 ref={eval("text" + workDetails.id)} className={`text-[150px] font-bold ${eval("text" + workDetails.id + "Visibility") ? "text-animate" : ""}`}>{workDetails.year}</h2>
                 </div>
          <div className={`card-${workDetails.position} flex-[5_5_0%] ${props.theme == "light" ? `bg-[${workDetails.imageLight}]` : `bg-[${workDetails.imageDark}]`} bg-cover ${eval("toggleCard"+workDetails.id) ? "show" : ""}`} id="card-two" onClick={() => {eval("setToggleCard" + workDetails.id)(!eval("toggleCard"+workDetails.id))}}>
-             <div className={`card-contain${workDetails.position == "left" ? "-left flex-row-reverse" : ""} ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
+             <div className={`card-contain${workDetails.position == "left" ? "-left" : ""} ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
              <div className={`info-card flex justify-center items-center ${eval("toggleCard"+workDetails.id) ? "show p-20" : "border-0"}`}>
                 <div className={`info-card-contain flex flex-col justify-center items-center w-[1200px] h-full ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
                     <div className="info-card-text-contain w-full flex text-center justify-center items-center flex-[6_6_0%]">
@@ -97,12 +96,15 @@ export default function Works(props) {
                         
                         <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
                             {workDetails.framework.map((tag, index) => {
-                                <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]" key={index}>{tag.name}</div>
+                                return(
+                                    <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]" key={index}>{tag.name}</div>
+                                )
                             })}
                         </div>
                         <IconContext.Provider value={{ color: "white", size:"90"}}>
                             <div className="info-card-link flex flex-row w-[30%] justify-between items-center">
-                                {<div className="featured-btn w-[250px] h-[100px] rounded-[50px] flex justify-center items-center border-8 border-white text-white text-[40px] bg-transparent">Featured</div>}
+                            {workDetails.github == "featured" ? <div className="featured-btn w-[250px] h-[100px] rounded-[50px] flex justify-center items-center border-8 border-white text-white text-[40px] bg-transparent">Featured</div> : 
+                                <a href={workDetails.github} target="_blank"><FaGithub/></a>}
                                 <a href="https://jsp.ng/" target="_blank"><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
@@ -129,12 +131,12 @@ export default function Works(props) {
         
          <VerticalLine/> 
 
-         <AnimateButtonPoint animateButtonClass={"animate-button-class"}/>
+         <AnimateButtonPoint animateButtonClass={"button-class"}/>
          </div>
             )
         })}
 
-
+        <AnimateButtonPoint animateButtonClass={"btn-end"}/>
 
 
 {/*          
@@ -384,9 +386,9 @@ export default function Works(props) {
              */}
 
 
-
+{/* 
             <VerticalLine/>
-            <AnimateButtonPoint/>
+            <AnimateButtonPoint/> */}
 
             <div className="h-[300px] w-full flex items-center flex-col-reverse">
                 {/* <div className="pr-[20px]">
