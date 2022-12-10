@@ -94,14 +94,18 @@ export default function Works(props) {
                         <h2 className="info-card-text text-white text-7xl leading-[100px]">{workDetails.mainInfo}</h2>
                     </div>
                     <div className="info-card-link-contain justify-between w-full h-full flex-[1_1_0%] flex flex-row">
+                        
                         <div className="info-card-link-tag flex flex-row justify-center items-center h-full">
                             {workDetails.framework.map((tag, index) => {
-                                <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]" key={index}>{tag.name}</div>
+                                return(
+                                    <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]" key={index}>{tag.name}</div>
+                                )
                             })}
                         </div>
                         <IconContext.Provider value={{ color: "white", size:"90"}}>
                             <div className="info-card-link flex flex-row w-[30%] justify-between items-center">
-                                <div className="featured-btn w-[250px] h-[100px] rounded-[50px] flex justify-center items-center border-8 border-white text-white text-[40px] bg-transparent">Featured</div>
+                                {workDetails.github == "featured" ? <div className="featured-btn w-[250px] h-[100px] rounded-[50px] flex justify-center items-center border-8 border-white text-white text-[40px] bg-transparent">Featured</div> : 
+                                <a href={workDetails.github} target="_blank"><FaGithub/></a>}
                                 <a href="https://jsp.ng/" target="_blank"><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
