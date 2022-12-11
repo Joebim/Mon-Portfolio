@@ -72,7 +72,7 @@ export default function Works(props) {
         <AnimateButtonPoint/>
         <VerticalLine/>
         <VerticalLine/>
-        <AnimateButtonPoint animateButtonClass={"btn-class"}/>
+        {/* <AnimateButtonPoint animateButtonClass={"btn-class"}/> */}
                  
         {worksData.map((workDetails, index)=> {
             return (
@@ -125,12 +125,12 @@ export default function Works(props) {
         
          <VerticalLine/> 
 
-         <AnimateButtonPoint animateButtonClass={"btn-class"}/>
+         {/* <AnimateButtonPoint animateButtonClass={"btn-class"}/> */}
          </div>
             )
         })}
 
-        <AnimateButtonPoint animateButtonClass={"btn-end"}/>
+        {/* <AnimateButtonPoint animateButtonClass={"btn-end"}/> */}
 
 
             <div className="h-[300px] w-full flex items-center flex-col-reverse">
