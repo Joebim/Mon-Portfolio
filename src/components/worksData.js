@@ -11,8 +11,8 @@ export const worksData = [
         web: "https://jsp.ng/",
         year: "2021",
         position: "right",
-        imageDark: "url('./assets/images/JSP.jpg')",
-        imageLight: "url('./assets/images/JSP.jpg')",
+        imageDark: "url('./assets/images/JSPDark.jpg')",
+        imageLight: "url('./assets/images/JSPLight.jpg')",
         framework: [
             {
                 id: 1,

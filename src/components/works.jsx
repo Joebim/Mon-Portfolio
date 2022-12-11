@@ -20,7 +20,7 @@ export default function Works(props) {
     const [toggleCard6, setToggleCard6] = useState(false)
 
 
-    console.log('eval("toggleCard"+workDetails.id)', eval("toggleCard"+1))
+    // console.log('eval("toggleCard"+workDetails.id)', eval("toggleCard"+1))
 
    
 
@@ -103,7 +103,7 @@ export default function Works(props) {
                         <IconContext.Provider value={{ color: "white", size:"90"}}>
                             <div className="info-card-link flex flex-row w-[30%] justify-between items-center">
                             {workDetails.github == "featured" ? <div className="featured-btn w-[250px] h-[100px] rounded-[50px] flex justify-center items-center border-8 border-white text-white text-[40px] bg-transparent">Featured</div> : 
-                                <a href={workDetails.github} target="_blank"><FaGithub/></a>}                                <a href="https://jsp.ng/" target="_blank"><BsBoxArrowUpRight/></a>
+                                <a href={workDetails.github} target="_blank" rel="noreferrer"><FaGithub/></a>}                                <a href="https://jsp.ng/" target="_blank" rel="noreferrer"><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider>
                         
