@@ -206,7 +206,7 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
 
         <div className="w-full flex justify-center align-center py-36">
             <div className="connect-card text-center w-[40%] h-auto rounded-[100px] ease duration-700 p-52">
-            <h2 className="text-[80px] pb-24 font-['overlock'] font-bold">Want to work on something?</h2>
+            <h2 className="text-[80px] pb-24 font-['overlock'] font-extrabold">Want to work on something?</h2>
             <p className="text-7xl pb-60 leading-[100px] font-bold text-center">Throw me your ideas and let me see how i can be of assistance.</p>
             <button className="connect-button h-[200px] w-[600px] rounded-[100px] mb-[100px] border-solid border-[10px] ease duration-500 text-white">
                 <a href="mailto:josey359@gmail.com" className="text-7xl font-['Bellota'] font-bold decoration-0">let's Chat</a>

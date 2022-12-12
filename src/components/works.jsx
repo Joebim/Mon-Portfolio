@@ -90,7 +90,7 @@ export default function Works(props) {
              <div className={`info-card flex justify-center items-center ${eval("toggleCard"+workDetails.id) ? "show p-20" : "border-0"}`}>
                 <div className={`info-card-contain flex flex-col justify-center items-center w-[1200px] h-full ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
                     <div className="info-card-text-contain w-full flex text-center justify-center items-center flex-[6_6_0%]">
-                        <h2 className="info-card-text text-white text-7xl leading-[100px]">{workDetails.mainInfo}</h2>
+                        <h2 className="info-card-text font-semibold text-white text-7xl leading-[100px]">{workDetails.mainInfo}</h2>
                     </div>
 
                     <div className="info-card-link-contain justify-between items-center w-full h-full flex-[1_1_0%] flex flex-row">
@@ -116,7 +116,7 @@ export default function Works(props) {
                 <div className={`work-info-contain justify-center items-center py-[50px] flex flex-col ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
                     <h3 className="work-info-header font-['overlock'] pt-[100px] pb-[200px] text-9xl font-black text-center">{workDetails.name}</h3>
                  <div className="text-contain">
-                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[90px] lg:text-[80px] leading-[120px] lg:leading-[100px] text-center">{workDetails.innerInfo}</h4>
+                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[90px] font-semibold lg:text-[80px] leading-[120px] lg:leading-[100px] text-center">{workDetails.innerInfo}</h4>
                  </div>
                 </div>
                  
