@@ -205,9 +205,17 @@ const GlobalStyles = createGlobalStyle`
     .card-left:hover {
         box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
     }
+
+    .inner {
+        background-color: ${({ theme }) => theme.color.inner};
+    }
     
-    .inner:hover {
+    .inner.show {
         background-color: ${({ theme }) => theme.color.innerHoverBg};
+    }
+
+    .work-info-details {
+        color: ${({ theme }) => theme.color.workYear};
     }
 
     

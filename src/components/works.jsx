@@ -85,7 +85,7 @@ export default function Works(props) {
                 <div className="work-year-contain flex-[3_3_0%] flex justify-center items-center">
                     <h2 ref={eval("text" + workDetails.id)} className={`text-[150px] font-bold ${eval("text" + workDetails.id + "Visibility") ? "text-animate" : ""}`}>{workDetails.year}</h2>
                 </div>
-         <div className={`card-${workDetails.position} flex-[5_5_0%] ${props.theme == "light" ? `${workDetails?.imageLight}` : `${workDetails?.imageDark}`} bg-cover ${eval("toggleCard"+workDetails.id) ? "show" : ""}`} id="card-two" onClick={() => {eval("setToggleCard" + workDetails.id)(!eval("toggleCard"+workDetails.id))}}>
+         <div className={`card-${workDetails.position} flex-[5_5_0%] ${`${workDetails?.image}`} bg-cover ${eval("toggleCard"+workDetails.id) ? "show" : ""}`} id="card-two" onClick={() => {eval("setToggleCard" + workDetails.id)(!eval("toggleCard"+workDetails.id))}}>
              <div className={`card-contain${workDetails.position == "left" ? "-left flex-row-reverse" : ""} ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
              <div className={`info-card flex justify-center items-center ${eval("toggleCard"+workDetails.id) ? "show p-20" : "border-0"}`}>
                 <div className={`info-card-contain flex flex-col justify-center items-center w-[1200px] h-full ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>

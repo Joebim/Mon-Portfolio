@@ -8,8 +8,8 @@ export const worksData = [
         web: "https://jsp.ng/",
         year: "2021",
         position: "right",
-        imageDark: "bg-[url('./assets/images/JSPDark.png')]",
-        imageLight: "bg-[url('./assets/images/JSPLight.png')]",
+        // imageDark: "bg-[url('./assets/images/JSPDark.png')]",
+        image: "bg-[url('./assets/images/JSPLight.png')]",
         status: "completed",
         framework: [
             {
@@ -36,8 +36,8 @@ export const worksData = [
         web: "https://joebim.github.io/Spirq",
         year: "2020",
         position: "left",
-        imageDark: "bg-[url('./assets/images/spirqBackgroundDark.jpg')]",
-        imageLight: "bg-[url('./assets/images/spirqBackgroundLight.jpg')]",
+        // imageDark: "bg-[url('./assets/images/spirqBackgroundDark.jpg')]",
+        image: "bg-[url('./assets/images/spirqBackgroundLight.jpg')]",
         status: "pending",
         framework: [
             {
@@ -64,8 +64,8 @@ export const worksData = [
         web: "https://joebim.github.io/Foodipy/",
         year: "2022",
         position: "right",
-        imageDark: "bg-[url('./assets/images/foodipiDark.jpg')]",
-        imageLight: "bg-[url('./assets/images/foodipiLight.jpg')]",
+        // imageDark: "bg-[url('./assets/images/foodipiDark.jpg')]",
+        image: "bg-[url('./assets/images/foodipiLight.jpg')]",
         status: "pending",
         framework: [
             {
@@ -92,8 +92,8 @@ export const worksData = [
         web: "https://joebim.github.io/Vlish",
         year: "2019",
         position: "left",
-        imageDark: "bg-[url('./assets/images/vlishDark.jpg')]",
-        imageLight: "bg-[url('./assets/images/vlishLight.jpg')]",
+        // imageDark: "bg-[url('./assets/images/vlishDark.jpg')]",
+        image: "bg-[url('./assets/images/vlishLight.jpg')]",
         status: "pending",
         framework: [
             {
@@ -120,8 +120,8 @@ export const worksData = [
         web: "https://joebim.github.io/Boonie/",
         year: "2022",
         position: "right",
-        imageDark: "bg-[url('./assets/images/boonieDark.png')]",
-        imageLight: "bg-[url('./assets/images/boonieLight.png')]",
+        // imageDark: "bg-[url('./assets/images/boonieDark.png')]",
+        image: "bg-[url('./assets/images/boonieLight.png')]",
         status: "pending",
         framework: [
             {
@@ -148,8 +148,8 @@ export const worksData = [
         web: "https://joebim.github.io/Grexo/",
         year: "2019",
         position: "left",
-        imageDark: "bg-[url('./assets/images/grexoDark.jpg')]",
-        imageLight: "bg-[url('./assets/images/grexoLight.jpg')]",
+        // imageDark: "bg-[url('./assets/images/grexoDark.jpg')]",
+        image: "bg-[url('./assets/images/grexoLight.jpg')]",
         status: "pending",
         framework: [
             {
