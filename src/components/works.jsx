@@ -111,10 +111,10 @@ export default function Works(props) {
                 </div>
              </div>
              <div className={`inner ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
-                <div className={`work-info-contain justify-center items-center flex flex-col ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
-                    <h3 className="work-info-header font-['overlock'] pt-[200px] pb-[100px] text-9xl font-black text-center">{workDetails.name}</h3>
+                <div className={`work-info-contain justify-center items-center py-[50px] flex flex-col ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
+                    <h3 className="work-info-header font-['overlock'] pt-[100px] pb-[200px] text-9xl font-black text-center">{workDetails.name}</h3>
                  <div className="text-contain">
-                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[65px] leading-[92px] text-center">{workDetails.innerInfo}</h4>
+                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[90px] lg:text-[80px] leading-[120px] lg:leading-[100px] text-center">{workDetails.innerInfo}</h4>
                  </div>
                 </div>
                  

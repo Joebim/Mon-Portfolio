@@ -177,7 +177,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
     padding-top: 70px;
     padding-left: 18%;
     padding-right: 18%;
-    font-size: 70px;
+    font-size: 90px;
     font-weight: bold;
     color: #da5533;
 }
@@ -1102,6 +1102,23 @@ input[type="checkbox"]:checked ~ .bar .middle {
         padding: 0;
         list-style: none;
       }
+
+      .intro-one {
+        padding-right: 200px;
+        padding-left: 200px;
+        height: 2500px;
+      }
+
+      .intro-two{
+        padding-right: 200px;
+        padding-left: 200px;
+        height: 2500px;
+
+      }
+
+      .text-contain {
+        width: 900px;
+      }
 }
 
 @media (max-width: 768px) {
@@ -1134,7 +1151,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
         padding-top: 70px;
         padding-left: 18%;
         padding-right: 18%;
-        font-size: 70px;
+        font-size: 90px;
     }
     
     .profile h3 {
@@ -1154,9 +1171,9 @@ input[type="checkbox"]:checked ~ .bar .middle {
     }
 
     .contain h3 {
-        padding-top: 150px;
-        padding-bottom: 50px;
-        font-size: 60px;
+        padding-top: 0px;
+        padding-bottom: 150px;
+        font-size: 150px;
     }
 
     /* .contain p {
@@ -1217,7 +1234,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
     } */
     
     .intro-one h2 {
-        font-size: 60px;
+        font-size: 70px;
         color: #e25d5d;
         font-weight: bold;
         text-align: center;
@@ -1227,7 +1244,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
     }
 
     .intro-two h2 {
-        font-size: 60px;
+        font-size: 70px;
         color: #e25d5d;
         font-weight: bold;
         text-align: center;

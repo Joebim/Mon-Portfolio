@@ -76,8 +76,8 @@ return (
                    
                 <div ref={eval("card"+ projectData.id)} className={`others-card bg-white rounded-[40px] flex justify-center items-center p-24 md:p-16 lg:p-16 xl:p-24 fade-in ${eval("card"+projectData.id+"Visibility") ? "appear" : ""}`} key={index}>
                     <div className="w-full flex justify-center flex-col items-center">
-                    <h1 className="text-7xl font-bold">{projectData.title}</h1>
-                    <p className="text-6xl text-center py-56 leading-[80px]">{projectData.content}</p>
+                    <h1 className="text-[90px] pt-[30px] font-bold">{projectData.title}</h1>
+                    <p className="text-[70px] text-center py-52 leading-[100px]">{projectData.content}</p>
                     <div className="flex flex-row justify-between w-full">
                     
                         <div className="info-card-link-tag flex flex-row justify-center items-center h-full">

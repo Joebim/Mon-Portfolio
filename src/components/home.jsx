@@ -181,11 +181,11 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
             
            {/* <VerticalLine/> */}
             <div ref={introRef1} className={`intro-one fade-in ${introOneVisibility ? "appear" : ""}`}>
-                <h2 className="text-left text-[75px] leading-[120px]">I'm a frontend developer and i'm based in Nigeria. I love to explore and create new things with passion for designs. Since the beginning of my journey, three years ago, I have worked on different projects and identified awesome web designs in different perspectives and views. </h2>
+                <h2 className="text-left text-[85px] leading-[120px]">I'm a frontend developer and i'm based in Nigeria. I love to explore and create new things with passion for designs. Since the beginning of my journey, three years ago, I have worked on different projects and identified awesome web designs in different perspectives and views. </h2>
                 <img src={lightBulb} alt=""></img>
             </div>
             <div ref={introRef2} className={`intro-two fade-in ${introTwoVisibility ? "appear" : ""}`}>
-                <h2 className="text-right text-[75px] leading-[120px]">I believe in the upmost beauty of things and how better they can be, from vector graphics to web, with respect to user interface and user experience.</h2>
+                <h2 className="text-right text-[85px] leading-[120px]">I believe in the upmost beauty of things and how better they can be, from vector graphics to web, with respect to user interface and user experience.</h2>
                 <img src={rocket} alt=""></img>
             </div>
            {/* <VerticalLine/> */}
@@ -207,7 +207,7 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
         <div className="w-full flex justify-center align-center py-36">
             <div className="connect-card text-center w-[40%] h-auto rounded-[100px] ease duration-700 p-52">
             <h2 className="text-[80px] pb-24 font-['overlock'] font-bold">Want to work on something?</h2>
-            <p className="text-7xl pb-60 font-bold text-center">Throw me your ideas and let me see how i can be of assistance.</p>
+            <p className="text-7xl pb-60 leading-[100px] font-bold text-center">Throw me your ideas and let me see how i can be of assistance.</p>
             <button className="connect-button h-[200px] w-[600px] rounded-[100px] mb-[100px] border-solid border-[10px] ease duration-500 text-white">
                 <a href="mailto:josey359@gmail.com" className="text-7xl font-['Bellota'] font-bold decoration-0">let's Chat</a>
             </button>
