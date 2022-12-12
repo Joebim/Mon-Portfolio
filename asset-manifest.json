@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Mon-Portfolio/static/css/main.50bf99bc.css",
+    "main.css": "/Mon-Portfolio/static/css/main.6f9e2e5a.css",
     "main.js": "/Mon-Portfolio/static/js/main.4c0a64b1.js",
     "static/js/787.595b4aa7.chunk.js": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js",
     "static/media/lightBulb.png": "/Mon-Portfolio/static/media/lightBulb.18d836d52c5efd4766f8.png",
@@ -47,12 +47,12 @@
     "static/media/Dimtec.svg": "/Mon-Portfolio/static/media/Dimtec.7eaf38b56fb9dd6f70244e385f1c3bee.svg",
     "static/media/Parlo.svg": "/Mon-Portfolio/static/media/Parlo.8f91f1c7f84c47d0d6e57fd9fd969725.svg",
     "index.html": "/Mon-Portfolio/index.html",
-    "main.50bf99bc.css.map": "/Mon-Portfolio/static/css/main.50bf99bc.css.map",
+    "main.6f9e2e5a.css.map": "/Mon-Portfolio/static/css/main.6f9e2e5a.css.map",
     "main.4c0a64b1.js.map": "/Mon-Portfolio/static/js/main.4c0a64b1.js.map",
     "787.595b4aa7.chunk.js.map": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50bf99bc.css",
+    "static/css/main.6f9e2e5a.css",
     "static/js/main.4c0a64b1.js"
   ]
 }
