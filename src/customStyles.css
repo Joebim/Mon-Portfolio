@@ -1234,9 +1234,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
     } */
     
     .intro-one h2 {
-        font-size: 70px;
         color: #e25d5d;
-        font-weight: bold;
         text-align: center;
         padding: 0;
         margin: 0;
@@ -1244,9 +1242,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
     }
 
     .intro-two h2 {
-        font-size: 70px;
         color: #e25d5d;
-        font-weight: bold;
         text-align: center;
         padding: 0;
         margin: 0;
