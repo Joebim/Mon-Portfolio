@@ -651,7 +651,6 @@ input[type="checkbox"]:checked ~ .bar .middle {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    background-color: white;
     box-sizing: border-box;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -670,7 +669,6 @@ input[type="checkbox"]:checked ~ .bar .middle {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    background-color: white;
     box-sizing: border-box;
     padding-top: 40px;
     padding-bottom: 40px;

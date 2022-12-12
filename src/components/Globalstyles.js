@@ -209,10 +209,14 @@ const GlobalStyles = createGlobalStyle`
     .inner {
         background-color: ${({ theme }) => theme.color.inner};
     }
-    
-    .inner.show {
-        background-color: ${({ theme }) => theme.color.innerHoverBg};
+
+    @media screen and (max-width: 640px) {
+        .inner.show {
+            background-color: ${({ theme }) => theme.color.innerHoverBg};
+        }
     }
+    
+    
 
     .work-info-details {
         color: ${({ theme }) => theme.color.workYear};
