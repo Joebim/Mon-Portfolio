@@ -10,6 +10,7 @@ export const worksData = [
         position: "right",
         imageDark: "bg-[url('./assets/images/JSPDark.png')]",
         imageLight: "bg-[url('./assets/images/JSPLight.png')]",
+        status: "completed",
         framework: [
             {
                 id: 1,
@@ -37,6 +38,7 @@ export const worksData = [
         position: "left",
         imageDark: "bg-[url('./assets/images/spirqBackgroundDark.jpg')]",
         imageLight: "bg-[url('./assets/images/spirqBackgroundLight.jpg')]",
+        status: "pending",
         framework: [
             {
                 id: 1,
@@ -64,6 +66,7 @@ export const worksData = [
         position: "right",
         imageDark: "bg-[url('./assets/images/foodipiDark.jpg')]",
         imageLight: "bg-[url('./assets/images/foodipiLight.jpg')]",
+        status: "pending",
         framework: [
             {
                 id: 1,
@@ -91,6 +94,7 @@ export const worksData = [
         position: "left",
         imageDark: "bg-[url('./assets/images/vlishDark.jpg')]",
         imageLight: "bg-[url('./assets/images/vlishLight.jpg')]",
+        status: "pending",
         framework: [
             {
                 id: 1,
@@ -112,12 +116,13 @@ export const worksData = [
         name: "Boonie",
         innerInfo: "Creating a world with opportunities",
         mainInfo: "Creating simple accessible opportunities in different fields and improving employability accross the world.",
-        github: "https://github.com/Joebim/Foodipy",
-        web: "https://joebim.github.io/Foodipy/",
+        github: "https://github.com/Joebim/Boonie",
+        web: "https://joebim.github.io/Boonie/",
         year: "2022",
         position: "right",
-        imageDark: "bg-[url('./assets/images/boonieDark.jpg')]",
-        imageLight: "bg-[url('./assets/images/boonieLight.jpg')]",
+        imageDark: "bg-[url('./assets/images/boonieDark.png')]",
+        imageLight: "bg-[url('./assets/images/boonieLight.png')]",
+        status: "pending",
         framework: [
             {
                 id: 1,
@@ -139,12 +144,13 @@ export const worksData = [
         name: "Grexo",
         innerInfo: "AI Measuring Tool",
         mainInfo: "Intelligent body measuring tool for Apparel making with adaptive body-shape measurement to 3D apparel conversion",
-        github: "https://github.com/Joebim/Vlish",
-        web: "https://joebim.github.io/Vlish",
+        github: "https://github.com/Joebim/Grexo",
+        web: "https://joebim.github.io/Grexo/",
         year: "2019",
         position: "left",
         imageDark: "bg-[url('./assets/images/grexoDark.jpg')]",
         imageLight: "bg-[url('./assets/images/grexoLight.jpg')]",
+        status: "pending",
         framework: [
             {
                 id: 1,
