@@ -1,6 +1,3 @@
-
-
-
 export const worksData = [
     {
         id: 1,
@@ -11,8 +8,8 @@ export const worksData = [
         web: "https://jsp.ng/",
         year: "2021",
         position: "right",
-        imageDark: "url('./assets/images/JSPDark.jpg')",
-        imageLight: "url('./assets/images/JSPLight.jpg')",
+        imageDark: "bg-[url('./assets/images/JSPDark.png')]",
+        imageLight: "bg-[url('./assets/images/JSPLight.png')]",
         framework: [
             {
                 id: 1,
@@ -38,12 +35,12 @@ export const worksData = [
         web: "https://joebim.github.io/Spirq",
         year: "2020",
         position: "left",
-        imageDark: "url('./assets/images/spirqBackgroundDark.jpg')",
-        imageLight: "url('./assets/images/spirqBackgroundLight.jpg')",
+        imageDark: "bg-[url('./assets/images/spirqBackgroundDark.jpg')]",
+        imageLight: "bg-[url('./assets/images/spirqBackgroundLight.jpg')]",
         framework: [
             {
                 id: 1,
-                name: "React",
+                name: "ReactJS",
             },
             {
                 id: 2,
@@ -65,8 +62,8 @@ export const worksData = [
         web: "https://joebim.github.io/Foodipy/",
         year: "2022",
         position: "right",
-        imageDark: "url('./assets/images/foodipiDark.jpg')",
-        imageLight: "url('./assets/images/foodipiLight.jpg')",
+        imageDark: "bg-[url('./assets/images/foodipiDark.jpg')]",
+        imageLight: "bg-[url('./assets/images/foodipiLight.jpg')]",
         framework: [
             {
                 id: 1,
@@ -92,12 +89,12 @@ export const worksData = [
         web: "https://joebim.github.io/Vlish",
         year: "2019",
         position: "left",
-        imageDark: "url('./assets/images/vlishDark.jpg')",
-        imageLight: "url('./assets/images/vlishLight.jpg')",
+        imageDark: "bg-[url('./assets/images/vlishDark.jpg')]",
+        imageLight: "bg-[url('./assets/images/vlishLight.jpg')]",
         framework: [
             {
                 id: 1,
-                name: "React",
+                name: "ReactJS",
             },
             {
                 id: 2,
@@ -119,12 +116,12 @@ export const worksData = [
         web: "https://joebim.github.io/Foodipy/",
         year: "2022",
         position: "right",
-        imageDark: "url('./assets/images/boonieDark.jpg')",
-        imageLight: "url('./assets/images/boonieLight.jpg')",
+        imageDark: "bg-[url('./assets/images/boonieDark.jpg')]",
+        imageLight: "bg-[url('./assets/images/boonieLight.jpg')]",
         framework: [
             {
                 id: 1,
-                name: "React",
+                name: "ReactJS",
             },
             {
                 id: 2,
@@ -146,12 +143,12 @@ export const worksData = [
         web: "https://joebim.github.io/Vlish",
         year: "2019",
         position: "left",
-        imageDark: "url('./assets/images/grexoDark.jpg')",
-        imageLight: "url('./assets/images/grexoLight.jpg')",
+        imageDark: "bg-[url('./assets/images/grexoDark.jpg')]",
+        imageLight: "bg-[url('./assets/images/grexoLight.jpg')]",
         framework: [
             {
                 id: 1,
-                name: "React",
+                name: "ReactJS",
             },
             {
                 id: 2,
