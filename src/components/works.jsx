@@ -99,7 +99,8 @@ export default function Works(props) {
                             {workDetails.framework.map((tag, index) => {
                             return(
                                 <div className="tag p-[10px] px-[20px] m-[10px] rounded-full text-black text-[40px]" key={index}>{tag.name}</div>
-                            )                            })}
+                            )
+                            })}
                         </div>
 
                         {workDetails.status == "completed" ? <IconContext.Provider value={{ color: "white", size:"90"}}>
@@ -116,7 +117,7 @@ export default function Works(props) {
                 <div className={`work-info-contain justify-center items-center py-[50px] flex flex-col ${eval("toggleCard"+workDetails.id) ? "show" : ""}`}>
                     <h3 className="work-info-header font-['overlock'] pt-[100px] pb-[200px] text-9xl font-black text-center">{workDetails.name}</h3>
                  <div className="text-contain">
-                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[90px] font-semibold lg:text-[80px] leading-[120px] lg:leading-[100px] text-center">{workDetails.innerInfo}</h4>
+                 <h4 className="work-info-details pt-[50px] pb-[150px] text-[85px] lg:text-[80px] leading-[120px] lg:leading-[100px] text-center">{workDetails.innerInfo}</h4>
                  </div>
                 </div>
                  
@@ -137,14 +138,14 @@ export default function Works(props) {
         })}
 
         <AnimateButtonPoint animateButtonClass={"btn-end"}/>
+{console.log('worksData.length', worksData.length)}
 
-
-            <div className="h-[300px] w-full flex items-center flex-col-reverse">
+            {worksData.length <= 6 ? "" :<div className="h-[300px] w-full flex items-center flex-col-reverse">
                 
                 <div className="checkout w-1/2 text-center h-[100px] font-extrabold text-white text-[80px] pb-[150px] pt-[100px] ease duration-500 cursor-pointer">
                     More Projects..
                 </div>
-            </div>
+            </div>  }
          
         </div>
     );

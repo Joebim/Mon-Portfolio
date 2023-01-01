@@ -87,7 +87,7 @@ export const worksData = [
         id: 4,
         name: "Vlish",
         innerInfo: "Take interior decoration to another level virtual 3D Editing",
-        mainInfo: "Experience immersive 3D inerior Assets, enviroments and objects in Virtual Reality with Editing Features for interior decoration",
+        mainInfo: "Experience immersive 3D interior Assets, enviroments and objects in Virtual Reality with Editing Features for interior decoration",
         github: "https://github.com/Joebim/Vlish",
         web: "https://joebim.github.io/Vlish",
         year: "2019",
