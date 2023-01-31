@@ -176,16 +176,16 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
     <div ref={navRef} className="contain w-full">
         <div id='intro' className="intro">
             {/* <div className="flex-auto justify-center items-center h-60 w-full"> */}
-             <h1 className="about-text text-9xl pt-96 font-bold">About Me</h1>
+             <h1 className="about-text text-9xl pt-96 font-extrabold">About Me</h1>
             {/* </div> */}
             
            {/* <VerticalLine/> */}
             <div ref={introRef1} className={`intro-one fade-in ${introOneVisibility ? "appear" : ""}`}>
-                <h2 className="text-left text-[85px] leading-[120px]">I'm a frontend developer and i'm based in Nigeria. I love to explore and create new things with passion for designs. Since the beginning of my journey, three years ago, I have worked on different projects and identified awesome web designs in different perspectives and views. </h2>
+                <h2 className="text-left text-[85px] leading-[120px]">As a frontend developer based in Nigeria, I bring passion and creativity to every project I work on. With three years of experience, I have honed my skills and gained a unique perspective on web design. My goal is to continuously push boundaries and create innovative designs.</h2>
                 <img src={lightBulb} alt=""></img>
             </div>
             <div ref={introRef2} className={`intro-two fade-in ${introTwoVisibility ? "appear" : ""}`}>
-                <h2 className="text-right text-[85px] leading-[120px]">I believe in the upmost beauty of things and how better they can be, from vector graphics to web, with respect to user interface and user experience.</h2>
+                <h2 className="text-right text-[85px] leading-[120px]">I strive to elevate the visual appeal and functionality of my designs. My philosophy is centered around the belief that every aspect of a website or application can be beautiful, intuitive, and user-friendly. Whether it's through vector graphics or reponsive 3D simplicity, my goal is to create a seamless and enjoyable experience for users.</h2>
                 <img src={rocket} alt=""></img>
             </div>
            {/* <VerticalLine/> */}

@@ -63,7 +63,7 @@ export default function Others() {
 return (
     <>  
     <div className="w-full text-center pt-[400px]">
-        <h1 className="text-9xl font-bold">Other Minimal Works</h1>
+        <h1 className="text-9xl font-extrabold">Other Minimal Works</h1>
     </div>
     
 

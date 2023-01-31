@@ -71,7 +71,7 @@ export default function Works(props) {
     return (
         <div id="works" className="works-contain w-full px-96 pt-56">
         <div className="w-full text-center py-60">
-            <h1 className="text-9xl font-bold">My Project Timeline</h1>
+            <h1 className="text-9xl font-extrabold">My Project Timeline</h1>
         </div>
         <AnimateButtonPoint/>
         <VerticalLine/>

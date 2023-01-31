@@ -9,7 +9,7 @@ export const lightTheme = {
     text: "#189e5b",
     headerImg: lightThemeImg,
     color: {
-        textAlt: "#000000",
+        textAlt: "#4c4c4c",
         textSecondary: "#189e5b",        
         navLinkHoverA: "#fdf7f7",
         navLinkHover: "#EE5645",
