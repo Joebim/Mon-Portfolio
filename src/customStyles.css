@@ -376,12 +376,6 @@ input[type="checkbox"]:checked ~ .bar .middle {
     height: 2000px;
 }
 
-.intro img {
-    text-align: center;
-    flex: 1.2;
-    width: 1000px;
-}
-
 .intro h2 {
     color: #e25d5d;
     /* margin: 150px; */
@@ -1248,12 +1242,7 @@ input[type="checkbox"]:checked ~ .bar .middle {
         margin: 0;
         padding-top: 40px;
     }
-     .intro img {
-         width: 100%;
-     }
-    
-
-    
+      
 
     .logos {
         padding: 50px;

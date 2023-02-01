@@ -12,7 +12,7 @@ export default function Services() {
         <div id="services" className="services w-full h-aut flex justify-center px-[200px]">
             <div className="service-card-contain w-3/4">
                 <div className="service-card flex flex-row w-full py-60 justify-between items-center">
-                    <div className="service-info-contain pr-[600px]">
+                    <div className="service-info-contain pr-0 md:pr-[600px]">
                         <h1 className="text-9xl pt-96 font-bold">What I Do</h1>
                         <p className="text-[75px] leading-[120px] py-24">I create creating interactive and visually appealing web designs that bring ideas to life and enhance the user experience.</p>
                     </div>
@@ -25,7 +25,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className="service-card flex flex-row-reverse py-60 w-full justify-between items-center">
-                    <div className="text-right service-info-contain pl-[600px]">
+                    <div className="text-right service-info-contain pr-0 md:pl-[600px]">
                         <h1 className="text-9xl pt-96 font-bold">I Design For You</h1>
                         <p className="text-[75px] leading-[120px] py-24">I design custom graphic content that meets your exact specifications and enhances your brand's visual identity.</p>
                     </div>

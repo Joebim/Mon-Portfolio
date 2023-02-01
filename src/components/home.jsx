@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import hamburger from "../assets/images/gg_menu-left.png"
 import logo from "../assets/images/Joseph.svg"
 import lightBulb from "../assets/images/lightBulb.png"
-import rocket from "../assets/images/rocket.png"
+import paperPlane from "../assets/images/paperplane.png"
 import Services from "./services"
 import Works from "./works";
 import Others from "./Others";
@@ -174,19 +174,19 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
 
 
     <div ref={navRef} className="contain w-full">
-        <div id='intro' className="intro">
-            {/* <div className="flex-auto justify-center items-center h-60 w-full"> */}
+        <div id='intro' className="intro flex flex-col items-center">
+            <div className="flex justify-center items-center w-full flex-[2]">
              <h1 className="about-text text-9xl pt-96 font-extrabold">About Me</h1>
-            {/* </div> */}
+            </div>
             
            {/* <VerticalLine/> */}
-            <div ref={introRef1} className={`intro-one fade-in ${introOneVisibility ? "appear" : ""}`}>
-                <h2 className="text-left text-[85px] leading-[120px]">As a frontend developer based in Nigeria, I bring passion and creativity to every project I work on. With three years of experience, I have honed my skills and gained a unique perspective on web design. My goal is to continuously push boundaries and create innovative designs.</h2>
-                <img src={lightBulb} alt=""></img>
+            <div ref={introRef1} className={`intro-one fade-in mt-[400px] flex-[8] ${introOneVisibility ? "appear" : ""}`}>
+                <h2 className="text-left text-[85px] leading-[120px] pr-0 md:pr-[700px]">As a frontend developer based in Nigeria, I bring passion and creativity to every project I work on. With three years of experience, I have honed my skills and gained a unique perspective on web design. My goal is to continuously push boundaries and create innovative designs.</h2>
+                <img src={lightBulb} className="" alt="" width="1300"></img>
             </div>
-            <div ref={introRef2} className={`intro-two fade-in ${introTwoVisibility ? "appear" : ""}`}>
-                <h2 className="text-right text-[85px] leading-[120px]">I strive to elevate the visual appeal and functionality of my designs. My philosophy is centered around the belief that every aspect of a website or application can be beautiful, intuitive, and user-friendly. Whether it's through vector graphics or reponsive 3D simplicity, my goal is to create a seamless and enjoyable experience for users.</h2>
-                <img src={rocket} alt=""></img>
+            <div ref={introRef2} className={`intro-two fade-in mt-[400px] flex-[8] ${introTwoVisibility ? "appear" : ""}`}>
+                <h2 className="text-right text-[85px] leading-[120px] pl-0 md:pl-[700px]">I strive to elevate the visual appeal and functionality of my designs. My philosophy is centered around the belief that every aspect of a website or application can be beautiful, intuitive, and user-friendly. Whether it's through vector graphics or reponsive 3D simplicity, my goal is to create a seamless and enjoyable experience for users.</h2>
+                <img src={paperPlane} className="" alt="" width="1300"></img>
             </div>
            {/* <VerticalLine/> */}
         </div>
