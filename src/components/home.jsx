@@ -53,7 +53,7 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
     delay: "0"
   });
 
-  let currentTheme = sessionStorage.getItem("theme") || "light";
+  let currentTheme = sessionStorage.getItem("theme") || "dark";
 
 
 // const darkMode = useContext(Theme)
