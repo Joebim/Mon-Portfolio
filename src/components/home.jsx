@@ -181,7 +181,7 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
             
            {/* <VerticalLine/> */}
             <div ref={introRef1} className={`intro-one fade-in mt-[400px] flex-[8] ${introOneVisibility ? "appear" : ""}`}>
-                <h2 className="text-left text-[85px] leading-[120px] pr-0 md:pr-[700px]">As a frontend developer based in Nigeria, I bring passion and creativity to every project I work on. With three years of experience, I have honed my skills and gained a unique perspective on web design. My goal is to continuously push boundaries and create innovative designs.</h2>
+                <h2 className="text-left text-[85px] leading-[120px] pr-0 md:pr-[700px]">As a frontend developer based in Nigeria, I bring passion and creativity to every project I work on. With years of experience, I have honed my skills and gained a unique perspective on web design. My goal is to continuously push boundaries and create innovative designs.</h2>
                 <img src={lightBulb} className="" alt="" width="1300"></img>
             </div>
             <div ref={introRef2} className={`intro-two fade-in mt-[400px] flex-[8] ${introTwoVisibility ? "appear" : ""}`}>
