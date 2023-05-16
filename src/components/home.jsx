@@ -21,7 +21,7 @@ import Footer from "./Footer";
 import GlobalStyles from './Globalstyles';
 import { useContext } from "react";
 import { Theme } from "./ThemeContext";
-import resume from "../assets/Joseph-Abimbola-Akinwole.pdf"
+import resume from "../assets/JOSEPH_AKINWOLE.pdf"
 import Sidebar from "./Sidebar";
 import { RiPaletteFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
@@ -73,7 +73,7 @@ const onPrintButtonClick = ()=> {
 
       let aLink = document.createElement('a')
       aLink.href = fileURL
-      aLink.download = "JOSEPH_AKINWOLE.pdf"
+      aLink.download = "Joseph-Akinwole-Abimbola.pdf"
       aLink.click()
     })
   })
