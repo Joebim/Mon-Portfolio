@@ -73,7 +73,7 @@ const onPrintButtonClick = ()=> {
 
       let aLink = document.createElement('a')
       aLink.href = fileURL
-      aLink.download = "Joseph-Akinwole-Abimbola.pdf"
+      aLink.download = "JOSEPH_AKINWOLE.pdf"
       aLink.click()
     })
   })
