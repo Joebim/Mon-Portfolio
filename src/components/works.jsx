@@ -18,6 +18,7 @@ export default function Works(props) {
     const [toggleCard4, setToggleCard4] = useState(false)
     const [toggleCard5, setToggleCard5] = useState(false)
     const [toggleCard6, setToggleCard6] = useState(false)
+    const [toggleCard7, setToggleCard7] = useState(false)
 
 
     // console.log('eval("toggleCard"+workDetails.id)', eval("toggleCard"+1))
@@ -65,8 +66,15 @@ export default function Works(props) {
         rootMargin: "0px 0px -250px 0px",
         delay: "350"
       });
-    
 
+      const { ref: text7, inView: text7Visibility} = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -250px 0px",
+        delay: "350"
+      });
+    
+// console.log('worksData', worksData)
 
     return (
         <div id="works" className="works-contain w-full px-96 pt-56">
@@ -106,7 +114,7 @@ export default function Works(props) {
                         {workDetails.status == "completed" ? <IconContext.Provider value={{ color: "white", size:"90"}}>
                             <div className="info-card-link flex flex-row w-[30%] justify-between items-center">
                             {workDetails.github == "featured" ? <div className="featured-btn w-[250px] h-[100px] rounded-[50px] flex justify-center items-center border-8 border-white text-white text-[40px] bg-transparent">Featured</div> : 
-                                <a href={workDetails.github} target="_blank" rel="noreferrer"><FaGithub/></a>}                                <a href="https://jsp.ng/" target="_blank" rel="noreferrer"><BsBoxArrowUpRight/></a>
+                                <a href={workDetails.github} target="_blank" rel="noreferrer"><FaGithub/></a>}                                <a href={workDetails.web} target="_blank" rel="noreferrer"><BsBoxArrowUpRight/></a>
                             </div>
                         </IconContext.Provider> : <div className="featured-btn w-[250px] h-[100px] rounded-[50px] flex justify-center items-center border-8 border-white text-white text-[40px] bg-transparent">In Progress</div>}
                         
