@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mon-Portfolio/static/css/main.608e32ef.css",
-    "main.js": "/Mon-Portfolio/static/js/main.2f6f0e47.js",
+    "main.js": "/Mon-Portfolio/static/js/main.6d930abf.js",
     "static/js/787.595b4aa7.chunk.js": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js",
     "static/media/lightBulb.png": "/Mon-Portfolio/static/media/lightBulb.414a0a928daa096824b2.png",
     "static/media/JSPDark.png": "/Mon-Portfolio/static/media/JSPDark.f860505a1094e076514d.png",
@@ -11,7 +11,6 @@
     "static/media/vlishLight.jpg": "/Mon-Portfolio/static/media/vlishLight.2f44f12b2b592fc1c031.jpg",
     "static/media/cors.png": "/Mon-Portfolio/static/media/cors.434c3a01a4857c765caa.png",
     "static/media/vlishDark.jpg": "/Mon-Portfolio/static/media/vlishDark.3eb231dbab7c9f1a700e.jpg",
-    "static/media/Joseph-Abimbola-Akinwole.pdf": "/Mon-Portfolio/static/media/Joseph-Abimbola-Akinwole.82172063bd8a359d4e13.pdf",
     "static/media/grexoLight.jpg": "/Mon-Portfolio/static/media/grexoLight.320fbf923057d8068f3e.jpg",
     "static/media/spirqBackgroundLight.jpg": "/Mon-Portfolio/static/media/spirqBackgroundLight.af36a76b76b289a47657.jpg",
     "static/media/spirqBackgroundDark.jpg": "/Mon-Portfolio/static/media/spirqBackgroundDark.3a0fc535e9a0f6a062f4.jpg",
@@ -19,6 +18,7 @@
     "static/media/Joseph.svg": "/Mon-Portfolio/static/media/Joseph.727169a2174b672d842f1569d99b412b.svg",
     "static/media/fontasie.png": "/Mon-Portfolio/static/media/fontasie.d06699bb58d0cccb500c.png",
     "static/media/Tromi.svg": "/Mon-Portfolio/static/media/Tromi.771ee12c08291e7af1c1245b983d5033.svg",
+    "static/media/JOSEPH_AKINWOLE.pdf": "/Mon-Portfolio/static/media/JOSEPH_AKINWOLE.1c8000271682b558759c.pdf",
     "static/media/backgroundBlue.png": "/Mon-Portfolio/static/media/backgroundBlue.6ecb7a04f1891a411614.png",
     "static/media/backgroundDark.png": "/Mon-Portfolio/static/media/backgroundDark.3e015737c370475570d5.png",
     "static/media/Stradazzle pink white.svg": "/Mon-Portfolio/static/media/Stradazzle pink white.34fa03168dcba480ab84f1620e6a385a.svg",
@@ -50,11 +50,11 @@
     "static/media/Parlo.svg": "/Mon-Portfolio/static/media/Parlo.8f91f1c7f84c47d0d6e57fd9fd969725.svg",
     "index.html": "/Mon-Portfolio/index.html",
     "main.608e32ef.css.map": "/Mon-Portfolio/static/css/main.608e32ef.css.map",
-    "main.2f6f0e47.js.map": "/Mon-Portfolio/static/js/main.2f6f0e47.js.map",
+    "main.6d930abf.js.map": "/Mon-Portfolio/static/js/main.6d930abf.js.map",
     "787.595b4aa7.chunk.js.map": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.608e32ef.css",
-    "static/js/main.2f6f0e47.js"
+    "static/js/main.6d930abf.js"
   ]
 }
