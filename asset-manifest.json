@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Mon-Portfolio/static/css/main.608e32ef.css",
-    "main.js": "/Mon-Portfolio/static/js/main.032dc812.js",
+    "main.css": "/Mon-Portfolio/static/css/main.e177e3a7.css",
+    "main.js": "/Mon-Portfolio/static/js/main.9174054b.js",
     "static/js/787.595b4aa7.chunk.js": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js",
     "static/media/lightBulb.png": "/Mon-Portfolio/static/media/lightBulb.414a0a928daa096824b2.png",
     "static/media/Joseph Akinwole Abimbola define.pdf": "/Mon-Portfolio/static/media/Joseph Akinwole Abimbola define.c7637fd2a2bc9e817a0d.pdf",
@@ -15,6 +15,7 @@
     "static/media/grexoLight.jpg": "/Mon-Portfolio/static/media/grexoLight.320fbf923057d8068f3e.jpg",
     "static/media/spirqBackgroundLight.jpg": "/Mon-Portfolio/static/media/spirqBackgroundLight.af36a76b76b289a47657.jpg",
     "static/media/spirqBackgroundDark.jpg": "/Mon-Portfolio/static/media/spirqBackgroundDark.3a0fc535e9a0f6a062f4.jpg",
+    "static/media/glimere.png": "/Mon-Portfolio/static/media/glimere.081a1fe02cfd0d284d6c.png",
     "static/media/grexoDark.jpg": "/Mon-Portfolio/static/media/grexoDark.3b567519ab44b67c6e49.jpg",
     "static/media/Joseph.svg": "/Mon-Portfolio/static/media/Joseph.727169a2174b672d842f1569d99b412b.svg",
     "static/media/fontasie.png": "/Mon-Portfolio/static/media/fontasie.d06699bb58d0cccb500c.png",
@@ -24,6 +25,7 @@
     "static/media/Stradazzle pink white.svg": "/Mon-Portfolio/static/media/Stradazzle pink white.34fa03168dcba480ab84f1620e6a385a.svg",
     "static/media/backgroundLight.png": "/Mon-Portfolio/static/media/backgroundLight.262f6c2695a573cfbb1a.png",
     "static/media/JSPLight.png": "/Mon-Portfolio/static/media/JSPLight.2e7d891382ea76ff157e.png",
+    "static/media/dashboard.png": "/Mon-Portfolio/static/media/dashboard.8e8505398bf34ea0b4d0.png",
     "static/media/dribbble.png": "/Mon-Portfolio/static/media/dribbble.e19f327a4611523ad45c.png",
     "static/media/instagram.png": "/Mon-Portfolio/static/media/instagram.cdaae8e9e7cd76e08247.png",
     "static/media/boonieLight.png": "/Mon-Portfolio/static/media/boonieLight.20f90ae742f29a3128d5.png",
@@ -50,12 +52,12 @@
     "static/media/Dimtec.svg": "/Mon-Portfolio/static/media/Dimtec.7eaf38b56fb9dd6f70244e385f1c3bee.svg",
     "static/media/Parlo.svg": "/Mon-Portfolio/static/media/Parlo.8f91f1c7f84c47d0d6e57fd9fd969725.svg",
     "index.html": "/Mon-Portfolio/index.html",
-    "main.608e32ef.css.map": "/Mon-Portfolio/static/css/main.608e32ef.css.map",
-    "main.032dc812.js.map": "/Mon-Portfolio/static/js/main.032dc812.js.map",
+    "main.e177e3a7.css.map": "/Mon-Portfolio/static/css/main.e177e3a7.css.map",
+    "main.9174054b.js.map": "/Mon-Portfolio/static/js/main.9174054b.js.map",
     "787.595b4aa7.chunk.js.map": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.608e32ef.css",
-    "static/js/main.032dc812.js"
+    "static/css/main.e177e3a7.css",
+    "static/js/main.9174054b.js"
   ]
 }
