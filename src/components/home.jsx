@@ -154,7 +154,7 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
 
             
                 <h4>I'm Joseph</h4>
-                <h2>Designer & Fullstack Developer</h2>
+                <h2>Designer & Frontend Developer</h2>
                 <h3>I code simple designs and make them work beautifully.</h3>
 
                 <div className="pt-[150px] pb-[100px] h-[500px] flex justify-center">
