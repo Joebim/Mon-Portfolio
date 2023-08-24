@@ -1,6 +1,33 @@
 export const worksData = [
     {
         id: 1,
+        name: "Products Dashboard",
+        innerInfo: "Data visualizaation dashboard UI",
+        mainInfo: "Management of products operations including, orders, profit tracking, inventory and customer interactions",
+        github: "https://github.com/Joebim/assessment-dashboard",
+        web: "",
+        year: "2023",
+        position: "left",
+        // imageDark: "bg-[url('./assets/images/glimere.png')]",
+        image: "bg-[url('./assets/images/dashboardUI.png')]",
+        status: "completed",
+        framework: [
+            {
+                id: 1,
+                name: "React",
+            },
+            {
+                id: 2,
+                name: "NextJs",
+            },
+            {
+                id: 3,
+                name: "ContextApi",
+            }
+        ]
+    },
+    {
+        id: 2,
         name: "Glimere",
         innerInfo: "Fashion tech product page",
         mainInfo: "Glimere is a groundbreaking app crafted for fashion enthusiasts, fostering connection within a vibrant social platform that amplifies personal style",
@@ -27,7 +54,7 @@ export const worksData = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         name: "Analytics Dashboard",
         innerInfo: "Dashboard UI for data visualization and analytics",
         mainInfo: "Analytics Dashboard is a dashboard UI made with Angular and Material UI for data visualization and analytics",
@@ -54,7 +81,7 @@ export const worksData = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         name: "Fontasie",
         innerInfo: "Create stunning text animations with desired fonts, customize your style and feel the visuals",
         mainInfo: "Fontasie is a text animation tool that leverages on code templates to create stunning text animations",
@@ -81,7 +108,7 @@ export const worksData = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         name: "CORS",
         innerInfo: "Cleaning service brand website ",
         mainInfo: "Core OutReach Services(CORS) is a cleaning service brand that offers cleaning services to homes and offices.",
@@ -108,7 +135,7 @@ export const worksData = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         name: "JSP",
         innerInfo: "Everything you need to manage your school",
         mainInfo: "JDLab School Portal(JSP) is a state-of-the-art management portal that offers all the features you need for your institution. It is a fast clean interface with easy integration",
@@ -136,7 +163,7 @@ export const worksData = [
     },
 
     {
-        id: 6,
+        id: 7,
         name: "Spirq",
         innerInfo: "Dazzle the world with your opinion with free speech",
         mainInfo: "Spirq is an interactive community that allow free opinion and speech, giving opportunity to thriving trends and events",

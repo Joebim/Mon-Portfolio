@@ -21,7 +21,7 @@ import Footer from "./Footer";
 import GlobalStyles from './Globalstyles';
 import { useContext } from "react";
 import { Theme } from "./ThemeContext";
-import resume from "../assets/Joseph Akinwole Abimbola new.pdf"
+import resume from "../assets/Joseph_Akinwole_Abimbola_5.pdf"
 import Sidebar from "./Sidebar";
 import { RiPaletteFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
@@ -53,7 +53,7 @@ const { ref: introRef1, inView: introOneVisibility} = useInView({
     delay: "0"
   });
 
-  let currentTheme = sessionStorage.getItem("theme") || "dark";
+  let currentTheme = sessionStorage.getItem("theme") || "light";
 
 
 // const darkMode = useContext(Theme)
@@ -154,7 +154,7 @@ const themeIndicateColor = theme == "light" ? "#189e5b" : "#ffffff"
 
             
                 <h4>I'm Joseph</h4>
-                <h2>Designer & Fullstack Developer</h2>
+                <h2>Frontend Developer</h2>
                 <h3>I code simple designs and make them work beautifully.</h3>
 
                 <div className="pt-[150px] pb-[100px] h-[500px] flex justify-center">
