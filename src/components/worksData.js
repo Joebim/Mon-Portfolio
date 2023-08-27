@@ -5,7 +5,7 @@ export const worksData = [
         innerInfo: "Data visualizaation dashboard UI",
         mainInfo: "Management of products operations including, orders, profit tracking, inventory and customer interactions",
         github: "https://github.com/Joebim/assessment-dashboard",
-        web: "",
+        web: "https://joebim.github.io/assessment-dashboard/",
         year: "2023",
         position: "left",
         // imageDark: "bg-[url('./assets/images/glimere.png')]",
