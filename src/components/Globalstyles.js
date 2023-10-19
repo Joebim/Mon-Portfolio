@@ -24,6 +24,8 @@ const GlobalStyles = createGlobalStyle`
         color: white;
     }
 
+   
+
     .checkout {
         color: ${({ theme }) => theme.color.textSecondary};
     }
@@ -198,13 +200,8 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    .card-right:hover {
-        box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
-    }
 
-    .card-left:hover {
-        box-shadow: 0px 0px 60px ${({ theme }) => theme.color.connectCardShadow};
-    }
+
 
     .inner {
         background-color: ${({ theme }) => theme.color.inner};
@@ -258,6 +255,10 @@ const GlobalStyles = createGlobalStyle`
 
     .work-year-contain h2 {
         color: ${({ theme }) => theme.color.workYear};
+    }
+
+    .info-card-text {
+        color: ${({ theme }) => theme.color.workYear};     
     }
 
     .featured-btn {

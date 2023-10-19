@@ -21,18 +21,18 @@ export const slides1 = [
     {image: css,},
     {image: javascript,},
     {image: bootstrap,},
-    {image: figma,},
     {image: nodejs,},
     {image: vue,},
     {image: sql,},
     {image: react,},
-    {image: angular,}
+    {image: angular,},
+    {image: virtualStudio,},
 ]
 
 export const slides2 = [
     {image: illustrator,},
-    {image: virtualStudio,},
     {image: adobexd,},
     {image: invision,},
     {image: photoshop,},
+    {image: figma,},
 ]
