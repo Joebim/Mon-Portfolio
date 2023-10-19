@@ -262,6 +262,10 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .featured-btn {
+        color: ${({ theme }) => theme.color.workYear};     
+    }
+
+    .featured-btn {
         border-color: ${({ theme }) => theme.text};
     }
 

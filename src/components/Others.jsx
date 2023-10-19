@@ -1,9 +1,3 @@
-import tromi from "../assets/images/Tromi.svg"
-import parlo from "../assets/images/Parlo.svg"
-import stradazzle from "../assets/images/Stradazzle pink white.svg"
-// import trendVida from "../assets/images/Trend vida logo.svg"
-import spirq from "../assets/images/Spirq Light.svg"
-import dimtec from "../assets/images/Dimtec.svg"
 import { useState } from "react"
 import { useInView } from 'react-intersection-observer';
 import { AnimateButtonPoint } from "./AnimateButton"

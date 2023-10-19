@@ -1,7 +1,6 @@
 import { React, useState, useEffect} from "react"
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
-import hamburger from "../assets/images/gg_menu-left.png"
 import logo from "../assets/images/Joseph.svg"
 import lightBulb from "../assets/images/lightBulb.png"
 import paperPlane from "../assets/images/paperplane.png"
