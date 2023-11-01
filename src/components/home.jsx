@@ -20,7 +20,7 @@ import Footer from "./Footer";
 import GlobalStyles from './Globalstyles';
 import { useContext } from "react";
 import { Theme } from "./ThemeContext";
-import resume from "../assets/Joseph_Akinwole_Abimbola_5.pdf"
+import resume from "../assets/Joseph_Akinwol_Abimbola_Abuja.pdf"
 import Sidebar from "./Sidebar";
 import { RiPaletteFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
