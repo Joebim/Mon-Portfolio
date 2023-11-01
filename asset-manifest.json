@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/Mon-Portfolio/static/css/main.fe0d228f.css",
-    "main.js": "/Mon-Portfolio/static/js/main.f43369f9.js",
+    "main.js": "/Mon-Portfolio/static/js/main.13cbaee3.js",
     "static/js/787.595b4aa7.chunk.js": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js",
     "static/media/lightBulb.png": "/Mon-Portfolio/static/media/lightBulb.414a0a928daa096824b2.png",
     "static/media/paperplane.png": "/Mon-Portfolio/static/media/paperplane.a403d7155e78af3ca556.png",
-    "static/media/Joseph_Akinwol_Abimbola_Abuja.pdf": "/Mon-Portfolio/static/media/Joseph_Akinwol_Abimbola_Abuja.aaa492c4a493308b115a.pdf",
+    "static/media/Joseph_Akinwol_Abimbola_Abuja.pdf": "/Mon-Portfolio/static/media/Joseph_Akinwol_Abimbola_Abuja.d68bf20a86aeefee9dfb.pdf",
     "static/media/cors.png": "/Mon-Portfolio/static/media/cors.434c3a01a4857c765caa.png",
     "static/media/spirqBackgroundLight.jpg": "/Mon-Portfolio/static/media/spirqBackgroundLight.af36a76b76b289a47657.jpg",
     "static/media/interiorui.png": "/Mon-Portfolio/static/media/interiorui.b1a68af955e7c703e60b.png",
@@ -40,11 +40,11 @@
     "static/media/icons8-vue-js.svg": "/Mon-Portfolio/static/media/icons8-vue-js.c4e36e521b8ca63b663894362838613a.svg",
     "index.html": "/Mon-Portfolio/index.html",
     "main.fe0d228f.css.map": "/Mon-Portfolio/static/css/main.fe0d228f.css.map",
-    "main.f43369f9.js.map": "/Mon-Portfolio/static/js/main.f43369f9.js.map",
+    "main.13cbaee3.js.map": "/Mon-Portfolio/static/js/main.13cbaee3.js.map",
     "787.595b4aa7.chunk.js.map": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe0d228f.css",
-    "static/js/main.f43369f9.js"
+    "static/js/main.13cbaee3.js"
   ]
 }
