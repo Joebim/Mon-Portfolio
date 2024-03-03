@@ -161,7 +161,7 @@ export const worksData = [
         innerInfo: "Everything you need to manage your school",
         mainInfo: "JDLab School Portal(JSP) is a state-of-the-art management portal that offers all the features you need for your institution. It is a fast clean interface with easy integration",
         github: "featured",
-        web: "https://jsp.ng/",
+        web: "https://jspnigeria.com/about",
         year: "2021",
         position: "right",
         image: "bg-[url('./assets/images/JSPLight.png')]",
