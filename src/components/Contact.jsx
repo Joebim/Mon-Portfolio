@@ -57,7 +57,7 @@ console.log('message', message)
       <div className="connect-card text-center w-[40%] h-auto rounded-[100px] ease duration-700 p-32 flex flex-col items-center gap-[50px]" onSubmit={handleSubmit}>
 
             <div className="section-heading">
-            <h2 className="text-[80px] pb-24 font-['overlock'] font-extrabold">Want to work on collaborate?</h2>
+            <h2 className="text-[80px] pb-24 font-['overlock'] font-extrabold">Want to collaborate?</h2>
             <p className="text-7xl pb-[100px] leading-[100px] font-bold text-center">Throw me your ideas and let me see how i can be of assistance.</p>
             </div>
 
