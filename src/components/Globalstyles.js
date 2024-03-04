@@ -241,6 +241,10 @@ const GlobalStyles = createGlobalStyle`
         color: ${({ theme }) => theme.color.textAlt};
     }
 
+    .section-heading h4 {
+        color: ${({ theme }) => theme.color.textAlt};
+    }
+
     .work-info-header {
         color: ${({ theme }) => theme.text};
     }
@@ -280,6 +284,11 @@ const GlobalStyles = createGlobalStyle`
 
     .end {
         background-color: ${({ theme }) => theme.color.endBg};
+    }
+
+    input, textarea {
+        background-color: ${({ theme }) => theme.color.endBg};
+        color: ${({ theme }) => theme.text};
     }
     
     .connect-button {

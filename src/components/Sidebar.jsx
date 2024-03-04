@@ -32,9 +32,9 @@ export default function Sidebar(props) {
             <Link to="intro" smooth={true} offset={-2009} duration={500} className='w-3/4'><li className='sidebar-link text-[70px] text-white text-center mb-14 rounded-[40px] cursor-pointer w-full'>About</li></Link>
             {/* <Link to="services"className='w-3/4'><li className='sidebar-link text-[70px] text-white text-center mb-14 rounded-[40px] cursor-pointer w-full'>Services</li></Link> */}
             <Link to="works" smooth={true} offset={-7500} duration={500} className='w-3/4'><li className='sidebar-link text-[70px] text-white text-center mb-14 rounded-[40px] cursor-pointer w-full'>Works</li></Link>
-               <Link2 to="/"className='w-full'>
+               <a href="https://joebim.github.io/Web-UI/" target="_blank" rel='noreferrer' className='w-full'>
                     <li className='sidebar-gallery text-[70px] text-white text-center mb-14 mt-96 rounded-[40px] h-96 cursor-pointer flex items-center justify-center w-full'>Gallery</li>
-                </Link2>
+                </a>
 
             </ul>
         </nav>
