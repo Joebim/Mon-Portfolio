@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
+import { useFormspark } from "@formspark/use-formspark";
+
+
+const FORMSPARK_FORM_ID = "jdCkYT7Gf";
 
 const Contact = () => {
+
+  const [submit, submitting] = useFormspark({
+    formId: FORMSPARK_FORM_ID,
+  });
+
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -15,10 +24,12 @@ const Contact = () => {
   const messageRegex = /^[a-zA-Zа-яА-ЯёЁіІїЇєЄ0-9., \-'_]+$/;
 
   // Function to handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const ContactMe = `${name} - ${email} - ${message}`
     if (nameValid && emailValid && messageValid) {
-      // Perform form submission or any other action here
+      await submit({ContactMe});
+      alert("Form submitted");
       console.log('Form submitted successfully');
     } else {
       console.log('Form submission failed - validation errors');
@@ -38,6 +49,7 @@ const Contact = () => {
     setEmail(value);
     setEmailValid(emailRegex.test(value));
   };
+
 
   // Function to handle input change and validation for message field
   const handleMessageChange = (e) => {
@@ -61,7 +73,8 @@ console.log('message', message)
             <p className="text-7xl pb-[100px] leading-[100px] font-bold text-center">Throw me your ideas and let me see how i can be of assistance.</p>
             </div>
 
-            <div className="inputField">
+            <form  onSubmit={handleSubmit} className='w-full flex flex-col items-center gap-[50px]'>
+              <div className="inputField">
               <input
                 type="text"
                 name="name"
@@ -114,6 +127,9 @@ console.log('message', message)
                 Send a message
               </button>
             </div>
+            </form>
+
+            
 
       </div>
     </div>
