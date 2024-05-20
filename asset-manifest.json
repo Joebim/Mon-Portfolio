@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mon-Portfolio/static/css/main.9a43b81d.css",
-    "main.js": "/Mon-Portfolio/static/js/main.7d072fce.js",
+    "main.js": "/Mon-Portfolio/static/js/main.0b6b85e6.js",
     "static/js/787.595b4aa7.chunk.js": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js",
     "static/media/lightBulb.png": "/Mon-Portfolio/static/media/lightBulb.414a0a928daa096824b2.png",
     "static/media/paperplane.png": "/Mon-Portfolio/static/media/paperplane.a403d7155e78af3ca556.png",
@@ -12,11 +12,11 @@
     "static/media/Joseph.svg": "/Mon-Portfolio/static/media/Joseph.727169a2174b672d842f1569d99b412b.svg",
     "static/media/fontasie.png": "/Mon-Portfolio/static/media/fontasie.d06699bb58d0cccb500c.png",
     "static/media/dashboardUI.png": "/Mon-Portfolio/static/media/dashboardUI.5761c89783f1cd03e304.png",
+    "static/media/Joseph_Akinwole_Abimbola-revised.pdf": "/Mon-Portfolio/static/media/Joseph_Akinwole_Abimbola-revised.e8e4e282e1ff567ae366.pdf",
     "static/media/backgroundBlue.png": "/Mon-Portfolio/static/media/backgroundBlue.6ecb7a04f1891a411614.png",
     "static/media/backgroundDark.png": "/Mon-Portfolio/static/media/backgroundDark.3e015737c370475570d5.png",
     "static/media/backgroundLight.png": "/Mon-Portfolio/static/media/backgroundLight.262f6c2695a573cfbb1a.png",
     "static/media/JSPLight.png": "/Mon-Portfolio/static/media/JSPLight.2e7d891382ea76ff157e.png",
-    "static/media/Joseph_Akinwole_Abimbola.pdf": "/Mon-Portfolio/static/media/Joseph_Akinwole_Abimbola.3605283f4c0d194b902d.pdf",
     "static/media/dashboard.png": "/Mon-Portfolio/static/media/dashboard.8e8505398bf34ea0b4d0.png",
     "static/media/dribbble.png": "/Mon-Portfolio/static/media/dribbble.e19f327a4611523ad45c.png",
     "static/media/instagram.png": "/Mon-Portfolio/static/media/instagram.cdaae8e9e7cd76e08247.png",
@@ -40,11 +40,11 @@
     "static/media/icons8-vue-js.svg": "/Mon-Portfolio/static/media/icons8-vue-js.c4e36e521b8ca63b663894362838613a.svg",
     "index.html": "/Mon-Portfolio/index.html",
     "main.9a43b81d.css.map": "/Mon-Portfolio/static/css/main.9a43b81d.css.map",
-    "main.7d072fce.js.map": "/Mon-Portfolio/static/js/main.7d072fce.js.map",
+    "main.0b6b85e6.js.map": "/Mon-Portfolio/static/js/main.0b6b85e6.js.map",
     "787.595b4aa7.chunk.js.map": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a43b81d.css",
-    "static/js/main.7d072fce.js"
+    "static/js/main.0b6b85e6.js"
   ]
 }
