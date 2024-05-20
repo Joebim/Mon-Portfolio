@@ -38,6 +38,7 @@ export default function Home(props) {
     rootMargin: "0px 0px -200px 0px",
     delay: "500"
   });
+  
 
   const { ref: introRef2, inView: introTwoVisibility } = useInView({
     /* Optional options */
