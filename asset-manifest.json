@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mon-Portfolio/static/css/main.8facb16c.css",
-    "main.js": "/Mon-Portfolio/static/js/main.7933eaac.js",
+    "main.js": "/Mon-Portfolio/static/js/main.e9ea15e1.js",
     "static/js/787.595b4aa7.chunk.js": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js",
     "static/media/lightBulb.png": "/Mon-Portfolio/static/media/lightBulb.414a0a928daa096824b2.png",
     "static/media/paperplane.png": "/Mon-Portfolio/static/media/paperplane.a403d7155e78af3ca556.png",
@@ -11,8 +11,8 @@
     "static/media/interiorui.png": "/Mon-Portfolio/static/media/interiorui.b1a68af955e7c703e60b.png",
     "static/media/Joseph.svg": "/Mon-Portfolio/static/media/Joseph.727169a2174b672d842f1569d99b412b.svg",
     "static/media/fontasie.png": "/Mon-Portfolio/static/media/fontasie.d06699bb58d0cccb500c.png",
+    "static/media/Joseph_Akinwole_Abimbola-Software-Engineer.pdf": "/Mon-Portfolio/static/media/Joseph_Akinwole_Abimbola-Software-Engineer.54b099c78b10676d1bed.pdf",
     "static/media/dashboardUI.png": "/Mon-Portfolio/static/media/dashboardUI.5761c89783f1cd03e304.png",
-    "static/media/Joseph_Akinwole_Abimbola-revised.pdf": "/Mon-Portfolio/static/media/Joseph_Akinwole_Abimbola-revised.e8e4e282e1ff567ae366.pdf",
     "static/media/pugabull.png": "/Mon-Portfolio/static/media/pugabull.1c9d1a56e86939b540e0.png",
     "static/media/backgroundBlue.png": "/Mon-Portfolio/static/media/backgroundBlue.6ecb7a04f1891a411614.png",
     "static/media/backgroundDark.png": "/Mon-Portfolio/static/media/backgroundDark.3e015737c370475570d5.png",
@@ -41,11 +41,11 @@
     "static/media/icons8-vue-js.svg": "/Mon-Portfolio/static/media/icons8-vue-js.c4e36e521b8ca63b663894362838613a.svg",
     "index.html": "/Mon-Portfolio/index.html",
     "main.8facb16c.css.map": "/Mon-Portfolio/static/css/main.8facb16c.css.map",
-    "main.7933eaac.js.map": "/Mon-Portfolio/static/js/main.7933eaac.js.map",
+    "main.e9ea15e1.js.map": "/Mon-Portfolio/static/js/main.e9ea15e1.js.map",
     "787.595b4aa7.chunk.js.map": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8facb16c.css",
-    "static/js/main.7933eaac.js"
+    "static/js/main.e9ea15e1.js"
   ]
 }
