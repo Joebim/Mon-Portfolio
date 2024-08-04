@@ -3,7 +3,7 @@ export const worksData = [
         id: 1,
         name: "Devlinks",
         innerInfo: "Link Sharing App",
-        mainInfo: "A place for deveopers to store ane share profiles and important links",
+        mainInfo: "A place for developers to store links and share profiles",
         github: "https://github.com/Joebim/hng_link_sharing_app",
         web: "https://hng-link-sharing-app.netlify.app/",
         year: "2024",

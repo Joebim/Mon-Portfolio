@@ -161,7 +161,7 @@ input[type="checkbox"]:checked~.bar .middle {
     position: relative;
     height: auto;
     width: 100%;
-    padding-top: 330px;
+    padding-top: 200px;
     justify-content: center;
 }
 
@@ -169,7 +169,7 @@ input[type="checkbox"]:checked~.bar .middle {
     padding-top: 460px;
     padding-left: 18%;
     padding-right: 18%;
-    font-size: 180px;
+    font-size: 250px;
     font-weight: bolder;
     color: #c74829;
     font-family: 'League Spartan';
@@ -179,7 +179,7 @@ input[type="checkbox"]:checked~.bar .middle {
     padding-top: 70px;
     padding-left: 18%;
     padding-right: 18%;
-    font-size: 90px;
+    font-size: 150px;
     font-weight: 600;
     color: #da5533;
 }
@@ -1177,14 +1177,14 @@ input[type="checkbox"]:checked~.bar .middle {
         padding-top: 300px;
         padding-left: 18%;
         padding-right: 18%;
-        font-size: 180px;
+        font-size: 200px;
     }
 
     .profile h2 {
         padding-top: 70px;
         padding-left: 18%;
         padding-right: 18%;
-        font-size: 90px;
+        font-size: 150px;
     }
 
     .profile h3 {

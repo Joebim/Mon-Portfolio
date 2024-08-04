@@ -54,7 +54,7 @@ export default function Home(props) {
     delay: "0"
   });
 
-  let currentTheme = sessionStorage.getItem("theme") || "light";
+  let currentTheme = sessionStorage.getItem("theme") || "dark";
 
 
   // const darkMode = useContext(Theme)
@@ -154,9 +154,9 @@ export default function Home(props) {
             <div className="profile">
 
 
-              <h4>I'm Joseph</h4>
-              <h2>Frontend Developer</h2>
-              <h3>I code simple designs and make them work beautifully.</h3>
+              <h4 className="">I'm Joseph</h4>
+              <h2 className="text-center leading-[150px] lsm:eading-[120px]">Fullstack Developer<br/><span className="text-[70px]">(With design experience)</span></h2>
+              <h3 className="">I code simple designs and make them work beautifully.</h3>
 
               <div className="pt-[150px] pb-[100px] h-[500px] flex justify-center">
                 <AnimateButtonPrimary />
@@ -186,7 +186,7 @@ export default function Home(props) {
               <img src={lightBulb} className="" alt="" width="1300"></img>
             </div>
             <div ref={introRef2} className={`intro-two fade-in mt-[400px] flex-[8] ${introTwoVisibility ? "appear" : ""}`}>
-              <h2 className="text-right text-[85px] leading-[120px] pl-0 md:pl-[700px]">I strive to elevate the visual appeal and functionality of my designs. My philosophy is centered around the belief that every aspect of a website or application can be beautiful, intuitive, and user-friendly. Whether it's through vector graphics or reponsive 3D simplicity, my goal is to create a seamless and enjoyable experience for users.</h2>
+              <h2 className="text-right text-[85px] leading-[120px] pl-0 md:pl-[700px]">I strive to elevate the visual appeal and functionality in my implementation. My philosophy is centered around the belief that every aspect of a website or application can be beautiful, intuitive, and user-friendly. Whether it's through vector graphics or reponsive 3D simplicity, my goal is to create a seamless and enjoyable experience for users.</h2>
               <img src={paperPlane} className="" alt="" width="1300"></img>
             </div>
             {/* <VerticalLine/> */}
