@@ -21,12 +21,11 @@ export default function Works(props) {
     const [toggleCard7, setToggleCard7] = useState(false)
     const [toggleCard8, setToggleCard8] = useState(false)
     const [toggleCard9, setToggleCard9] = useState(false)
-
+    const [toggleCard10, setToggleCard10] = useState(false)
+    const [toggleCard11, setToggleCard911] = useState(false)
 
 
     // console.log('eval("toggleCard"+workDetails.id)', eval("toggleCard"+1))
-
-
 
     const { ref: text1, inView: text1Visibility } = useInView({
         /* Optional options */
@@ -87,6 +86,20 @@ export default function Works(props) {
 
 
     const { ref: text9, inView: text9Visibility } = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -250px 0px",
+        delay: "350"
+    });
+
+    const { ref: text10, inView: text10Visibility } = useInView({
+        /* Optional options */
+        threshold: 0,
+        rootMargin: "0px 0px -250px 0px",
+        delay: "350"
+    });
+
+    const { ref: text11, inView: text11Visibility } = useInView({
         /* Optional options */
         threshold: 0,
         rootMargin: "0px 0px -250px 0px",

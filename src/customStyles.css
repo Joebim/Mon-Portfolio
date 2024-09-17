@@ -161,7 +161,7 @@ input[type="checkbox"]:checked~.bar .middle {
     position: relative;
     height: auto;
     width: 100%;
-    padding-top: 330px;
+    padding-top: 200px;
     justify-content: center;
 }
 
@@ -176,12 +176,10 @@ input[type="checkbox"]:checked~.bar .middle {
 }
 
 .profile h2 {
-    padding-top: 70px;
-    padding-left: 18%;
-    padding-right: 18%;
-    font-size: 90px;
-    font-weight: 600;
     color: #da5533;
+    font-size: 150px;
+    font-weight: 600;
+    padding-top: 70px;
 }
 
 .profile h3 {
@@ -1181,10 +1179,8 @@ input[type="checkbox"]:checked~.bar .middle {
     }
 
     .profile h2 {
+        font-size: 150px;
         padding-top: 70px;
-        padding-left: 18%;
-        padding-right: 18%;
-        font-size: 90px;
     }
 
     .profile h3 {

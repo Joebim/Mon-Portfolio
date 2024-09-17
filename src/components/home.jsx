@@ -20,7 +20,7 @@ import Footer from "./Footer";
 import GlobalStyles from './Globalstyles';
 import { useContext } from "react";
 import { Theme } from "./ThemeContext";
-import resume from "../assets/Joseph_Akinwole_Abimbola-revised.pdf"
+import resume from "../assets/Joseph-Abimbola-Akinwole-5.pdf"
 import Sidebar from "./Sidebar";
 import { RiPaletteFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
@@ -155,17 +155,14 @@ export default function Home(props) {
 
 
               <h4>I'm Joseph</h4>
-              <h2>Frontend Developer</h2>
+              <h2 className="text-center leading-[150px] lsm:eading-[120px]">Frontend Engineer
+                <br></br><span className="text-[70px]">(With design experience)</span>
+              </h2>
               <h3>I code simple designs and make them work beautifully.</h3>
 
               <div className="pt-[150px] pb-[100px] h-[500px] flex justify-center">
                 <AnimateButtonPrimary />
               </div>
-
-
-              {/* <div className="profile-pic">
-                        <img src="images/josey.png" alt="" height="1000">
-                    </div> */}
 
             </div>
 
