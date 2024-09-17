@@ -54,7 +54,7 @@ export default function Home(props) {
     delay: "0"
   });
 
-  let currentTheme = sessionStorage.getItem("theme") || "light";
+  let currentTheme = sessionStorage.getItem("theme") || "dark";
 
 
   // const darkMode = useContext(Theme)
