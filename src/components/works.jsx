@@ -126,7 +126,7 @@ export default function Works(props) {
                                 <h2 ref={eval("text" + workDetails.id)} className={`text-[150px] font-bold ${eval("text" + workDetails.id + "Visibility") ? "text-animate" : ""}`}>{workDetails.year}</h2>
                             </div>
                             <div className={`card-${workDetails.position} flex-[5_5_0%]  ${eval("toggleCard" + workDetails.id) ? "show" : ""}`} id="card-two" onClick={() => { eval("setToggleCard" + workDetails.id)(!eval("toggleCard" + workDetails.id)) }}>
-                                <div className={`card-contain${workDetails.position === "left" ? "-left flex-row" : " flex-row-reverse"} ${eval("toggleCard" + workDetails.id) ? "show" : ""}`}>
+                                <div className={`card-contain${workDetails.position === "left" ? "-left flex-row" : " flex-row-reverse"} ${eval("toggleCard" + workDetails.id) ? "show" : ""} cursor-pointer`}>
                                     <div className={`info-card flex flex-col justify-center items-center  p-20 ${eval("toggleCard" + workDetails.id) ? "border-0" : "show"}`}>
                                         <h3 className="work-info-header pt-[200px] pb-[100px] text-9xl font-black text-center">{workDetails.name}</h3>
 
