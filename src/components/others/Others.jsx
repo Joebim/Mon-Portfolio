@@ -1,12 +1,12 @@
 import { useState } from "react"
 import { useInView } from 'react-intersection-observer';
-import { AnimateButtonPoint } from "./AnimateButton"
-import { VerticalLine } from "./VerticalLine"
+import { AnimateButtonPoint } from "../AnimateButton"
+import { VerticalLine } from "../works/VerticalLine"
 import { FaGithub } from "react-icons/fa";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { IconContext } from "react-icons";
 import styled from "styled-components"
-import { othersData } from "./othersData"
+import { othersData } from "../../data/othersData"
 
 
 

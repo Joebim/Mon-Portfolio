@@ -943,6 +943,17 @@ input[type="checkbox"]:checked~.bar .middle {
     transition: all 0.8s ease;
 }
 
+.sidebar-social {
+    background: linear-gradient(to right, #1fc9b2, transparent)#a89f1d;
+    transition: all 0.8s ease;
+}
+
+.sidebar-social:hover,
+.sidebar-social:focus {
+    background-color: #3c7acc;
+    transition: all 0.8s ease;
+}
+
 /* .featured-btn {
     background: radial-gradient(circle farthest-side, #fceabb, #f8b500);
 } */

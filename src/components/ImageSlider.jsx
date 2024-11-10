@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { slides1 } from "./sliderData";
-import { slides2 } from "./sliderData";
+import { slides1 } from "../data/sliderData";
+import { slides2 } from "../data/sliderData";
 
 export function ImageSliderOne (props) {
     

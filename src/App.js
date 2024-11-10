@@ -1,10 +1,9 @@
 import './App.css';
 import {Routes, Route } from "react-router-dom";
 import './customStyles.css';
-import Home from './components/home';
-import Works from './components/works';
-import Services from './components/services';
-import Gallery from './components/Gallery';
+import Home from './pages/home';
+import Gallery from './pages/Gallery';
+import Social from './pages/Social';
 // import Footer from './components/Footer';
 // import { ThemeProvider } from 'styled-components';
 // import { lightTheme, darkTheme, blueTheme } from "./components/themes";
@@ -20,9 +19,8 @@ function App () {
     <>
     <Routes>
       <Route path="/" element={<Home />}/>
-      <Route path="/works" element={<Works />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/about" element={<Gallery />} />
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/social" element={<Social />} />
     </Routes>
     {/* <Footer/> */}
     </>

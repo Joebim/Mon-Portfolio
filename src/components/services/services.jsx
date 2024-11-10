@@ -1,6 +1,6 @@
 import React from "react"
-import { ImageSliderOne } from "./ImageSlider";
-import { ImageSliderTwo } from "./ImageSlider";
+import { ImageSliderOne } from "../ImageSlider";
+import { ImageSliderTwo } from "../ImageSlider";
 
 
 

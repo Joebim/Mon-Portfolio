@@ -1,30 +1,30 @@
-import { React, useState, useEffect } from "react"
+import { React, useState } from "react"
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import logo from "../assets/images/Joseph.svg"
 import lightBulb from "../assets/images/lightBulb.png"
 import paperPlane from "../assets/images/paperplane.png"
-import Services from "./services"
-import Works from "./works";
-import Others from "./Others";
-import { AnimateButtonPrimary } from "./AnimateButton";
-import { AnimateButtonPoint } from "./AnimateButton";
-import { VerticalLine } from "./VerticalLine";
+// import Services from "../components/services/Services"
+import Works from "../components/works/Works";
+import Others from "../components/others/Others";
+import { AnimateButtonPrimary } from "../components/AnimateButton";
+import { AnimateButtonPoint } from "../components/AnimateButton";
+import { VerticalLine } from "../components/works/VerticalLine";
 // import GrowingCircleAnimation from "./GrowingCircleAnimation";
 // import ThemeButton from "./ThemeButton";
 // import FlippableCard from "./flipable-card";
 // import { ThemeSwitcher} from "./ThemeSwitcher";
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, blueTheme } from "./themes";
-import Footer from "./Footer";
-import GlobalStyles from './Globalstyles';
+import { lightTheme, darkTheme, blueTheme } from "../data/themes";
+import Footer from "../components/Footer";
+import GlobalStyles from '../components/Globalstyles';
 import { useContext } from "react";
-import { Theme } from "./ThemeContext";
+import { Theme } from "../context/ThemeContext";
 import resume from "../assets/Joseph-Abimbola-Akinwole-5.pdf"
-import Sidebar from "./Sidebar";
+import Sidebar from "../components/Sidebar";
 import { RiPaletteFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
-import Contact from "./Contact";
+import Contact from "../components/contact/Contact";
 
 
 
@@ -189,7 +189,7 @@ export default function Home(props) {
             {/* <VerticalLine/> */}
           </div>
 
-          <Services></Services>
+          {/* <Services></Services> */}
           <Works theme={theme}></Works>
           <Others></Others>
 
