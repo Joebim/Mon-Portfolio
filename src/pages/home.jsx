@@ -12,6 +12,8 @@ import { AnimateButtonPrimary, AnimateButtonPoint } from "../components/AnimateB
 import { VerticalLine } from "../components/works/VerticalLine";
 import Contact from "../components/contact/Contact";
 import Navbar from "../components/Navbar";
+import lightBulb from "../assets/images/lightBulb.png"
+import paperPlane from "../assets/images/paperplane.png"
 
 const Home = (props) => {
   const { ref: introRef1, inView: introOneVisibility } = useInView({
@@ -64,11 +66,11 @@ const Home = (props) => {
 
             <div ref={introRef1} className={`intro-one fade-in mt-[400px] flex-[8] ${introOneVisibility ? "appear" : ""}`}>
               <h2 className="text-left text-[85px] leading-[120px] pr-0 md:pr-[700px]">As a frontend developer based in Nigeria, I bring passion and creativity to every project I work on. With years of experience, I have honed my skills and gained a unique perspective on web design. My goal is to continuously push boundaries and create innovative designs.</h2>
-              <img src="../assets/images/lightBulb.png" alt="Light Bulb" width="1300"></img>
+              <img src={lightBulb} alt="Light Bulb" width="1300"></img>
             </div>
             <div ref={introRef2} className={`intro-two fade-in mt-[400px] flex-[8] ${introTwoVisibility ? "appear" : ""}`}>
               <h2 className="text-right text-[85px] leading-[120px] pl-0 md:pl-[700px]">I strive to elevate the visual appeal and functionality of my designs. My philosophy is centered around the belief that every aspect of a website or application can be beautiful, intuitive, and user-friendly. Whether it's through vector graphics or responsive 3D simplicity, my goal is to create a seamless and enjoyable experience for users.</h2>
-              <img src="../assets/images/paperplane.png" alt="Paper Plane" width="1300"></img>
+              <img src={paperPlane} alt="Paper Plane" width="1300"></img>
             </div>
           </div>
 
