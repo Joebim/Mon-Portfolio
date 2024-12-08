@@ -298,8 +298,8 @@ export const worksData = [
         name: "Real Estate Website",
         innerInfo: "Browse and manage real estate listings",
         mainInfo: "A platform to explore real estate listings, view detailed property information, and connect with agents",
-        github: "featured",
-        web: "https://realestatewebsite.example.com/", // Updated to reflect a hypothetical appropriate URL
+        github: "https://github.com/Joebim/Real-Estate-Web-App",
+        web: "https://real-estate-web-app-lbwk.vercel.app/", // Updated to reflect a hypothetical appropriate URL
         year: "2024",
         position: "left",
         image: "bg-[url('./assets/images/real-estate.png')]",
