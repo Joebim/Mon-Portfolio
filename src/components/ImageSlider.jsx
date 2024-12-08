@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import { useState, useEffect } from "react";
 import { slides1 } from "../data/sliderData";
@@ -44,8 +45,8 @@ export function ImageSliderOne (props) {
         <>
         {slides1?.map((slide, index) => {
             return(
-            <div className={`carousel-new-inner w-[600px] h-[600px] gray-200 justify-center align-center inline-flex ${index == currentSlide ? "slide-one current" : "slide-one"}`} key={index}>
-                {index == currentSlide && (
+            <div className={`carousel-new-inner w-[600px] h-[600px] gray-200 justify-center align-center inline-flex ${index === currentSlide ? "slide-one current" : "slide-one"}`} key={index}>
+                {index === currentSlide && (
                     <img src={slide.image} alt="slide" className="w-[400px] h-[400px]"></img>
                 )}
 
@@ -68,7 +69,7 @@ export function ImageSliderTwo (props) {
     let intervalTime = 5500
 
     const nextSlide = () => {
-        setCurrentSlide(currentSlide == slideLength - 1 ? 0 : currentSlide + 1); 
+        setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1); 
     }
 
     // const prevSlide = () => {
@@ -91,6 +92,7 @@ export function ImageSliderTwo (props) {
             auto()
         }
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [autoSlide, currentSlide]);
 
 
@@ -98,8 +100,8 @@ export function ImageSliderTwo (props) {
         <>
         {slides2?.map((slide, index) => {
             return(
-            <div className={`carousel-new-inner w-[600px] h-[600px] gray-200 flex justify-center align-center inline-flex ${index == currentSlide ? "slide-two current" : "slide-two"}`} key={index}>
-                {index == currentSlide && (
+            <div className={`carousel-new-inner w-[600px] h-[600px] gray-200 justify-center align-center inline-flex ${index === currentSlide ? "slide-two current" : "slide-two"}`} key={index}>
+                {index === currentSlide && (
                     <img src={slide.image} alt="slide" className="w-[400px] h-[400px]"></img>
                 )}
 

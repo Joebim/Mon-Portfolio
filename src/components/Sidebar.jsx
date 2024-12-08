@@ -71,11 +71,11 @@ export default function Sidebar(props) {
                   Gallery
                 </li>
               </a>
-              <Link to="social" className="w-full">
+              <Link2 to="social" className="w-full">
                 <li className="sidebar-social text-[70px] text-white text-center rounded-[40px] h-72 cursor-pointer flex items-center justify-center w-full">
                   Social Fun Projects
                 </li>
-              </Link>
+              </Link2>
             </div>
           </ul>
         </nav>

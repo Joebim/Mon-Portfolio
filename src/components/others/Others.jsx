@@ -86,7 +86,7 @@ return (
                         <IconContext.Provider value={{ color: "#c2c2c2", size:"90"}}>
                             <div className="info-card-link flex flex-row text-[30px] w-[23%] justify-between items-center">
                                 <a href={projectData.github} target="_blank"><FaGithub /></a>
-                                {projectData.web == "" ? 
+                                {projectData.web === "" ? 
                                 <div className="featured-alt-btn w-[250px] h-[100px] rounded-[50px] flex justify-center items-center border-8 border-white text-white text-[40px] bg-transparent px-[30px] mx-[30px]">Mobile</div>
                                  : <a href={projectData.web} target="_blank"><BsBoxArrowUpRight/></a>}
                             </div>

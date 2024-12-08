@@ -55,7 +55,7 @@ const m = {
       m.ctx.scale(lowerResolutionRatio, lowerResolutionRatio)
     }
 
-    if(circleCenterCoordinates.x == null || circleCenterCoordinates.y == null) {
+    if(circleCenterCoordinates.x === null || circleCenterCoordinates.y === null) {
       m.radiusMultiplier = isDark ? 0 : m.radiusMultiplier
     }
 
