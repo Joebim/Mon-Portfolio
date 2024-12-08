@@ -132,7 +132,7 @@ export const worksData = [
     {
         id: 6,
         name: "Products Dashboard",
-        innerInfo: "Data visualizaation dashboard UI",
+        innerInfo: "Data visualization dashboard UI",
         mainInfo: "Management of products operations including, orders, profit tracking, inventory and customer interactions",
         github: "https://github.com/Joebim/assessment-dashboard",
         web: "https://joebim.github.io/assessment-dashboard/",
@@ -143,15 +143,15 @@ export const worksData = [
         framework: [
             {
                 id: 1,
-                name: "React"
-            },
-            {
-                id: 2,
                 name: "NextJs"
             },
             {
-                id: 3,
+                id: 2,
                 name: "ContextApi"
+            },
+            {
+                id: 3,
+                name: "Sass"
             }
         ]
     },
@@ -247,7 +247,7 @@ export const worksData = [
         framework: [
             {
                 id: 1,
-                name: "React"
+                name: "Nextjs"
             },
             {
                 id: 2,
@@ -255,7 +255,11 @@ export const worksData = [
             },
             {
                 id: 3,
-                name: "RestAPI"
+                name: "Zustand"
+            },
+            {
+                id: 3,
+                name: "Shadcn"
             }
         ]
     },
@@ -299,7 +303,7 @@ export const worksData = [
         framework: [
             {
                 id: 1,
-                name: "React"
+                name: "Vue"
             },
             {
                 id: 2,
@@ -307,6 +311,10 @@ export const worksData = [
             },
             {
                 id: 3,
+                name: "Pinia"
+            },
+            {
+                id: 4,
                 name: "RestAPI"
             }
         ]
