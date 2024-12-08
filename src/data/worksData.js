@@ -221,7 +221,7 @@ export const worksData = [
         framework: [
             {
                 id: 1,
-                name: "React"
+                name: "Nextjs"
             },
             {
                 id: 2,
@@ -229,7 +229,11 @@ export const worksData = [
             },
             {
                 id: 3,
-                name: "RestAPI"
+                name: "Firebase"
+            },
+            {
+                id: 4,
+                name: "ContextApi"
             }
         ]
     },
