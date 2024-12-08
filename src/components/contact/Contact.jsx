@@ -58,10 +58,6 @@ const Contact = () => {
     setMessageValid(messageRegex.test(value));
   };
 
-console.log('name', name)
-console.log('email', email)
-console.log('message', message)
-
   
 
   return (

@@ -14,7 +14,7 @@ export default function Works() {
       <VerticalLine />
       <VerticalLine />
       <AnimateButtonPoint animateButtonClass="btn-class" />
-      {worksData.map((workDetails, index) => (
+      { worksData.slice().reverse().map((workDetails, index) => (
         <div key={index}>
           <WorkCard workDetails={workDetails} />
           <VerticalLine />
@@ -22,7 +22,7 @@ export default function Works() {
         </div>
       ))}
       <AnimateButtonPoint animateButtonClass="btn-end" />
-      {worksData.length > 6 && (
+      { worksData.slice().reverse().length > 6 && (
         <div className="h-[300px] w-full flex items-center flex-col-reverse">
           <div className="checkout w-1/2 text-center h-[100px] font-extrabold text-white text-[80px] pb-[150px] pt-[100px] ease duration-500 cursor-pointer">
             More Projects..

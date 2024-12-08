@@ -17,8 +17,9 @@ body {
     margin: 0px;
     overflow-x: hidden;
     font-family: 'League Spartan', sans-serif;
-    /* background-color: transparent; */
-    /* background-color: #fdf7f7; */
+}
+
+.zoom {
     zoom: 24%;
 }
 
