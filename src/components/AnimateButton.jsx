@@ -16,7 +16,6 @@ export function AnimateButtonPoint(props) {
             <div className="animate-button-contain pr-8">
                 <div  
                 id="btn_2"
-                // onClick={() => {setToggleCardThree(!toggleCardThree)}}
                 className="info-end m-0">
                     
                 </div>
