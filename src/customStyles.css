@@ -961,7 +961,7 @@ input[type="checkbox"]:checked~.bar .middle {
 
 @media screen and (max-width: 640px) {
     .zoom {
-        zoom: 24%;
+        zoom: 22%;
     }
 
     .about-text {
@@ -1178,7 +1178,7 @@ input[type="checkbox"]:checked~.bar .middle {
 
 @media screen and (max-width: 1024px) {
     .zoom {
-        zoom: 24%;
+        zoom: 22%;
     }
 
     .navbar {
