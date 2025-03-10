@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { RiPaletteFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
 import logo from "../assets/images/Joseph.svg";
+import resume from "../assets/Joseph-Akinwole.pdf"
 
 const Navbar = ({ theme, setTheme, navVisibility }) => {
   const themeIndicateColor = theme === "light" ? "#189e5b" : "#ffffff";
@@ -45,7 +46,7 @@ const Navbar = ({ theme, setTheme, navVisibility }) => {
 
         <div className="print-resume-btn w-[400px] h-[120px] bg-transparent rounded-[20px] border-solid border-[10px] p-2 text-[60px] cursor-pointer"
           onClick={() => {
-            fetch("../assets/Joseph-Akinwole.pdf").then(res => {
+            fetch(resume).then(res => {
               res.blob().then(blob => {
                 const fileURL = window.URL.createObjectURL(blob);
                 let aLink = document.createElement('a');
