@@ -46,6 +46,7 @@ const Home = (props) => {
           <div className="photo-header">
             <Navbar theme={theme} setTheme={setTheme} navVisibility={navVisibility} />
             <div className="profile">
+              
               <h4>I'm Joseph</h4>
               <h2 className="text-center leading-[150px] lsm:eading-[120px]">Frontend Engineer
                 <br></br><span className="text-[70px]">(With design experience)</span>

@@ -45,7 +45,7 @@ const Navbar = ({ theme, setTheme, navVisibility }) => {
 
         <div className="print-resume-btn w-[400px] h-[120px] bg-transparent rounded-[20px] border-solid border-[10px] p-2 text-[60px] cursor-pointer"
           onClick={() => {
-            fetch("../assets/Joseph-Abimbola-Akinwole-5.pdf").then(res => {
+            fetch("../assets/Joseph-Akinwole.pdf").then(res => {
               res.blob().then(blob => {
                 const fileURL = window.URL.createObjectURL(blob);
                 let aLink = document.createElement('a');

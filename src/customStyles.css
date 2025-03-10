@@ -960,6 +960,10 @@ input[type="checkbox"]:checked~.bar .middle {
 } */
 
 @media screen and (max-width: 640px) {
+    .zoom {
+        zoom: 22%;
+    }
+
     .about-text {
         padding-bottom: 150px;
     }
@@ -1173,7 +1177,7 @@ input[type="checkbox"]:checked~.bar .middle {
 }
 
 @media screen and (max-width: 1024px) {
-    body {
+    .zoom {
         zoom: 22%;
     }
 
