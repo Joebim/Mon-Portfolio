@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mon-Portfolio/static/css/main.357ada27.css",
-    "main.js": "/Mon-Portfolio/static/js/main.d983ff71.js",
+    "main.js": "/Mon-Portfolio/static/js/main.6883aece.js",
     "static/js/787.595b4aa7.chunk.js": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js",
     "static/media/delve.png": "/Mon-Portfolio/static/media/delve.a747949a15cfd6cbd2dd.png",
     "static/media/lightBulb.png": "/Mon-Portfolio/static/media/lightBulb.414a0a928daa096824b2.png",
@@ -11,6 +11,7 @@
     "static/media/cors.png": "/Mon-Portfolio/static/media/cors.434c3a01a4857c765caa.png",
     "static/media/devlinks.png": "/Mon-Portfolio/static/media/devlinks.374481a163679761680c.png",
     "static/media/interiorui.png": "/Mon-Portfolio/static/media/interiorui.b1a68af955e7c703e60b.png",
+    "static/media/Joseph-Akinwole.pdf": "/Mon-Portfolio/static/media/Joseph-Akinwole.0bab37c1540ef9b76528.pdf",
     "static/media/Joseph.svg": "/Mon-Portfolio/static/media/Joseph.727169a2174b672d842f1569d99b412b.svg",
     "static/media/health-dashboard.png": "/Mon-Portfolio/static/media/health-dashboard.564e093b61b35b4cb9a0.png",
     "static/media/fontasie.png": "/Mon-Portfolio/static/media/fontasie.d06699bb58d0cccb500c.png",
@@ -28,11 +29,11 @@
     "static/media/facebook.png": "/Mon-Portfolio/static/media/facebook.eae3efb01f1fe4c01491.png",
     "index.html": "/Mon-Portfolio/index.html",
     "main.357ada27.css.map": "/Mon-Portfolio/static/css/main.357ada27.css.map",
-    "main.d983ff71.js.map": "/Mon-Portfolio/static/js/main.d983ff71.js.map",
+    "main.6883aece.js.map": "/Mon-Portfolio/static/js/main.6883aece.js.map",
     "787.595b4aa7.chunk.js.map": "/Mon-Portfolio/static/js/787.595b4aa7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.357ada27.css",
-    "static/js/main.d983ff71.js"
+    "static/js/main.6883aece.js"
   ]
 }
